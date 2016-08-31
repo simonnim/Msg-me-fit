@@ -25,3 +25,42 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+Started GET "/" for ::1 at 2016-08-31 11:33:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/simonnim/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/simonnim/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (9.0ms)
+Completed 200 OK in 35ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-31 11:38:28 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/simonnim/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/simonnim/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (5.4ms)
+Completed 200 OK in 15ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-31 11:38:30 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/simonnim/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/simonnim/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.1ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2016-08-31 11:39:02 -0700
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1158ms (Views: 1154.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-31 11:40:26 -0700
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
