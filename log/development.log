@@ -2750,3 +2750,93 @@ Processing by UserController#show as HTML
 Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/user/show" for ::1 at 2016-09-03 17:34:46 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 72ms (Views: 68.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user/show" for ::1 at 2016-09-03 17:35:01 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user/show" for ::1 at 2016-09-03 17:35:06 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user/show" for ::1 at 2016-09-03 18:46:11 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 95ms (Views: 76.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user/show" for ::1 at 2016-09-03 18:46:17 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user/show" for ::1 at 2016-09-03 18:46:18 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2016-09-03 18:46:19 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 65ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for ::1 at 2016-09-03 18:46:20 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for ::1 at 2016-09-03 18:46:21 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2016-09-03 18:46:21 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/show" for ::1 at 2016-09-03 18:46:21 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.5ms)
+
+
