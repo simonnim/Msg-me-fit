@@ -9,11 +9,16 @@
 </head>
 
 <body>
+<% if current_user %>
+  <a href="/user">Home</a>
+  <a href="/user/show">My Profile</a>
+  <a href="/logout">Log out</a>
+  <strong> Currently signed in as <%= current_user.name %></strong>
+<% else %>
+  <a href="/user">Home</a>
   <a href="/sessions/new">Log in</a>
   <a href="/user/new">Register</a>
-  <a href="/logout">Log out</a>
-  <a href="/user/show">My profile</a>
-  <a href="/user">Home</a><br>
-  <%= yield %>
+<% end %><br>
+<%= yield %>
 </body>
 </html>
