@@ -3096,3 +3096,146 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+Started GET "/" for ::1 at 2016-09-04 19:41:38 -0700
+Started GET "/" for ::1 at 2016-09-04 19:41:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (3.7ms)
+  Rendered user/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 758ms (Views: 724.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 760ms (Views: 726.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for ::1 at 2016-09-04 19:44:37 -0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (62.6ms)
+Completed 200 OK in 163ms (Views: 161.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2016-09-04 19:44:45 -0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6qNEaunZcUkYx5FJWKaiALOdr6TRhc/fia1oNYDlc5GNyRqNO33OKWXxW1iRfqH/PLDT1GDyj8arGj/Q5bzGg==", "user"=>{"name"=>"Simon", "email"=>"simon@simon.simon", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (12.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Simon"], ["email", "simon@simon.simon"], ["password_digest", "$2a$10$7gK72e2Ob6w7os/ZllXr1O.NiCTq8b6luAngvgsjrO/pnlLtOGlb."], ["created_at", 2016-09-05 02:44:45 UTC], ["updated_at", 2016-09-05 02:44:45 UTC]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 119ms (ActiveRecord: 21.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-04 19:44:45 -0700
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2016-09-04 19:44:51 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-09-04 19:44:58 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eanFa5WmTO1DGkKSc/BKUKP3Uwt9MuGD2s8r5IarZGjENGwQCuzeEMLumbo01ypfXcvm+r/3PIO+Rfa7Ez4CvA==", "email"=>"simon@simon.simon", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "simon@simon.simon"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 91ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-04 19:44:58 -0700
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2016-09-04 19:45:03 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-09-04 19:45:13 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IY3CGFY7c/De3yDxXpTnVy754NF2KKQDGY1k693K0uacEGtjyXHhDV8r+9kZs4dY0MVVILTteQN9B7m0SF+0Mg==", "email"=>"simon@simon.simon", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "simon@simon.simon"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 82ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-09-04 19:45:13 -0700
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/show" for ::1 at 2016-09-04 19:46:06 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user/show" for ::1 at 2016-09-04 20:11:14 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 120ms (Views: 94.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/user/show" for ::1 at 2016-09-04 20:11:22 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/user/show" for ::1 at 2016-09-04 20:11:30 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user" for ::1 at 2016-09-04 20:11:32 -0700
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/show" for ::1 at 2016-09-04 20:11:35 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 50.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user" for ::1 at 2016-09-04 20:11:36 -0700
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 80ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
