@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   root to: 'user#index'
   get '/logout' => 'sessions#destroy'
   get '/login' => 'sessions#new'
+  
 
 end
