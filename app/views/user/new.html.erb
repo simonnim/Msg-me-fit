@@ -3,34 +3,14 @@
 <%= form_for :user, url: "/user" do |f| %>
 <div class="form-group">
    <%= f.label :name %>
-   <%= f.text_field :name, class: "txt-group" %>
+   <%= f.text_field :name%>
 </div>
 <div class="form-group">
-   <%= f.label :team %>
-   <%= f.text_field :team, class: "txt-group" %>
-</div>
-<div class="form-group">
-   <%= f.label :sport %>
-   <%= f.text_field :sport, class: "txt-group" %>
-</div>
-<div class="form-group">
-   <%= f.label :email %>
-   <%= f.email_field :email, class: "txt-group" %>
-</div>
-<div class="form-group">
-   <%= f.label :phone %>
-   <%= f.telephone_field :phone, class: "txt-group" %>
+   <%= f.label :email%>
+   <%= f.text_field :email%>
 </div>
 <div class="form-group">
    <%= f.label :password %>
-   <%= f.password_field :password, class: "txt-group" %>
-</div>
-<div class="form-group">
-   <%= f.label :password_confirmation, "Password Confirmation" %>
-   <%= f.password_field :password_confirmation, class: "txt-group" %>
-</div>
-<%= f.hidden_field :coach, :value => true %>
-<div class="form-group">
-   <%= f.submit "Register", class: "btn btn-default" %>
+   <%= f.password_field :password%>
 </div>
 <% end %>
