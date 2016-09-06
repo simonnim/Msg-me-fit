@@ -12,27 +12,7 @@
   <script src="/assets/javascripts/application.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<<<<<<< HEAD
-<!-- <body>
-  <a href="/sessions/new">Log in</a>
-  <a href="/user/new">Register</a>
-  <a href="/logout">Log out</a>
-  <a href="/user/show">My profile</a>
-  <a href="/user">Home</a><br> -->
-
-<!--   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav navbar-right"> -->
-      <% if logged_in? %>
-      <% p current_user %>
-      <li><a href="/">Hi <%= current_user.name.capitalize %>! </a></li> <li><%= link_to "Logout", '/logout' %></li>
-      <% else %>
-      <li><%= link_to 'Login', '/login' %> </li> <li> <%= link_to 'Signup', '/signup' %> </li>
-      <% end %>
-  <%= yield %>
-<!--     </ul>
-  </div> -->
-=======
+  
 </head>
 <body>
 <% if current_user %>
@@ -72,7 +52,6 @@
 <% end %>
 <br>
 <%= yield %>
->>>>>>> a6deded52c9f0a4ed608da6a690434c1c05ff7a6
 </body>
 </html>
 
