@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>FitnessPlanner</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>FitnessPlanner</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/assets/javascripts/application.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <body>
-    <%= yield %>
-  </body>
+</head>
+<body>
+<% if current_user %>
+<nav class="navbar navbar-inverse sidebar" role="navigation">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/user/show">Welcome, <%= current_user.name.capitalize %>!</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/user">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+				<li ><a href="/user/show">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+				<li ><a href="#">Calendar<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-calendar"></span></a></li>
+				<li ><a href="#">Exercises<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-flash"></span></a></li>
+				<li ><a href="#">Meals<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphiconglyphicon glyphicon-apple"></span></a></li>
+				<li ><a href="/logout">Log out<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-log-out"></span></a></li>
+			</ul>
+		</div>
+</nav>
+<% else %>
+<nav class="navbar navbar-inverse sidebar" role="navigation">
+    <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/user/show">Welcome, Guest!</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+	<ul class="nav navbar-nav">
+				<li class="active"><a href="/user">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+				<li ><a href="/sessions/new">Login<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-log-in"></span></a></li>
+				<li ><a href="/user/new">Register<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-plus-sign"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<% end %>
+<br>
+<%= yield %>
+</body>
 </html>
+
+
