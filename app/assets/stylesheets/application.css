@@ -12,6 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require simple_calendar
+
  */
 
      body,html{
@@ -165,3 +167,36 @@
 	section{
 		padding-left: 15px;
 	}
+
+/*_______________________________________________________________*/
+/*Calender css*/
+.simple-calendar {
+	background-color: white;
+  width: 85%;
+  float: left;
+  padding: 10px;
+  padding-left: 25px;
+
+
+}
+.calendar-heading {
+  text-align: center;
+  font-size: 150%;
+  font: 20px Tahoma, Helvetica, Arial, Sans-Serif;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.today {
+    background: #afafaf !important;
+  }
+
+.next-month {
+    background-color: #c0c2ce !important;
+  }
+
+.prev-month {
+    background: #c0c2ce !important;
+  }
+
