@@ -5,13 +5,13 @@ class UserController < ApplicationController
 	end
 
 	def show
-		@user = User.find(session[:id])
+		@user = User.find(session[:user_id])
 	end
 
 	def create
 		@user = User.new(user_params)
 		if @user.save
-			session[:id] = @user.id
+			session[:user_id] = @user.id
 			redirect_to '/'
 		else
 			render 'new'
