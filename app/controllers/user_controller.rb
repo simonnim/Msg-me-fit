@@ -5,8 +5,6 @@ class UserController < ApplicationController
 	end
 
 	def show
-		print session[:id]
-		print "*******************************"
 		@user = User.find(session[:user_id])
 	end
 
