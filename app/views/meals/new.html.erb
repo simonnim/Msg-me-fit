@@ -1,0 +1,9 @@
+<%= form_for :meal, url: user_meals_path do |f| %>
+<div>
+	<%= f.label :meal %>
+	<%= f.text_field :meal %>
+</div>
+<div>
+	<%= f.submit "Submit" %>
+</div>
+<% end %>
