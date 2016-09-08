@@ -1,5 +1,7 @@
-<%= form_for :workouts, url: user_workouts_path do |f| %>
-<div>
+<h1 class="form-group">Workouts</h1>
+
+<%= form_for :workout, url: user_workouts_path do |f| %>
+<div class="form-group">
 	<%= f.label :exercise %>
 	<%= f.text_field :workout %><br>
 	<%= f.label :sets %>
@@ -7,7 +9,8 @@
 	<%= f.label :reps %>
 	<%= f.number_field(:reps) %><br>
 	<%= f.label :weight %>
-	<%= f.number_field(:weight) %><br>
+	<%= f.number_field(:weight) %>
+	<%= f.hidden_field :user_id, :value => current_user.id %><br>
 	<%= f.submit "Add to Workout" %>
 </div>
 
