@@ -1,3 +1,4 @@
+config.assets.enabled = false
 require_relative 'boot'
 
 require "rails"
