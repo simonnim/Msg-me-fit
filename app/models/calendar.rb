@@ -4,6 +4,6 @@ class Calendar < ApplicationRecord
 	has_many :meals
 
 	def start_time
-		self.appointment_time
+		self.time
 	end
 end
