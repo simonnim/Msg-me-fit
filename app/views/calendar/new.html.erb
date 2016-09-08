@@ -1,0 +1,13 @@
+<h1 class="form-group">Add to Calendar</h1>
+
+<%= form_for :calendar, url: user_calendar_index_path do |f| %>
+<div class="form-group">
+	<%= f.label :exercise %>
+	<%= f.text_field :workout %><br>
+	<%= f.label :time %>
+	<%= f.datetime_select :time, :ampm => true, :start_year => 2016, :order => [:month, :day, :year]%>
+	<%= f.hidden_field :user_id, :value => current_user.id %><br>
+	<%= f.submit "Add to Workout" %>
+</div>
+
+<% end %>
