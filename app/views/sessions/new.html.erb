@@ -1,8 +1,6 @@
 <div class="login">
   <h1>Login</h1>
-
-  <div class="form-login">
-  <%= form_tag '/login' do %>
+  <%= form_tag '/sessions' do %>
   <div class="form-group txt-group">
   Email: <%= text_field_tag :email %>
   </div>
@@ -10,7 +8,6 @@
   Password: <%= password_field_tag :password %>
   </div>
   <%= submit_tag "Submit", class: "btn btn-default" %>
-
   <% end %>
   </div>
 </div>
