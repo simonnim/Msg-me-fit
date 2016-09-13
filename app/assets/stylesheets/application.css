@@ -12,10 +12,7 @@
  *
  *= require_tree .
  *= require_self
- *= require simple_calendar
-
  */
-
      body,html{
 		height: 100%;
 	}
@@ -203,4 +200,3 @@
 .intro {
 	text-align: center;
 }
-
