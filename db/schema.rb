@@ -16,12 +16,13 @@ ActiveRecord::Schema.define(version: 20160914020325) do
   enable_extension "plpgsql"
 
   create_table "calendars", force: :cascade do |t|
-    t.integer  "user_id",    null: false
-    t.integer  "meal_id"
-    t.integer  "workout_id"
-    t.datetime "time",       null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "user_id",     null: false
+    t.string   "category",    null: false
+    t.string   "title",       null: false
+    t.string   "description"
+    t.datetime "time"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "exerciselists", force: :cascade do |t|
@@ -31,8 +32,9 @@ ActiveRecord::Schema.define(version: 20160914020325) do
 
   create_table "meals", force: :cascade do |t|
     t.string   "meal"
+    t.string   "ingredients"
+    t.string   "directions"
     t.integer  "user_id"
-    t.integer  "calendar_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
@@ -51,9 +53,8 @@ ActiveRecord::Schema.define(version: 20160914020325) do
     t.integer  "reps"
     t.integer  "weight"
     t.integer  "user_id"
-    t.integer  "calendar_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
