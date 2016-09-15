@@ -1,4 +1,6 @@
-
-
+<% @exerciselistbicep.each do |x| %>
+Exercise name: <%= x.exercise %><br>
+Muscle worked: <%= x.muscle %><br>
+<% end %>
 
 <%= link_to "Add to your workout regimen", new_user_workout_path(@user) %>

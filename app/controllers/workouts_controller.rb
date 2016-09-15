@@ -2,6 +2,7 @@ class WorkoutsController < ApplicationController
 	
 	def index
 		@user = User.find(params[:user_id])
+		@exerciselistbicep = Exerciselist.where(muscle: "biceps")
 	end
 
 	def new
