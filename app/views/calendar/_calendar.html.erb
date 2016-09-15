@@ -3,7 +3,7 @@
 
   <% appointments.each do |appointment| %>
     <div class="calendar">
-      <strong><%= appointment.title %></strong><%= appointment.start_time.strftime(" %I:%M%p") %>
+      <a href="/user/<%=@user_id%>/calendar/<%=appointment.id%>"><strong><%= appointment.title %></strong><%= appointment.start_time.strftime(" %I:%M%p") %></a>
       <% end %>
     </div>
   <% end %>

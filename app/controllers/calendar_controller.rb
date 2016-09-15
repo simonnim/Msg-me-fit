@@ -15,6 +15,11 @@ class CalendarController < ApplicationController
     end
 	end
 
+	 def show
+    @event = Calendar.find(params[:id])
+    @user = session[:user_id]
+  end
+
 	private
 	def calendar_params
 		params.require(:calendar).permit(:category, :description, :title, :time,:user_id )
