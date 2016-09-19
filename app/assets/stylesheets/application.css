@@ -460,12 +460,22 @@
     display: inline-block;
     margin-bottom: 25px;
 }
-.subtitle{
-    display: block;
+
+.title{
+text-shadow: 2px 3px 0px #fff, 5px 8px 5px rgba(0,0,0,0.1);
+}
+
+.subtitle { width: 450px; 
+    background: url('http://i47.tinypic.com/a9l0g3.png') top left no-repeat; 
+    padding-left: 45px;
     font-family: 'Lobster';
     font-size: 18px;
     color:  #999999;
 }
-.title{
-text-shadow: 2px 3px 0px #fff, 5px 8px 5px rgba(0,0,0,0.1);
-}
+.subtitle p { padding-right: 35px; 
+    line-height: 18px; 
+    background: url('http://i48.tinypic.com/eb1yrr.png') bottom right no-repeat; 
+    padding-bottom: 25px; 
+    color: #999999; 
+    font-size: 17px;
+    font-family: 'Lobster'; }

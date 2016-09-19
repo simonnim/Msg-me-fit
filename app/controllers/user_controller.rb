@@ -9,7 +9,7 @@ class UserController < ApplicationController
 	end
 
 	def create
-		@user = User.new(user_params)
+		@user = User.new(name: params[:name], password: params[:password], email: params[:email])
 		if @user.save
 			session[:user_id] = @user.id
 			redirect_to '/'
@@ -20,7 +20,8 @@ class UserController < ApplicationController
 
 	  private
 
-  def user_params
-    params.require(:user).permit(:name, :password, :email)
-  end
+	#removed to get modal to work, params are now on line 12
+  # def user_params
+  #   params.require(:user).permit(:name, :password, :email)
+  # end
 end

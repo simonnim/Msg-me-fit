@@ -49,8 +49,8 @@
 							</ul>
 							<% else %>
               <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/user/new">Register</a></li>
-                    <li><a href="/sessions/new">Sign in</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#registerModal">Register</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#loginModal">Sign in</a></li>
                </ul>
               <% end %>
             </div><!-- /.navbar-collapse -->
@@ -62,6 +62,53 @@
     </div>
     <container>
 <br>
+
+<div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <center><h4 class="modal-title">Welcome Back! Log in Here</h4></center>
+      </div>
+      <div class="modal-body">
+        <%= bootstrap_form_tag url:'/sessions' do |f| %>
+        <%= f.text_field :email %>
+        <%= f.password_field :password %>
+        <%= f.submit "Log In" %>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+<div id="registerModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <center><h4 class="modal-title">Register Here!</h4></center>
+      </div>
+      <div class="modal-body">
+        <%= bootstrap_form_tag url:'/user' do |f| %>
+          <%= f.text_field :name %>
+          <%= f.text_field :email %>
+          <%= f.password_field :password %>
+          <%= f.submit "Sign Up" %>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <div class="main">
 <%= yield %>
 </div>
