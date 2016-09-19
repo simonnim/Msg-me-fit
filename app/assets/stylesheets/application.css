@@ -31,22 +31,22 @@
 .calendar-heading {
   text-align: center;
   font-size: 150%;
-  font: 20px Tahoma, Helvetica, Arial, Sans-Serif;
+  font: 25px Tahoma, Helvetica, Arial, Sans-Serif;
   text-align: center;
   padding: 10px;
 
 }
 
 .today {
-    background: #afafaf !important;
+    background: #45b3e0 !important;
   }
 
 .next-month {
-    background-color: #c0c2ce !important;
+    background-color: #87ceeb !important;
   }
 
 .prev-month {
-    background: #c0c2ce !important;
+    background: #c9e9f6 !important;
   }
 
 .intro {
