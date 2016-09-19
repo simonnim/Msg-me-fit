@@ -479,3 +479,29 @@ text-shadow: 2px 3px 0px #fff, 5px 8px 5px rgba(0,0,0,0.1);
     color: #999999; 
     font-size: 17px;
     font-family: 'Lobster'; }
+
+/*________________________________________________*/
+/*exercise list css*/
+.list {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 3.5px solid black;
+}
+
+
+
+.list li {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #ccc;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+  display: block;
+}
+
+.list li:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}

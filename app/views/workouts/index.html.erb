@@ -1,5 +1,98 @@
 <!-- <img src=http://www.3weekdietebook.com/wp-content/uploads/2015/10/Lose-Weight.jpg style="width:512px; height:512px">
 <img src=http://health-hq.com/wp-content/uploads/2015/05/Tips-how-to-build-muscle.jpg style="width:512px; height:512px"> -->
 
-<center><%= link_to "Add to your workout regimen", new_user_workout_path(@user) %></center>
 
+<div class="container">
+  <center><h1 class="intro title">Exercise Database</h1></center><br>
+  <div class="btn-group btn-group-justified">
+
+    <div class="btn-group">
+    <button type="button" data-toggle="collapse" data-target="#bicep"  class="btn btn-default">Biceps</button>
+    </div>
+
+    <div class="btn-group">
+    <button type="button" data-toggle="collapse" data-target="#tricep"  class="btn btn-default">Triceps</button>
+    </div>
+
+    <div class="btn-group">
+    <button type="button" data-toggle="collapse" data-target="#chest"  class="btn btn-default">Chest</button>
+    </div>
+
+    <div class="btn-group">
+    <button type="button" data-toggle="collapse" data-target="#shoulder"  class="btn btn-default">Shoulders</button>
+    </div>
+
+    <div class="btn-group">
+    <button type="button" data-toggle="collapse" data-target="#abs"  class="btn btn-default">Abs</button>
+    </div>
+
+    <div class="btn-group">
+    <button type="button" data-toggle="collapse" data-target="#back"  class="btn btn-default">Back</button>
+    </div>
+
+    <div class="btn-group">
+    <button type="button" data-toggle="collapse" data-target="#legs"  class="btn btn-default">Legs</button>
+    </div>
+
+
+</div>
+<br>
+<div id="bicep" class="collapse list">
+<center><h2>Bicep</h2></center>
+<% @exerciselistbicep.each do |x| %>
+<center><li class="list"><%=x.exercise %><br></li></center>
+
+<% end %>
+</div>
+
+<div id="tricep" class="collapse list">
+<center><h2>Tricep</h2></center>
+<% @exerciselisttricep.each do |x| %>
+<center><li class="list"><%=x.exercise %><br></li></center>
+
+<% end %>
+</div>
+
+<div id="chest" class="collapse list">
+<center><h2>Chest</h2></center>
+<% @exerciselistchest.each do |x| %>
+<center><li class="list"><%=x.exercise %><br></li></center>
+
+<% end %>
+</div>
+
+<div id="shoulder" class="collapse list">
+<center><h2>Shoulder</h2></center>
+<% @exerciselistshoulder.each do |x| %>
+<center><li class="list"><%=x.exercise %><br></li></center>
+
+<% end %>
+</div>
+
+<div id="abs" class="collapse list">
+<center><h2>Abdominal</h2></center>
+<% @exerciselistabs.each do |x| %>
+<center><li class="list"><%=x.exercise %><br></li></center>
+
+<% end %>
+</div>
+
+<div id="back" class="collapse list">
+<center><h2>Back</h2></center>
+<% @exerciselistback.each do |x| %>
+<center><li class="list"><%=x.exercise %><br></li></center>
+
+<% end %>
+</div>
+
+<div id="legs" class="collapse list">
+<center><h2>Legs</h2></center>
+<% @exerciselistlegs.each do |x| %>
+<center><li class="list"><%=x.exercise %><br></li></center>
+
+<% end %>
+</div>
+
+
+<br><br>
+<center><%= link_to "Add to your workout regimen", new_user_workout_path(@user) %></center>
