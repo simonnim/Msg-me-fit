@@ -1,0 +1,3 @@
+class Exerciselist < ApplicationRecord
+
+end
