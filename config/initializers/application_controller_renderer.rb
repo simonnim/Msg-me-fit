@@ -15,4 +15,6 @@ class ActionDispatch::DebugExceptions
   end
 end
 
+
+
 # code that kills all development log errors we were getting for routing error
