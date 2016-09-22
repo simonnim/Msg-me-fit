@@ -1,0 +1,12 @@
+<h1 class="form-group">Exercise List Database</h1>
+
+<%= form_for :exerciselist, url: user_workouts_path do |f| %>
+<div class="form-group">
+	<%= f.label :exercise %>
+	<%= f.text_field :exercise %><br>
+	<%= f.label :muscle %>
+	<%= f.text_field :muscle %><br>
+	<%= f.submit "Add to Database" %>
+</div>
+
+<% end %>

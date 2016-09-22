@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>FitnessPlanner</title>
-  <%= csrf_meta_tags %>
-
+  <head>
+    <title>FitnessPlanner</title>
+    <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -97,3 +96,11 @@
 
 
 <!-- source for sidebar http://bootsnipp.com/snippets/featured/responsive-sidebar-menu -->
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
