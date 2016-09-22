@@ -16,16 +16,16 @@ class WorkoutsController < ApplicationController
 	end
 
 	def create
-		@workout = Workout.new(workout_params)
-    if @workout.save
-      redirect_to "/"
+		@exercise = Exerciselist.new(workout_params)
+    if @exercise.save
+      redirect_to "/user/#{@user_id}/workouts"
     else
-			redirect_to '/sessions/new'
+			redirect_to "/user/#{@user_id}/calendar"
     end
 	end
 
 	private
 	def workout_params
-		params.require(:workout).permit(:workout, :sets, :reps, :weight, :user_id)
+		params.require(:exerciselist).permit(:muscle,:exercise)
 	end
 end

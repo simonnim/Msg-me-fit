@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   	resources :meals
   	resources :calendar
   	resources :workouts
+    resources :exerciselist
   end
 
   root to: 'user#index'
