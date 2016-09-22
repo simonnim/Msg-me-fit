@@ -1,9 +1,24 @@
-##MSG ME FIT
+# README
 
-This application is designed to allow users to create meal plans and workout routines.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-We use a calender to record meal/workout regiments.
+Things you may want to cover:
 
-Twilio allows for active texting of individual of daily regiments and user can respond with "Yes" or "No" to update the calender.
+* Ruby version
 
-User will also be able to record his macros, and weight during period and enter in desired weight.
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

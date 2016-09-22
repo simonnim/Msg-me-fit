@@ -1,13 +1,11 @@
-<br><br>
 <%= month_calendar events: @user_appointments do |date, appointments| %>
   <%= date.strftime('%d') %>
 
   <% appointments.each do |appointment| %>
     <div class="calendar">
-      <a href="/user/<%=@user_id%>/calendar/<%=appointment.id%>"><strong><%= appointment.title %></strong><%= appointment.start_time.strftime(" %I:%M%p") %></a>
+      <strong>Time:</strong><%= appointment.start_time.strftime(" %I:%M%p") %>
       <% end %>
     </div>
   <% end %>
+
 <center><strong><%= link_to "Add Event to Calendar", new_user_calendar_path(@user) %></strong></center>
-<br>
-<br>

@@ -6,22 +6,16 @@ class CalendarController < ApplicationController
 	end
 	
 	def create
-		@user_id = current_user.id
 		@Calendar = Calendar.new(calendar_params)
     if @Calendar.save
-      redirect_to "/user/#{@user_id}/calendar"
+      redirect_to "/"
     else
-      redirect_to "/user/#{@user_id}/calendar"
+			redirect_to '/sessions/new'
     end
 	end
 
-	 def show
-    @event = Calendar.find(params[:id])
-    @user = session[:user_id]
-  end
-
 	private
 	def calendar_params
-		params.require(:calendar).permit(:category, :description, :title, :time,:user_id )
+		params.require(:calendar).permit(:exercise, :time, :user_id )
 	end
 end

@@ -1,1 +1,0 @@
-DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/simonnim/Desktop/fitness-planner/config/initializers/quiet_assets.rb:11)

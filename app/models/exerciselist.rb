@@ -1,3 +1,0 @@
-class Exerciselist < ApplicationRecord
-
-end

@@ -6,5 +6,4 @@ class Calendar < ApplicationRecord
 	def start_time
 		self.time
 	end
-
 end
