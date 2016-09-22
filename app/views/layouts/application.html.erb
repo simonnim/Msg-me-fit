@@ -18,105 +18,82 @@
 </head>
 <body>
  <div id="navbar-full">
-  <div id="navbar">
-    <!--    
-        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange  
-      -->
-      <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation">
-        
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/user" style="font-size: 40px; color:white;">FitnessPlanner</a>
-          </div>
-          
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-           
-           <% if current_user %>
-           <ul class="nav navbar-nav navbar-right">
-             <li ><a href="/user/show" style="color:white;">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
-             <li ><a href="/user/<%=current_user.id%>/calendar" style="color:white;" >Calendar<span style="font-size:16px; color:white;" class="pull-right hidden-xs showopacity glyphicon glyphicon-calendar"></span></a></li>
-             <li ><a href="/user/<%=current_user.id%>/workouts" style="color:white;">Exercises<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-flash"></span></a></li>
-             <li ><a href="/user/<%=current_user.id%>/meals" style="color:white;">Meals<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphiconglyphicon glyphicon-apple"></span></a></li>
-             <li ><a href="/logout" style="color:white;">Log out<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-log-out"></span></a></li>
-           </ul>
-           <% else %>
-           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" data-toggle="modal" data-target="#registerModal">Register</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#loginModal">Sign in</a></li>
-          </ul>
-          <% end %>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <div class="blurred-container">
-      <div class="img-src" style="background-image: url('http://wallpapercave.com/wp/EnDM8YS.jpg')"></div>
+    <div id="navbar">
+        <nav class="navbar-fixed-top navbar-transparent" role="navigation">
+ 
+              <a class="navbar-brand" href="/user" style="font-size: 40px; color:#bdbdbd;">FitnessPlanner</a>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+              <% if current_user %>
+              <ul class="nav navbar-nav navbar-right">
+              <li ><a href="/user/show" style="color:#bdbdbd;">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+                        <li ><a href="/user/<%=current_user.id%>/calendar" style="color:#bdbdbd;" >Calendar<span style="font-size:16px; color:#bdbdbd;" class="pull-right hidden-xs showopacity glyphicon glyphicon-calendar"></span></a></li>
+                        <li ><a href="/user/<%=current_user.id%>/workouts" style="color:#bdbdbd;">Exercises<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-flash"></span></a></li>
+                        <li ><a href="/user/<%=current_user.id%>/meals" style="color:#bdbdbd;">Meals<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphiconglyphicon glyphicon-apple"></span></a></li>
+                        <li ><a href="/logout" style="color:#bdbdbd;">Log out<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-log-out"></span></a></li>
+              </ul>
+              <% else %>
+              <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#registerModal">Register</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#loginModal">Sign in</a></li>
+               </ul>
+              <% end %>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <div class="blurred-container">
+            <div class="img-src" ></div>
+        </div>
+    <container>
+<div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <center><h4 class="modal-title">Login</h4></center>
+      </div>
+      <div class="modal-body">
+        <%= bootstrap_form_tag url:'/sessions' do |f| %>
+        <%= f.text_field :email %>
+        <%= f.password_field :password %>
+        <%= f.submit "Log In" %>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
+
   </div>
-  <container>
-    <br>
+</div>
+<div id="registerModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
-    <div id="loginModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <center><h4 class="modal-title">Login</h4></center>
-          </div>
-          <div class="modal-body">
-            <%= bootstrap_form_tag url:'/sessions' do |f| %>
-            <%= f.text_field :email %>
-            <%= f.password_field :password %>
-            <%= f.submit "Log In" %>
-            <% end %>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <center><h4 class="modal-title">Register</h4></center>
       </div>
-    </div>
-    <div id="registerModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <center><h4 class="modal-title">Register</h4></center>
-          </div>
-          <div class="modal-body">
-            <%= bootstrap_form_tag url:'/user' do |f| %>
-            <%= f.text_field :name %>
-            <%= f.text_field :email %>
-            <%= f.password_field :password %>
-            <%= f.submit "Sign Up" %>
-            <% end %>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-
+      <div class="modal-body">
+        <%= bootstrap_form_tag url:'/user' do |f| %>
+          <%= f.text_field :name %>
+          <%= f.text_field :email %>
+          <%= f.password_field :password %>
+          <%= f.submit "Sign Up" %>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
 
-    <div class="main">
-      <%= yield %>
-    </div>
-  </body>
-  </html>
+  </div>
+</div>
+<%= yield %>
+</body>
+</html>
 
 
-  <!-- source for sidebar http://bootsnipp.com/snippets/featured/responsive-sidebar-menu -->
-
+<!-- source for sidebar http://bootsnipp.com/snippets/featured/responsive-sidebar-menu -->

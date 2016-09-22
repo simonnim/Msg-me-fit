@@ -1,3 +1,4 @@
+<br><br>
 <%= month_calendar events: @user_appointments do |date, appointments| %>
   <%= date.strftime('%d') %>
 
@@ -7,5 +8,6 @@
       <% end %>
     </div>
   <% end %>
-
 <center><strong><%= link_to "Add Event to Calendar", new_user_calendar_path(@user) %></strong></center>
+<br>
+<br>
