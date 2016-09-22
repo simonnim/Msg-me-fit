@@ -20,33 +20,31 @@
 /*_______________________________________________________________*/
 /*Calender css*/
 .simple-calendar {
-	background-color: white;
+background-color: white;
   width: 85%;
   float: left;
   padding: 10px;
   padding-left: 25px;
-
-
 }
 .calendar-heading {
   text-align: center;
   font-size: 150%;
-  font: 25px Tahoma, Helvetica, Arial, Sans-Serif;
+  font: 28px Tahoma, Helvetica, Arial, Sans-Serif;
   text-align: center;
   padding: 10px;
 
 }
 
 .today {
-    background: #45b3e0 !important;
+    background: #cccccc !important;
   }
 
 .next-month {
-    background-color: #87ceeb !important;
+    background-color: #8f98a0 !important;
   }
 
 .prev-month {
-    background: #c9e9f6 !important;
+    background: #587a9b !important;
   }
 
 .intro {
@@ -61,75 +59,6 @@
 
 /*_________________________________________________________*/
 
-.tim-container{
-    background: #ffffff;
-
-}
-.tim-row{
-    margin-bottom: 20px;
-}
-.tim-title{
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-.tim-typo{
-    padding-left: 25%;
-    margin-bottom: 40px;
-    position: relative;   
-}
-.tim-typo .tim-note{
-    bottom: 10px;
-    color: #c0c1c2;
-    display: block;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 13px;
-    left: 0;
-    margin-left: 20px;
-    position: absolute;
-    width: 260px;
-}
-.tim-row{
-    margin-top: 50px;
-}
-.tim-row h3{
-    margin-top: 0;
-}
-.switch{
-.tim-container{
-    background: #ffffff;
-
-}
-.tim-row{
-    margin-bottom: 20px;
-}
-.tim-title{
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-.tim-typo{
-    padding-left: 25%;
-    margin-bottom: 40px;
-    position: relative;   
-}
-.tim-typo .tim-note{
-    bottom: 10px;
-    color: #c0c1c2;
-    display: block;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 13px;
-    left: 0;
-    margin-left: 20px;
-    position: absolute;
-    width: 260px;
-}
-.tim-row{
-    margin-top: 50px;
-}
-.tim-row h3{
-    margin-top: 0;
-}
 .switch{
     margin-right: 20px;
 }
@@ -511,9 +440,8 @@
 .navigation-example .img-src{
     background-attachment: scroll; 
 }
-.main{
-    background-color: #FFFFFF;
-}
+
+
 .navigation-example{
     height: 100%;
     background-image: url('http://wallpapercave.com/wp/EnDM8YS.jpg');
@@ -847,10 +775,7 @@
         top: 130px;
     }
 }
-.main{
-    background-color: #FFFFFF;
-    position: relative;
-}
+
 
 #buttons .btn, #tooltips .btn{
     margin-bottom: 15px;
@@ -863,22 +788,70 @@
 .title{
     font-size:35px;
     text-shadow: 2px 3px 0px #fff, 5px 8px 5px rgba(0,0,0,0.1);
+    color:  #333333;
 }
 
-.subtitle { width: 450px; 
+.subtitle { width: 38%; 
     background: url('http://i47.tinypic.com/a9l0g3.png') top left no-repeat; 
     padding-left: 45px;
-    font-family: 'Lobster';
+    font-family: 'Lucida Sans Typewriter';
     font-size: 18px;
-    color:  #999999;
+    color:  #666666;
 }
 .subtitle p { padding-right: 35px; 
     line-height: 18px; 
     background: url('http://i48.tinypic.com/eb1yrr.png') bottom right no-repeat; 
     padding-bottom: 25px; 
-    color: #999999; 
-    font-size: 17px;
-    font-family: 'Lobster'; }
+    color: #666666; 
+    font-size: 20px;
+    font-family: 'Lucida Sans Typewriter'; }
+
+.author {
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color:  #333333;
+    font-size: 25px;
+    text-align: right;
+}
+.grey-container{
+    background-color: #2d2d2d;
+}
+
+.white-container{
+    background-color: white;
+}
+.invisible-ink{
+    color:white;
+}
+.header{
+    font-size:50px;
+    text-shadow: 2px 3px 0px #389c94, 5px 8px 5px rgba(0,0,0,0.1);
+    color:  #f8f8ff;
+}
+.dark-header{
+    font-size:50px;
+    text-shadow: 2px 3px 0px #389c94, 5px 8px 5px rgba(0,0,0,0.1);
+    color:  #2d2d2d;
+}
+.dark-paragraph{
+    font-family: 'Helvetica';
+    font-size: 18px;
+    color: #2d2d2d;
+}
+.white-paragraph{
+    font-family: 'Helvetica';
+    font-size: 18px;
+    color: white;
+}
+.container{
+    padding-top:2%; 
+    padding-bottom: 3%; 
+}
+.list li:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+
 
 /*________________________________________________*/
 /*exercise list css*/
@@ -900,7 +873,55 @@
   display: block;
 }
 
-.list li:hover {
+.hover li:hover {
   font-size: 30px;
   background: #f6f6f6;
+}
+/*___________________________________________________________________*/
+/*thumbnail css*/
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
