@@ -17,7 +17,6 @@
  */
 
  
-/*_______________________________________________________________*/
 /*Calender css*/
 .simple-calendar {
 background-color: white;
@@ -51,13 +50,11 @@ background-color: white;
 	text-align: center;
 }
 
-/*______________________________________________________________________________*/
 .form {
 	width: 85%;
 	float: right;
 }
 
-/*_________________________________________________________*/
 
 .switch{
     margin-right: 20px;
@@ -846,7 +843,6 @@ background-color: white;
 }
 
 
-/*________________________________________________*/
 /*exercise list css*/
 .list {
   font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
@@ -870,7 +866,7 @@ background-color: white;
   font-size: 30px;
   background: #f6f6f6;
 }
-/*___________________________________________________________________*/
+
 /*thumbnail css*/
 div.img {
     border: 1px solid #ccc;
