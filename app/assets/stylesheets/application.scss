@@ -19,10 +19,11 @@
 
 .simple-calendar {
 background-color: white;
-  width: 85%;
+  width: 80%;
   float: left;
   padding: 10px;
   padding-left: 25px;
+  padding-bottom: 50px;
 }
 .calendar-heading {
   text-align: center;
@@ -809,7 +810,7 @@ background-color: white;
 }
 .dark-header{
     font-size:50px;
-    text-shadow: 2px 3px 0px #389c94, 5px 8px 5px rgba(0,0,0,0.1);
+    text-shadow: 2px 3px 0px #587a9b, 5px 8px 5px rgba(0,0,0,0.1);
     color:  #2d2d2d;
 }
 .dark-paragraph{
