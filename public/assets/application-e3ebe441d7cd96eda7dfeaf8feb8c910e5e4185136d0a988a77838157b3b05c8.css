@@ -1,0 +1,1305 @@
+// Place all the styles related to the calendar controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* line 1, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+ */
+/* line 21, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.simple-calendar {
+  background-color: white;
+  width: 85%;
+  float: left;
+  padding: 10px;
+  padding-left: 25px;
+}
+
+/* line 28, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.calendar-heading {
+  text-align: center;
+  font-size: 150%;
+  font: 28px Tahoma, Helvetica, Arial, Sans-Serif;
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 37, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.today {
+  background: #cccccc !important;
+}
+
+/* line 41, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.next-month {
+  background-color: #8f98a0 !important;
+}
+
+/* line 45, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.prev-month {
+  background: #587a9b !important;
+}
+
+/* line 49, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.intro {
+  text-align: center;
+}
+
+/* line 53, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.form {
+  width: 85%;
+  float: right;
+}
+
+/* line 59, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.switch {
+  margin-right: 20px;
+}
+
+/* line 62, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+#navbar-full .navbar {
+  border-radius: 0 !important;
+  margin-bottom: 0;
+}
+
+/* line 66, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.navigation-example {
+  margin-top: 0px;
+}
+
+/* line 69, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.space {
+  height: 130px;
+  display: block;
+}
+
+/* line 73, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.navigation-example .img-src {
+  background-attachment: scroll;
+}
+
+/* line 76, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.main {
+  background-color: #FFFFFF;
+}
+
+/* line 79, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.navigation-example {
+  height: 660px;
+  background-image: url("../img/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 86, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+#notifications {
+  background-color: #FFFFFF;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+/* line 92, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.tim-note {
+  text-transform: capitalize;
+}
+
+/* line 96, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.card {
+  background-color: #FFFFFF;
+  padding: 10px 0 20px;
+  width: 100%;
+}
+
+/* line 101, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.card h3 {
+  margin-bottom: 20px;
+}
+
+/* line 104, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.card button {
+  margin-top: 30px;
+}
+
+/* line 107, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.subscribe-form {
+  padding-top: 20px;
+}
+
+/* line 114, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.space-100 {
+  height: 100px;
+  display: block;
+  width: 100%;
+}
+
+/* line 120, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.be-social {
+  padding-bottom: 20px;
+  margin: 0 auto 40px;
+}
+
+/* line 124, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.txt-white {
+  color: #FFFFFF;
+}
+
+/* line 127, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.txt-gray {
+  color: #ddd !important;
+}
+
+/* line 130, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.footer {
+  background-color: #DDDDDD;
+  background-image: url("../img/cover_4_blur.jpg");
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* line 136, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.heart {
+  color: #FF3B30;
+}
+
+/* line 139, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.footer .overlayer {
+  background-color: rgba(27, 27, 27, 0.7);
+  position: relative;
+}
+
+/* line 143, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.footer .credits {
+  margin-top: 25px;
+  padding: 20px 0 15px;
+  text-align: center;
+  color: #EEE;
+}
+
+/* line 149, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.footer .credits a {
+  color: #FFFFFF;
+}
+
+/* line 152, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.social-share {
+  float: left;
+  margin-right: 8px;
+}
+
+/* line 156, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.social-share a {
+  color: #FFFFFF;
+}
+
+/* line 159, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+#subscribe_email {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+/* line 164, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.pick-class-label {
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  margin-right: 10px;
+  padding: 15px 23px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+/* line 179, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro {
+  width: 100%;
+  display: block;
+  position: relative;
+  background-color: #000;
+}
+
+/* line 185, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro > .img-src {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* line 195, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: block;
+  content: "";
+  z-index: 0;
+}
+
+/* line 206, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .container {
+  padding-top: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+/* line 211, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .hello a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 215, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .hello {
+  font-size: 48px;
+  font-weight: 300;
+  position: relative;
+  margin: 30px auto 50px;
+}
+
+/* line 221, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .label {
+  font-size: 18px;
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #FF9500;
+  color: #FFFFFF;
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 0;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+/* line 236, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro small {
+  padding-top: 15px;
+  font-size: 20px;
+  display: block;
+  color: #fff;
+}
+
+/* line 242, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro ul {
+  width: 280px;
+  margin: 0 auto;
+}
+
+/* line 246, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro li {
+  padding: 9px 0;
+  border-bottom: 1px solid #777;
+}
+
+/* line 250, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .actions {
+  margin-top: 40px;
+}
+
+/* line 253, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .actions {
+  margin-left: 10px;
+}
+
+/* line 256, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .motto {
+  color: #FFFFFF;
+  font-size: 64px;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
+  text-transform: uppercase;
+  z-index: 3;
+  margin: 0 auto;
+  top: 22%;
+  width: 285px;
+}
+
+/* line 269, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .motto .pro {
+  position: absolute;
+  font-size: 18px;
+  background-color: #FFFFFF;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  color: #333333;
+  text-shadow: 0 0 0;
+}
+
+/* line 281, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .motto .square {
+  padding: 7px 14px;
+  height: auto;
+  width: auto;
+  line-height: inherit;
+  border-radius: 6px;
+  bottom: 22px;
+  right: -25px;
+  color: #FFFFFF;
+  background-color: #ff9500;
+  font-weight: 300;
+  background-color: #ff9500;
+}
+
+/* line 294, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.social-share {
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+/* line 298, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.footer h4 {
+  margin: 0px 0 20px;
+}
+
+/* line 301, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.space-30 {
+  height: 30px;
+  display: block;
+}
+
+/* line 305, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.credits {
+  display: block;
+  margin: 15px 0;
+  color: #ddd;
+  opacity: .8;
+}
+
+/* line 311, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.credits a {
+  color: #FFFFFF;
+}
+
+/* line 314, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.sharing-title {
+  margin: 10px;
+  line-height: 40px;
+}
+
+/* line 318, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.social-line {
+  padding: 5px 0;
+}
+
+/* line 321, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.section-gray {
+  padding: 10px 0;
+  background-color: #EEE;
+}
+
+/* line 325, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.section-gray h5 {
+  margin: 0;
+  line-height: 40px;
+}
+
+/* line 330, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blurred-container {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  top: 0;
+  left: 0;
+}
+
+/* line 337, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blurred-container > .img-src {
+  position: fixed;
+  width: 100%;
+  height: 540px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 345, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blur {
+  opacity: 0;
+}
+
+/* line 349, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.logo-container {
+  margin-top: 10px;
+}
+
+/* line 352, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.logo-container .logo {
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #333333;
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+/* line 360, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.logo-container .logo img {
+  width: 100%;
+}
+
+/* line 363, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.logo-container .brand {
+  font-size: 18px;
+  color: #FFFFFF;
+  float: left;
+  height: 50px;
+  line-height: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 60px;
+}
+
+/* line 373, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blurred-container .motto {
+  color: #FFFFFF;
+  font-size: 76px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+  text-transform: uppercase;
+  top: 100px;
+  z-index: 3;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 306px;
+  height: 0;
+}
+
+/* line 390, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blurred-container .motto .border {
+  float: left;
+  border: 3px solid #FFFFFF;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+/* line 396, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blurred-container .motto .no-right-border {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  /* line 401, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+  .blurred-container .motto {
+    font-size: 60px;
+    width: 268px;
+    top: 130px;
+  }
+}
+/* line 407, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.main {
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+/* line 412, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+#buttons .btn, #tooltips .btn {
+  margin-bottom: 15px;
+}
+
+/* line 415, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.img-dog {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+/* line 420, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+#navbar-full .navbar {
+  border-radius: 0 !important;
+  margin-bottom: 0;
+}
+
+/* line 424, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.navigation-example {
+  margin-top: 0px;
+}
+
+/* line 427, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.space {
+  height: 130px;
+  display: block;
+}
+
+/* line 431, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.navigation-example .img-src {
+  background-attachment: scroll;
+}
+
+/* line 436, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.navigation-example {
+  height: 100%;
+  background-image: url("http://wallpapercave.com/wp/EnDM8YS.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 443, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+#notifications {
+  background-color: #FFFFFF;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+/* line 449, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.tim-note {
+  text-transform: capitalize;
+}
+
+/* line 453, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.card {
+  background-color: #FFFFFF;
+  padding: 10px 0 20px;
+  width: 100%;
+}
+
+/* line 458, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.card h3 {
+  margin-bottom: 20px;
+}
+
+/* line 461, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.card button {
+  margin-top: 30px;
+}
+
+/* line 464, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.subscribe-form {
+  padding-top: 20px;
+}
+
+/* line 471, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.space-100 {
+  height: 100px;
+  display: block;
+  width: 100%;
+}
+
+/* line 477, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.be-social {
+  padding-bottom: 20px;
+  margin: 0 auto 40px;
+}
+
+/* line 481, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.txt-white {
+  color: #FFFFFF;
+}
+
+/* line 484, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.txt-gray {
+  color: #ddd !important;
+}
+
+/* line 487, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.heart {
+  color: #FF3B30;
+}
+
+/* line 490, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.footer .overlayer {
+  background-color: rgba(27, 27, 27, 0.7);
+  position: relative;
+}
+
+/* line 494, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.footer .credits {
+  margin-top: 25px;
+  padding: 20px 0 15px;
+  text-align: center;
+  color: #EEE;
+}
+
+/* line 500, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.footer .credits a {
+  color: #FFFFFF;
+}
+
+/* line 503, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.social-share {
+  float: left;
+  margin-right: 8px;
+}
+
+/* line 507, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.social-share a {
+  color: #FFFFFF;
+}
+
+/* line 510, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+#subscribe_email {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+/* line 515, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.pick-class-label {
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  margin-right: 10px;
+  padding: 15px 23px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+/* line 530, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro {
+  width: 100%;
+  display: block;
+  position: relative;
+  background-color: #000;
+}
+
+/* line 536, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro > .img-src {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* line 546, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: block;
+  content: "";
+  z-index: 0;
+}
+
+/* line 557, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .container {
+  padding-top: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+/* line 562, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .hello a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 566, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .hello {
+  font-size: 48px;
+  font-weight: 300;
+  position: relative;
+  margin: 30px auto 50px;
+}
+
+/* line 572, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .label {
+  font-size: 18px;
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #FF9500;
+  color: #FFFFFF;
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 0;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+/* line 587, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro small {
+  padding-top: 15px;
+  font-size: 20px;
+  display: block;
+  color: #fff;
+}
+
+/* line 593, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro ul {
+  width: 280px;
+  margin: 0 auto;
+}
+
+/* line 597, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro li {
+  padding: 9px 0;
+  border-bottom: 1px solid #777;
+}
+
+/* line 601, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .actions {
+  margin-top: 40px;
+}
+
+/* line 604, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .actions {
+  margin-left: 10px;
+}
+
+/* line 607, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .motto {
+  color: #FFFFFF;
+  font-size: 64px;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
+  text-transform: uppercase;
+  z-index: 3;
+  margin: 0 auto;
+  top: 22%;
+  width: 285px;
+}
+
+/* line 620, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .motto .pro {
+  position: absolute;
+  font-size: 18px;
+  background-color: #FFFFFF;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  color: #333333;
+  text-shadow: 0 0 0;
+}
+
+/* line 632, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.parallax-pro .motto .square {
+  padding: 7px 14px;
+  height: auto;
+  width: auto;
+  line-height: inherit;
+  border-radius: 6px;
+  bottom: 22px;
+  right: -25px;
+  color: #FFFFFF;
+  background-color: #ff9500;
+  font-weight: 300;
+  background-color: #ff9500;
+}
+
+/* line 645, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.social-share {
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+/* line 649, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.footer h4 {
+  margin: 0px 0 20px;
+}
+
+/* line 652, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.space-30 {
+  height: 30px;
+  display: block;
+}
+
+/* line 656, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.credits {
+  display: block;
+  margin: 15px 0;
+  color: #ddd;
+  opacity: .8;
+}
+
+/* line 662, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.credits a {
+  color: #FFFFFF;
+}
+
+/* line 665, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.sharing-title {
+  margin: 10px;
+  line-height: 40px;
+}
+
+/* line 669, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.social-line {
+  padding: 5px 0;
+}
+
+/* line 672, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.section-gray {
+  padding: 10px 0;
+  background-color: #EEE;
+}
+
+/* line 676, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.section-gray h5 {
+  margin: 0;
+  line-height: 40px;
+}
+
+/* line 681, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blurred-container {
+  position: relative;
+  width: 100%;
+  height: 725px;
+  top: 0;
+  left: 0;
+}
+
+/* line 688, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blurred-container > .img-src {
+  background-image: url("http://wallpapercave.com/wp/EnDM8YS.jpg");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 696, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blur {
+  opacity: 0;
+}
+
+/* line 700, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.logo-container {
+  margin-top: 10px;
+}
+
+/* line 703, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.logo-container .logo {
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #333333;
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+/* line 711, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.logo-container .logo img {
+  width: 100%;
+}
+
+/* line 714, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.logo-container .brand {
+  font-size: 18px;
+  color: #FFFFFF;
+  float: left;
+  height: 50px;
+  line-height: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 60px;
+}
+
+/* line 724, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blurred-container .motto {
+  color: #FFFFFF;
+  font-size: 76px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+  text-transform: uppercase;
+  top: 100px;
+  z-index: 3;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 306px;
+  height: 0;
+}
+
+/* line 741, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blurred-container .motto .border {
+  float: left;
+  border: 3px solid #FFFFFF;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+/* line 747, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.blurred-container .motto .no-right-border {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  /* line 752, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+  .blurred-container .motto {
+    font-size: 60px;
+    width: 268px;
+    top: 130px;
+  }
+}
+/* line 760, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+#buttons .btn, #tooltips .btn {
+  margin-bottom: 15px;
+}
+
+/* line 763, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.img-dog {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+/* line 768, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.title {
+  font-size: 35px;
+  text-shadow: 2px 3px 0px #fff, 5px 8px 5px rgba(0, 0, 0, 0.1);
+  color: #333333;
+}
+
+/* line 774, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.subtitle {
+  width: 38%;
+  background: url("http://i47.tinypic.com/a9l0g3.png") top left no-repeat;
+  padding-left: 45px;
+  font-family: 'Lucida Sans Typewriter';
+  font-size: 18px;
+  color: #666666;
+}
+
+/* line 781, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.subtitle p {
+  padding-right: 35px;
+  line-height: 18px;
+  background: url("http://i48.tinypic.com/eb1yrr.png") bottom right no-repeat;
+  padding-bottom: 25px;
+  color: #666666;
+  font-size: 20px;
+  font-family: 'Lucida Sans Typewriter';
+}
+
+/* line 789, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.author {
+  font-family: "Century Gothic";
+  font-weight: bold;
+  color: #333333;
+  font-size: 25px;
+  text-align: right;
+}
+
+/* line 796, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.grey-container {
+  background-color: #2d2d2d;
+}
+
+/* line 800, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.white-container {
+  background-color: white;
+}
+
+/* line 803, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.invisible-ink {
+  color: white;
+}
+
+/* line 806, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.header {
+  font-size: 50px;
+  text-shadow: 2px 3px 0px #389c94, 5px 8px 5px rgba(0, 0, 0, 0.1);
+  color: #f8f8ff;
+}
+
+/* line 811, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.dark-header {
+  font-size: 50px;
+  text-shadow: 2px 3px 0px #389c94, 5px 8px 5px rgba(0, 0, 0, 0.1);
+  color: #2d2d2d;
+}
+
+/* line 816, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.dark-paragraph {
+  font-family: 'Helvetica';
+  font-size: 18px;
+  color: #2d2d2d;
+}
+
+/* line 821, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.white-paragraph {
+  font-family: 'Helvetica';
+  font-size: 18px;
+  color: white;
+}
+
+/* line 826, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.container {
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+/* line 830, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.list li:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+
+/* line 836, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.list {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+/* line 842, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.list li {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #ccc;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+  display: block;
+}
+
+/* line 854, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.hover li:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+
+/* line 859, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+div.img {
+  border: 1px solid #ccc;
+}
+
+/* line 863, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+div.img:hover {
+  border: 1px solid #777;
+}
+
+/* line 867, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+div.img img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 872, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* line 877, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 881, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  /* line 888, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 895, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+  .responsive {
+    width: 100%;
+  }
+}
+/* line 900, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/application.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 2, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar table {
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  background-color: transparent;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+/* line 13, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar tr {
+  border-collapse: collapse;
+}
+/* line 17, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar th {
+  padding: 6px;
+  border-bottom: 2px solid #dddddd;
+  border-collapse: collapse;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-top: 0px none #333333;
+  box-sizing: border-box;
+  text-align: left;
+}
+/* line 28, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar td {
+  padding: 6px;
+  vertical-align: top;
+  width: 14%;
+  border: 1px solid #ddd;
+  border-top-color: #dddddd;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: #dddddd;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: #dddddd;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #dddddd;
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+/* line 48, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .day {
+  height: 80px;
+}
+/* line 60, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .today {
+  background: #FFFFC0;
+}
+/* line 69, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .prev-month {
+  background: #DDD;
+}
+/* line 72, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .next-month {
+  background: #DDD;
+}
+.rails-bootstrap-forms-date-select select,
+.rails-bootstrap-forms-time-select select,
+.rails-bootstrap-forms-datetime-select select {
+  display: inline-block;
+  width: auto;
+}
+
+.rails-bootstrap-forms-error-summary {
+  margin-top: 10px;
+}
