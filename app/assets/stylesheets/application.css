@@ -493,12 +493,6 @@ background-color: white;
 .txt-gray{
     color: #ddd !important;
 }
-.footer{
-    background-color: #DDDDDD;
-    background-image: url('../img/cover_4_blur.jpg');
-    background-attachment: fixed;
-    position: relative;
-}
 .heart{
     color: #FF3B30;
 }
