@@ -17,7 +17,6 @@
  */
 
  
-/*Calender css*/
 .simple-calendar {
 background-color: white;
   width: 85%;
@@ -119,7 +118,6 @@ background-color: white;
 
 .be-social{
     padding-bottom: 20px;
-/*     border-bottom: 1px solid #aaa; */
     margin: 0 auto 40px;
 }
 .txt-white{
@@ -217,7 +215,6 @@ background-color: white;
     font-size: 48px;
     font-weight: 300;
     position: relative;
-/*     width: 430px; */
     margin: 30px auto 50px;
 }
 .parallax-pro .label{
@@ -328,9 +325,6 @@ background-color: white;
     margin: 0;
     line-height: 40px;
 }
-
-/*   EXTRA SHIT  */
-/* @cristina: fisier singular, folosit pentru efectul de blur la parallax in header */
 
 .blurred-container{
   position:relative;
@@ -481,7 +475,6 @@ background-color: white;
 
 .be-social{
     padding-bottom: 20px;
-/*     border-bottom: 1px solid #aaa; */
     margin: 0 auto 40px;
 }
 .txt-white{
@@ -573,7 +566,6 @@ background-color: white;
     font-size: 48px;
     font-weight: 300;
     position: relative;
-/*     width: 430px; */
     margin: 30px auto 50px;
 }
 .parallax-pro .label{
@@ -684,9 +676,6 @@ background-color: white;
     margin: 0;
     line-height: 40px;
 }
-
-/*   EXTRA SHIT  */
-/* @cristina: fisier singular, folosit pentru efectul de blur la parallax in header */
 
 .blurred-container{
   position:relative;
@@ -843,7 +832,6 @@ background-color: white;
 }
 
 
-/*exercise list css*/
 .list {
   font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
 }
@@ -867,7 +855,6 @@ background-color: white;
   background: #f6f6f6;
 }
 
-/*thumbnail css*/
 div.img {
     border: 1px solid #ccc;
 }
