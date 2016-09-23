@@ -7,17 +7,39 @@
       <a href="/user/<%=@user_id%>/calendar/<%=appointment.id%>"><strong><%= appointment.title %></strong><%= appointment.start_time.strftime(" %I:%M%p") %></a>
       <% end %>
     </div>
-  <% end %>
-  <br><br>
-<br>
+  <% end %><br>
 
-<a class="btn btn-lg btn-default" data-toggle="modal" 
+  <div class="div-pillar">
+  <% @user_appointments.each do |event|%>
+  <br>
+<div class="w3-container">
+  <div class="w3-card-4">
+    <header class="w3-container w3-light-grey">
+      <h3><center><%= event.title %></center></h3>
+    </header>
+    <div class="w3-container">
+      <small class="text-muted"><center><%=(event.time).strftime("%m/%d/%Y") %> at <%= (event.time).strftime("%I:%M%p") %></center></small>
+      <hr>
+      <% if event.category == 'Exercise' %>
+      <img src="/assets/dumbbell.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30px">
+      <% else %>
+      <img src="/assets/food.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30px">
+      <% end %>
+      <p><%= event.description %></p><br>
+    </div>
+    <button class="w3-btn-block w3-dark-grey">View</button><br>
+  </div>
+</div><br>
+<% end %>
+</div>
+
+
+<a class="btn btn-med btn-default" data-toggle="modal" 
    data-target="#exerciseModal" 
    data-remote="assets/ali.jpg">Click to Add Event to Calendar</a>
 
-   <div id="exerciseModal" class="modal fade" role="dialog">
+  <div id="exerciseModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
