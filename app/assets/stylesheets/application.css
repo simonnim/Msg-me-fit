@@ -19,11 +19,16 @@
 
 .simple-calendar {
 background-color: white;
-  width: 80%;
+  width: 75%;
   float: left;
-  padding: 10px;
-  padding-left: 25px;
-  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.div-pillar{
+  width: 23%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .calendar-heading {
   text-align: center;
