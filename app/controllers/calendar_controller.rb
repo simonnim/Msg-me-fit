@@ -20,6 +20,13 @@ class CalendarController < ApplicationController
     @user = session[:user_id]
   end
 
+  def destroy
+    @calendar = Calendar.find(params[:id])
+    @calendar.destroy
+		@user_id = current_user.id
+    redirect_to "/user/#{@user_id}/calendar"
+  end
+
 	private
 	def calendar_params
 		params.require(:calendar).permit(:category, :description, :title, :time,:user_id )

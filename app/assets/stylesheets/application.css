@@ -32,10 +32,12 @@ background-color: white;
 }
 .calendar-heading {
   text-align: center;
-  font-size: 150%;
-  font: 28px Tahoma, Helvetica, Arial, Sans-Serif;
-  text-align: center;
   padding: 10px;
+
+}
+.calendar-title{
+  font: 25px Tahoma, Helvetica, Arial, Sans-Serif;
+  color: #346fa1;
 
 }
 
