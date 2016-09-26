@@ -1,5 +1,4 @@
 
-
 <div >
   <br><br><%= month_calendar events: @user_appointments do |date, appointments| %>
   <%= date.strftime('%d') %>
@@ -12,58 +11,3 @@
   <% end %>
 </div>
 
-<br>
-<center><a class="btn btn-med btn-primary" data-toggle="modal" 
-   data-target="#exerciseModal" 
-   data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
-
-<div class="div-pillar">
-  <% @user_appointments.each do |event|%>
-  <br>
-<div class="w3-container">
-  <div class="w3-card-4">
-    <header class="w3-container w3-light-grey">
-      <h3><center><%= event.title %></center></h3>
-    </header>
-    <div class="w3-container">
-      <small class="text-muted"><center><%=(event.time).strftime("%m/%d/%Y") %> at <%= (event.time).strftime("%I:%M%p") %></center></small>
-      <hr>
-      <% if event.category == 'Exercise' %>
-      <img src="/assets/dumbbell.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30px">
-      <% else %>
-      <img src="/assets/food.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30px">
-      <% end %>
-      <p><%= event.description %></p><br>
-    </div>
-    <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
-  </div>
-</div><br>
-<% end %>
-
-</div>
-
-
-
-  <div id="exerciseModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <center><h4 class="modal-title">Add a Calendar Event</h4></center>
-      </div>
-      <div class="modal-body">
-				<%= bootstrap_form_for :calendar, url: user_calendar_index_path do |f| %>
-  			<%= f.select :category, options_for_select([["Select One", ""], "Exercise", "Meal"]) %>
-  			<%= f.text_field :title, value: 'Enter a Title for Your Event' %>
-  			<%= f.text_area :description, size: "80x5" %> <br>
-  			<%= f.datetime_select :time, :ampm => true, :start_year => 2016, :order => [:month, :day, :year]%>
-				<%= f.hidden_field :user_id, :value => current_user.id %><br>
-  			<%= f.submit %>
-				<% end %>
-			</div>
-      </div>
-    </div>
-
-  </div>
-</div>

@@ -21,8 +21,7 @@
 background-color: white;
   width: 75%;
   float: left;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
   -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
