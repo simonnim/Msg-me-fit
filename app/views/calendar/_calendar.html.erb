@@ -1,5 +1,6 @@
-<hr>
-<%= month_calendar events: @user_appointments do |date, appointments| %>
+
+
+<br><br><%= month_calendar events: @user_appointments do |date, appointments| %>
   <%= date.strftime('%d') %>
 
   <% appointments.each do |appointment| %>
@@ -13,8 +14,7 @@
    data-target="#exerciseModal" 
    data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
 
-
-  <div class="div-pillar">
+<div class="div-pillar">
   <% @user_appointments.each do |event|%>
   <br>
 <div class="w3-container">

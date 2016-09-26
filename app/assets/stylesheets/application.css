@@ -23,12 +23,21 @@ background-color: white;
   float: left;
   padding-left: 20px;
   padding-right: 20px;
+  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+.shadow{
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
 .div-pillar{
   width: 23%;
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
+  padding-left: 10px
 }
 .calendar-heading {
   text-align: center;
