@@ -22,6 +22,7 @@ background-color: white;
   width: 80%;
   float: left;
   padding: 20px;
+  display: inline-block;
 }
 .shadow{
     -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
