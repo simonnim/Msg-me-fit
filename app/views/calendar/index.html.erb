@@ -8,9 +8,9 @@
   <% @user_appointments.each do |event|%>
   <br>
   <div class="w3-card-4">
-    <header class="w3-container w3-light-grey">
+    <div class="w3-container w3-light-grey">
       <h3><center><%= event.title %></center></h3>
-    </header>
+    </div>
     <div class="w3-container">
       <small class="text-muted"><center><%=(event.time).strftime("%m/%d/%Y") %> at <%= (event.time).strftime("%I:%M%p") %></center></small>
       <hr>
