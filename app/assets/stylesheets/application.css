@@ -16,13 +16,15 @@
  *= require rails_bootstrap_forms
  */
 
-
+.col {
+    display:inline-block;
+    vertical-align:top;
+}
 .simple-calendar {
 background-color: white;
   width: 80%;
   float: left;
   padding: 20px;
-  display: inline-block;
 }
 .shadow{
     -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
@@ -30,8 +32,7 @@ background-color: white;
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
 .div-pillar{
-  width: 18%;
-  display: inline-block;
+  width: 17%;
 }
 .event-list{
   width: 20%;
