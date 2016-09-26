@@ -27,6 +27,11 @@ background-color: white;
     -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
+.shadow{
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
 .div-pillar{
   width: 23%;
   display: inline-block;

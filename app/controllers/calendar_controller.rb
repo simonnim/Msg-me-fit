@@ -18,6 +18,8 @@ class CalendarController < ApplicationController
 	 def show
     @event = Calendar.find(params[:id])
     @user = session[:user_id]
+		@user_appointments = Calendar.where(user_id: @user_id)
+    
   end
 
   def destroy
