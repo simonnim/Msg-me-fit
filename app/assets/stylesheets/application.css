@@ -33,9 +33,8 @@ background-color: white;
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
 .div-pillar{
-  width: 23%;
+  width: 20%;
   display: inline-block;
-  float: right;
   margin-right: 10px;
   margin-left: 10px;
   padding-left: 10px
