@@ -1,4 +1,5 @@
-<div  class="simple-calendar">
+<div id="col-2s" class="colstyle">
+<div class="simple-calendar">
   <div class="calendar-heading">
     <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view %>
     <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
@@ -30,4 +31,5 @@
       <% end %>
     </tbody>
   </table>
+</div>
 </div>
