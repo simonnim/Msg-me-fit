@@ -34,10 +34,16 @@ background-color: white;
 .div-pillar{
   width: 20%;
   float: right;
+  display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
 }
-
+.event-list{
+  width: 20%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 .calendar-heading {
   text-align: center;
   padding: 10px;
