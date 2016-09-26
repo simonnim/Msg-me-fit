@@ -1,4 +1,4 @@
-<br><br>
+<hr>
 <%= month_calendar events: @user_appointments do |date, appointments| %>
   <%= date.strftime('%d') %>
 
@@ -7,7 +7,12 @@
       <a href="/user/<%=@user_id%>/calendar/<%=appointment.id%>"><strong><%= appointment.title %></strong><%= appointment.start_time.strftime(" %I:%M%p") %></a>
       <% end %>
     </div>
-  <% end %><br>
+  <% end %>
+<br>
+<center><a class="btn btn-med btn-primary" data-toggle="modal" 
+   data-target="#exerciseModal" 
+   data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
+
 
   <div class="div-pillar">
   <% @user_appointments.each do |event|%>
@@ -27,16 +32,13 @@
       <% end %>
       <p><%= event.description %></p><br>
     </div>
-    <button class="w3-btn-block w3-dark-grey">View</button><br>
+    <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
   </div>
 </div><br>
 <% end %>
 </div>
 
 
-<a class="btn btn-med btn-default" data-toggle="modal" 
-   data-target="#exerciseModal" 
-   data-remote="assets/ali.jpg">Click to Add Event to Calendar</a>
 
   <div id="exerciseModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
