@@ -1,12 +1,11 @@
 <%= render partial: 'calendar' %>
 
-<center><a class="btn btn-med btn-primary" data-toggle="modal" 
-   data-target="#exerciseModal" 
-   data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
 
 <center>
 <div class="div-pillar">
-<div class="event-list">
+<center><a class="btn btn-med btn-primary" data-toggle="modal" 
+   data-target="#exerciseModal" 
+   data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
   <% @user_appointments.each do |event|%>
   <br>
   <div class="w3-card-4">
@@ -26,7 +25,6 @@
     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
   </div>
 <% end %>
-</div>
 </div>
 </center>
 
