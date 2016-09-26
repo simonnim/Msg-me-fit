@@ -9,10 +9,10 @@
   <% @user_appointments.each do |event|%>
   <br>
   <div class="w3-card-4">
-    <div>
+    <div class="w3-container w3-light-grey">
       <h3><center><%= event.title %></center></h3>
     </div>
-    <div >
+    <div class="w3-container">
       <small class="text-muted"><center><%=(event.time).strftime("%m/%d/%Y") %> at <%= (event.time).strftime("%I:%M%p") %></center></small>
       <hr>
       <% if event.category == 'Exercise' %>
@@ -27,6 +27,7 @@
 <% end %>
 </div>
 </center>
+
 
  <div id="exerciseModal" class="modal fade" role="dialog">
   <div class="modal-dialog">

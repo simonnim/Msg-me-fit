@@ -30,7 +30,8 @@ background-color: white;
 }
 .div-pillar{
   width: 18%;
-  display: inline-block;
+  float: right;
+  display: block;
 }
 .event-list{
   width: 20%;
