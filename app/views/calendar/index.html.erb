@@ -1,13 +1,13 @@
 
-
+<center><a class="btn btn-med btn-primary" data-toggle="modal" 
+   data-target="#exerciseModal" 
+   data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
 
     <div id="col-2s" class="colstyle"><%= render partial: 'calendar' %></div>
 
 
 
-    <div id="col-3s" class="colstyle"><center><a class="btn btn-med btn-primary" data-toggle="modal" 
-   data-target="#exerciseModal" 
-   data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
+    <div id="col-3s" class="colstyle">
   <% @user_appointments.each do |event|%>
   <br>
 
