@@ -37,6 +37,12 @@ background-color: white;
   margin-right: 10px;
   margin-left: 10px;
 }
+.event-list{
+  width: 20%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 .calendar-heading {
   text-align: center;
   padding: 10px;
