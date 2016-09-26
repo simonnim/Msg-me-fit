@@ -8,8 +8,10 @@
    data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
   <div class="event-item" ><% @user_appointments.each do |event|%>
   <br>
-
+  <header class="w3-container w3-light-grey">
       <h3><center><%= event.title %></center></h3>
+      </header>
+     <div class="w3-container"> 
       <small class="text-muted"><center><%=(event.time).strftime("%m/%d/%Y") %> at <%= (event.time).strftime("%I:%M%p") %></center></small>
       <hr>
       <% if event.category == 'Exercise' %>
@@ -18,7 +20,8 @@
       <img src="/assets/food.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30px">
       <% end %>
       <p><%= event.description %></p><br>
-    <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="">View</button></a><br>
+      </div>
+    <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey">View</button></a><br>
 <% end %>
 </div>
 </div>
