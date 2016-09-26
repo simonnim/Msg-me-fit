@@ -16,41 +16,28 @@
  *= require rails_bootstrap_forms
  */
 
-
-.colstyle {
-    display:inline-block;
-    vertical-align:top;
-}
-
-#col-2s {
-    width:80%;
-}
-#col-3s {
-    width:18%;
-}
 .col {
     display:inline-block;
     vertical-align:top;
 }
-#col1{
+.simple-calendar {
+background-color: white;
   width: 80%;
+  height: 100%;
   float: left;
-    display:inline-block;
-
-}
-#col2{
-  width: 15%;
-  float: right;
-    display:inline-block;
-
+  padding: 20px;
 }
 .shadow{
     -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
+.div-pillar{
+  width: 17%;
+  height: 100%;
+}
 .event-list{
-  width: 20%;
+  width: 100%;
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;

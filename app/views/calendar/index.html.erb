@@ -1,14 +1,12 @@
+<%= render partial: 'calendar' %>
 
+
+<div class="div-pillar col">
+<div class="event-list">
 <center><a class="btn btn-med btn-primary" data-toggle="modal" 
    data-target="#exerciseModal" 
    data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
-
-    <%= render partial: 'calendar' %>
-
-
-
-    <div id="col-3s" class="colstyle">
-  <% @user_appointments.each do |event|%>
+  <div class="event-item"><% @user_appointments.each do |event|%>
   <br>
 
       <h3><center><%= event.title %></center></h3>
@@ -23,7 +21,8 @@
     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="">View</button></a><br>
 <% end %>
 </div>
-</center>
+</div>
+</div>
 
 
  <div id="exerciseModal" class="modal fade" role="dialog">
@@ -35,15 +34,16 @@
         <center><h4 class="modal-title">Add a Calendar Event</h4></center>
       </div>
       <div class="modal-body">
-        <%= bootstrap_form_for :calendar, url: user_calendar_index_path do |f| %>
-        <%= f.select :category, options_for_select([["Select One", ""], "Exercise", "Meal"]) %>
-        <%= f.text_field :title, value: 'Enter a Title for Your Event' %>
-        <%= f.text_area :description, size: "80x5" %> <br>
-        <%= f.datetime_select :time, :ampm => true, :start_year => 2016, :order => [:month, :day, :year]%>
-        <%= f.hidden_field :user_id, :value => current_user.id %><br>
-        <%= f.submit %>
-        <% end %>
+				<%= bootstrap_form_for :calendar, url: user_calendar_index_path do |f| %>
+  			<%= f.select :category, options_for_select([["Select One", ""], "Exercise", "Meal"]) %>
+  			<%= f.text_field :title, value: 'Enter a Title for Your Event' %>
+  			<%= f.text_area :description, size: "80x5" %> <br>
+  			<%= f.datetime_select :time, :ampm => true, :start_year => 2016, :order => [:month, :day, :year]%>
+				<%= f.hidden_field :user_id, :value => current_user.id %><br>
+  			<%= f.submit %>
+				<% end %>
+			</div>
       </div>
-      </div>
-    </div></div>
+    </div>
+ </div>
 
