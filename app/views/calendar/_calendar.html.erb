@@ -1,6 +1,7 @@
 
 
-<br><br><%= month_calendar events: @user_appointments do |date, appointments| %>
+<div >
+  <br><br><%= month_calendar events: @user_appointments do |date, appointments| %>
   <%= date.strftime('%d') %>
 
   <% appointments.each do |appointment| %>
@@ -9,6 +10,8 @@
       <% end %>
     </div>
   <% end %>
+</div>
+
 <br>
 <center><a class="btn btn-med btn-primary" data-toggle="modal" 
    data-target="#exerciseModal" 
@@ -36,6 +39,7 @@
   </div>
 </div><br>
 <% end %>
+
 </div>
 
 
