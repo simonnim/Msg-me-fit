@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       redirect_to '/'
     else
       # If user's login doesn't work, send them back to the login form.
-      redirect_to 'new'
+      redirect_to '/new'
     end
   end
 
