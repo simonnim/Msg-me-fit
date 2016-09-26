@@ -20,19 +20,22 @@
     display:inline-block;
     vertical-align:top;
 }
-.simple-calendar {
-background-color: white;
+#col1{
   width: 80%;
   float: left;
-  padding: 20px;
+    display:inline-block;
+
+}
+#col2{
+  width: 15%;
+  float: right;
+    display:inline-block;
+
 }
 .shadow{
     -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-}
-.div-pillar{
-  width: 17%;
 }
 .event-list{
   width: 20%;
