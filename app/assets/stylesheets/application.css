@@ -19,25 +19,18 @@
 
 .simple-calendar {
 background-color: white;
-  width: 50%;
+  width: 80%;
   float: left;
   padding: 20px;
-}
-.calendar {
-    border: solid;
-    border-width: 1px;
-  text-align: center;
-    padding: 5px;
-    background-color: #63ace5;
 }
 .shadow{
     -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
-.pillar{
-  width: 38%;
-  display: block;
+.div-pillar{
+  width: 18%;
+  display: inline-block;
 }
 .event-list{
   width: 20%;

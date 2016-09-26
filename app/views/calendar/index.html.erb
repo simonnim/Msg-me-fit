@@ -2,17 +2,14 @@
 
 
 <center>
-<div class="pillar">
+<div class="div-pillar">
 <center><a class="btn btn-med btn-primary" data-toggle="modal" 
    data-target="#exerciseModal" 
    data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
   <% @user_appointments.each do |event|%>
   <br>
-  <div class="w3-card-4">
-    <div class="w3-container w3-light-grey">
+
       <h3><center><%= event.title %></center></h3>
-    </div>
-    <div class="w3-container">
       <small class="text-muted"><center><%=(event.time).strftime("%m/%d/%Y") %> at <%= (event.time).strftime("%I:%M%p") %></center></small>
       <hr>
       <% if event.category == 'Exercise' %>
@@ -21,9 +18,7 @@
       <img src="/assets/food.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:30px">
       <% end %>
       <p><%= event.description %></p><br>
-    </div>
     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
-  </div>
 <% end %>
 </div>
 </center>
