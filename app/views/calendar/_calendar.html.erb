@@ -1,5 +1,5 @@
-<hr>
-<%= month_calendar events: @user_appointments do |date, appointments| %>
+
+<br><br><%= month_calendar events: @user_appointments do |date, appointments| %>
   <%= date.strftime('%d') %>
 
   <% appointments.each do |appointment| %>
