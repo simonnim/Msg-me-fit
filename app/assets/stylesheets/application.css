@@ -16,6 +16,18 @@
  *= require rails_bootstrap_forms
  */
 
+
+.colstyle {
+    display:inline-block;
+    vertical-align:top;
+}
+
+#col-2s {
+    width:80%;
+}
+#col-3s {
+    width:18%;
+}
 .col {
     display:inline-block;
     vertical-align:top;
