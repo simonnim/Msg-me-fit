@@ -19,12 +19,9 @@
 
 .simple-calendar {
 background-color: white;
-  width: 75%;
+  width: 80%;
   float: left;
   padding: 20px;
-  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
 .shadow{
     -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
@@ -32,11 +29,8 @@ background-color: white;
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
 .div-pillar{
-  width: 20%;
-  float: right;
+  width: 18%;
   display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 .event-list{
   width: 20%;
