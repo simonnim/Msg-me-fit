@@ -2888,3 +2888,1587 @@ Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.0ms)
 
 DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)
 DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)
+Started GET "/" for ::1 at 2016-09-23 10:50:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 926ms (Views: 911.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/user/1/workouts" for ::1 at 2016-09-23 10:50:49 -0700
+Processing by WorkoutsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering workouts/index.html.erb within layouts/application
+  [1m[36mExerciselist Load (0.9ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE "exerciselists"."muscle" = $1[0m  [["muscle", "biceps"]]
+  [1m[36mExerciselist Load (0.4ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE "exerciselists"."muscle" = $1[0m  [["muscle", "triceps"]]
+  [1m[36mExerciselist Load (0.4ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE "exerciselists"."muscle" = $1[0m  [["muscle", "chest"]]
+  [1m[36mExerciselist Load (0.4ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE "exerciselists"."muscle" = $1[0m  [["muscle", "shoulders"]]
+  [1m[36mExerciselist Load (0.4ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE "exerciselists"."muscle" = $1[0m  [["muscle", "abdominals"]]
+  [1m[36mExerciselist Load (0.4ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE (muscle = 'lower back' or muscle = 'upper back')[0m
+  [1m[36mExerciselist Load (0.6ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE (muscle = 'quadriceps' or muscle = 'hamstrings' or muscle = 'calves' or muscle = 'glutes')[0m
+  Rendered workouts/index.html.erb within layouts/application (44.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 112ms (Views: 96.7ms | ActiveRecord: 9.5ms)
+
+
+  
+SyntaxError (/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+...o "Add Event to Calendar" class="btn btn-lg btn-default", ne...
+...                               ^
+/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:12: syntax error, unexpected ',', expecting ')'
+...class="btn btn-lg btn-default", new_user_calendar_path(@user...
+...                               ^):
+  
+app/views/calendar/_calendar.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+app/views/calendar/_calendar.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098597729600'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+SyntaxError (/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+...o "Add Event to Calendar" class="btn btn-lg btn-default", ne...
+...                               ^
+/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:12: syntax error, unexpected ',', expecting ')'
+...class="btn btn-lg btn-default", new_user_calendar_path(@user...
+...                               ^):
+  
+app/views/calendar/_calendar.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+app/views/calendar/_calendar.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098597546500'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+SyntaxError (/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+...o "Add Event to Calendar" class="btn btn-lg btn-default", ne...
+...                               ^
+/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:12: syntax error, unexpected ',', expecting ')'
+...class="btn btn-lg btn-default", new_user_calendar_path(@user...
+...                               ^):
+  
+app/views/calendar/_calendar.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+app/views/calendar/_calendar.html.erb:12: syntax error, unexpected ',', expecting ')'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098537005300'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (undefined local variable or method `appointment' for #<#<Class:0x007f823410a190>:0x007f82368a1758>):
+    17:   <div class="appointments-list">
+    18:       <% @user_appointments.each do |event|%>
+    19:       <div class="div-class-mentor">
+    20:       <a href="/user/<%=@user_id%>/calendar/<%=appointment.id%>">
+    21:       <strong>Title:</strong> <%= event.title %><br>
+    22:        <strong>Date:</strong> <%= (event.time).strftime("%m/%d/%Y") %><br>
+    23:        <strong>Time:</strong> <%= (event.time).strftime("%I:%M%p") %><br> 
+  
+app/views/calendar/_calendar.html.erb:20:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098534335600'
+app/views/calendar/_calendar.html.erb:18:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098534335600'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098618749240'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+SyntaxError (/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:67: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:69: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/calendar/_calendar.html.erb:67: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/calendar/_calendar.html.erb:69: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098606656580'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+SyntaxError (/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:64: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:66: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/calendar/_calendar.html.erb:64: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/calendar/_calendar.html.erb:66: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098624256240'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+SyntaxError (/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:71: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:73: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/calendar/_calendar.html.erb:71: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/calendar/_calendar.html.erb:73: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098532695740'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (undefined local variable or method `appointment' for #<#<Class:0x007f823410a190>:0x007f822c2cd6b0>):
+    32:       <% end %>
+    33:       <p><%= event.description %></p><br>
+    34:     </div>
+    35:     <button class="w3-btn-block w3-dark-grey" href="/user/<%=@user_id%>/calendar/<%=appointment.id%>">View</button><br>
+    36:   </div>
+    37: </div><br>
+    38: <% end %>
+  
+app/views/calendar/_calendar.html.erb:35:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098581854040'
+app/views/calendar/_calendar.html.erb:18:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098581854040'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098531826300'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007f823410a190>:0x007f822c6487b8>):
+     7: 	<li>Time: <%= (@event.time).strftime("%I:%M%p") %></li>
+     8: </ul>
+     9: 
+    10: <td><%= link_to 'Delete', user_calendar_path(user), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/calendar/show.html.erb:10:in `_app_views_calendar_show_html_erb___243003133535650704_70098533632880'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for CalendarController):
+  
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+SyntaxError (/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:91: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/calendar/_calendar.html.erb:91: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098600997860'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    48:         <center><h4 class="modal-title">Add a Calendar Event</h4></center>
+    49:       </div>
+    50:       <div class="modal-body">
+    51:         <%=render '/'%>
+    52:       </div>
+    53:       </div>
+    54:     </div>
+  
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098533979540'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098533979540'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098614583680'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    48:         <center><h4 class="modal-title">Add a Calendar Event</h4></center>
+    49:       </div>
+    50:       <div class="modal-body">
+    51:         <%= render '/' %>
+    52:       </div>
+    53:       </div>
+    54:     </div>
+  
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098625015920'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098625015920'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098621375620'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (Missing partial /_user with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/macbook/Desktop/Msg-me-fit/app/views"
+  * "/Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/views"
+):
+    48:         <center><h4 class="modal-title">Add a Calendar Event</h4></center>
+    49:       </div>
+    50:       <div class="modal-body">
+    51:         <%= render '/user' %>
+    52:       </div>
+    53:       </div>
+    54:     </div>
+  
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098568192500'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098568192500'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098619856460'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (Missing partial /_calendar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/macbook/Desktop/Msg-me-fit/app/views"
+  * "/Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/views"
+):
+    48:         <center><h4 class="modal-title">Add a Calendar Event</h4></center>
+    49:       </div>
+    50:       <div class="modal-body">
+    51:         <%= render '/calendar' %>
+    52:       </div>
+    53:       </div>
+    54:     </div>
+  
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098620048840'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098620048840'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098622681920'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+fatal (exception reentered):
+  
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098621892060'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098614472380'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (Missing partial calendar/__calendar, application/__calendar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/macbook/Desktop/Msg-me-fit/app/views"
+  * "/Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/views"
+):
+    48:         <center><h4 class="modal-title">Add a Calendar Event</h4></center>
+    49:       </div>
+    50:       <div class="modal-body">
+    51:         <%= render '_calendar' %>
+    52:       </div>
+    53:       </div>
+    54:     </div>
+  
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098650533860'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098650533860'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb___1032882429274774576_70098394159460'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___2529538583781252577_70098392568760'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)
+Started GET "/user/1/workouts" for ::1 at 2016-09-25 22:30:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WorkoutsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering workouts/index.html.erb within layouts/application
+  [1m[36mExerciselist Load (0.5ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE "exerciselists"."muscle" = $1[0m  [["muscle", "biceps"]]
+  [1m[36mExerciselist Load (0.3ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE "exerciselists"."muscle" = $1[0m  [["muscle", "triceps"]]
+  [1m[36mExerciselist Load (0.3ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE "exerciselists"."muscle" = $1[0m  [["muscle", "chest"]]
+  [1m[36mExerciselist Load (0.3ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE "exerciselists"."muscle" = $1[0m  [["muscle", "shoulders"]]
+  [1m[36mExerciselist Load (0.5ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE "exerciselists"."muscle" = $1[0m  [["muscle", "abdominals"]]
+  [1m[36mExerciselist Load (0.5ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE (muscle = 'lower back' or muscle = 'upper back')[0m
+  [1m[36mExerciselist Load (0.6ms)[0m  [1m[34mSELECT "exerciselists".* FROM "exerciselists" WHERE (muscle = 'quadriceps' or muscle = 'hamstrings' or muscle = 'calves' or muscle = 'glutes')[0m
+  Rendered workouts/index.html.erb within layouts/application (99.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 544ms (Views: 491.3ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/user/1/calendar" for ::1 at 2016-09-25 22:30:33 -0700
+Processing by CalendarController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering calendar/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered simple_calendar/_month_calendar.html.erb (9.1ms)
+  Rendered calendar/_calendar.html.erb (95.6ms)
+  Rendered calendar/index.html.erb within layouts/application (97.3ms)
+Completed 200 OK in 164ms (Views: 154.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/user/1/calendar" for ::1 at 2016-09-25 22:30:35 -0700
+Processing by CalendarController#index as JS
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/user/1/assets/ali.jpg" for ::1 at 2016-09-25 22:30:35 -0700
+  Rendering calendar/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered simple_calendar/_month_calendar.html.erb (9.5ms)
+  Rendered calendar/_calendar.html.erb (34.1ms)
+  Rendered calendar/index.html.erb within layouts/application (49.4ms)
+  Rendering /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb
+  Rendering /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+Completed 200 OK in 177ms (Views: 159.8ms | ActiveRecord: 0.9ms)
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (34.3ms)
+Started GET "/user/1/calendar" for ::1 at 2016-09-25 22:31:51 -0700
+Processing by CalendarController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering calendar/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered simple_calendar/_month_calendar.html.erb (12.2ms)
+  Rendered calendar/_calendar.html.erb (81.0ms)
+  Rendered calendar/index.html.erb within layouts/application (82.9ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `redirect_to' for #<#<Class:0x007fcfe12f9ed8>:0x007fcfd9443c10>):
+    48:         <center><h4 class="modal-title">Add a Calendar Event</h4></center>
+    49:       </div>
+    50:       <div class="modal-body">
+    51:         <%= redirect_to '/' %>
+    52:       </div>
+    53:       </div>
+    54:     </div>
+  
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265340271880'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265340271880'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265340070860'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  Rendering /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.4ms)
+  Rendering /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.6ms)
+Started GET "/" for ::1 at 2016-09-25 22:32:30 -0700
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/user/1/calendar" for ::1 at 2016-09-25 22:32:33 -0700
+Processing by CalendarController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering calendar/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered simple_calendar/_month_calendar.html.erb (9.4ms)
+  Rendered calendar/_calendar.html.erb (72.7ms)
+  Rendered calendar/index.html.erb within layouts/application (74.3ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `redirect_to' for #<#<Class:0x007fcfe12f9ed8>:0x007fcfe1a7e780>):
+    48:         <center><h4 class="modal-title">Add a Calendar Event</h4></center>
+    49:       </div>
+    50:       <div class="modal-body">
+    51:         <%= redirect_to '/' %>
+    52:       </div>
+    53:       </div>
+    54:     </div>
+  
+app/views/calendar/_calendar.html.erb:51:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265410481860'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265410481860'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265410419080'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  Rendering /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.5ms)
+  Rendering /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.3/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.7ms)
+Started GET "/user/1/calendar" for ::1 at 2016-09-25 22:32:39 -0700
+Processing by CalendarController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering calendar/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.5ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered simple_calendar/_month_calendar.html.erb (7.6ms)
+  Rendered calendar/_calendar.html.erb (17.7ms)
+  Rendered calendar/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 57ms (Views: 52.6ms | ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"calendar", :user_id=>"1"} missing required keys: [:id]):
+    34:       <p><%= event.description %></p><br>
+    35:     </div>
+    36:     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
+    37:     <td><%= link_to 'Delete', user_calendar_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    38:   </div>
+    39: </div><br>
+    40: <% end %>
+  
+app/views/calendar/_calendar.html.erb:37:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265409801420'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265409801420'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265409638420'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (undefined local variable or method `user_id' for #<#<Class:0x007fcfe12f9ed8>:0x007fcfd9e0ab90>):
+    34:       <p><%= event.description %></p><br>
+    35:     </div>
+    36:     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
+    37:     <td><%= link_to 'Delete', user_calendar_path(user_id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    38:   </div>
+    39: </div><br>
+    40: <% end %>
+  
+app/views/calendar/_calendar.html.erb:37:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265345082780'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265345082780'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265345182200'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"calendar", :user_id=>"1"} missing required keys: [:id]):
+    34:       <p><%= event.description %></p><br>
+    35:     </div>
+    36:     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
+    37:     <td><%= link_to 'Delete', user_calendar_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    38:   </div>
+    39: </div><br>
+    40: <% end %>
+  
+app/views/calendar/_calendar.html.erb:37:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265344952620'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265344952620'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265345049520'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"calendar", :user_id=>#<Calendar id: 4, user_id: 1, category: "Meal", title: "Icicles", description: "We are gonna eat goooooood today. Kicking crab wit...", time: "2016-09-24 20:00:00", created_at: "2016-09-23 22:01:38", updated_at: "2016-09-23 22:01:38">} missing required keys: [:id]):
+    34:       <p><%= event.description %></p><br>
+    35:     </div>
+    36:     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
+    37:     <td><%= link_to 'Delete', user_calendar_path(event), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    38:   </div>
+    39: </div><br>
+    40: <% end %>
+  
+app/views/calendar/_calendar.html.erb:37:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265385206000'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265385206000'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265385313040'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"calendar", :user_id=>4} missing required keys: [:id]):
+    34:       <p><%= event.description %></p><br>
+    35:     </div>
+    36:     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
+    37:     <td><%= link_to 'Delete', user_calendar_path(event.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    38:   </div>
+    39: </div><br>
+    40: <% end %>
+  
+app/views/calendar/_calendar.html.erb:37:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265385559780'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265385559780'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265358430980'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+SyntaxError (/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:37: syntax error, unexpected '<', expecting ')'
+... 'Delete', user_calendar_path(<%=event.id);@output_buffer.sa...
+...                               ^
+/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:40: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:68: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/_calendar.html.erb:70: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/calendar/_calendar.html.erb:37: syntax error, unexpected '<', expecting ')'
+app/views/calendar/_calendar.html.erb:40: syntax error, unexpected keyword_end, expecting ')'
+app/views/calendar/_calendar.html.erb:68: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/calendar/_calendar.html.erb:70: syntax error, unexpected keyword_end, expecting ')'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265410120320'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007fcfe12f9ed8>:0x007fcfe12d2108>):
+    34:       <p><%= event.description %></p><br>
+    35:     </div>
+    36:     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
+    37:     <td><%= link_to 'Delete', user_calendar_path(id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    38:   </div>
+    39: </div><br>
+    40: <% end %>
+  
+app/views/calendar/_calendar.html.erb:37:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265341531820'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265341531820'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265406395880'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (undefined local variable or method `user_id' for #<#<Class:0x007fcfe12f9ed8>:0x007fcfd97380d8>):
+    34:       <p><%= event.description %></p><br>
+    35:     </div>
+    36:     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
+    37:     <td><%= link_to 'Delete', user_calendar_path(user_id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    38:   </div>
+    39: </div><br>
+    40: <% end %>
+  
+app/views/calendar/_calendar.html.erb:37:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265341566080'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265341566080'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265341593360'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007fcfe12f9ed8>:0x007fcfdee083e0>):
+    34:       <p><%= event.description %></p><br>
+    35:     </div>
+    36:     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
+    37:     <td><%= link_to 'Delete', user_calendar_path(user), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    38:   </div>
+    39: </div><br>
+    40: <% end %>
+  
+app/views/calendar/_calendar.html.erb:37:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265406702020'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265406702020'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265387108360'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"calendar", :user_id=>#<Calendar id: 4, user_id: 1, category: "Meal", title: "Icicles", description: "We are gonna eat goooooood today. Kicking crab wit...", time: "2016-09-24 20:00:00", created_at: "2016-09-23 22:01:38", updated_at: "2016-09-23 22:01:38">} missing required keys: [:id]):
+    34:       <p><%= event.description %></p><br>
+    35:     </div>
+    36:     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
+    37:     <td><%= link_to 'Delete', user_calendar_path(event), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    38:   </div>
+    39: </div><br>
+    40: <% end %>
+  
+app/views/calendar/_calendar.html.erb:37:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265344186140'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265344186140'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265355821200'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"calendar", :user_id=>"1"} missing required keys: [:id]):
+    34:       <p><%= event.description %></p><br>
+    35:     </div>
+    36:     <a href="/user/<%=@user_id%>/calendar/<%=event.id%>"><button class="w3-btn-block w3-dark-grey" >View</button></a><br>
+    37:     <td><%= link_to 'Delete', user_calendar_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    38:   </div>
+    39: </div><br>
+    40: <% end %>
+  
+app/views/calendar/_calendar.html.erb:37:in `block in _app_views_calendar__calendar_html_erb__899120914933724079_70265336964240'
+app/views/calendar/_calendar.html.erb:19:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265336964240'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265337048080'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActiveRecord::RecordNotFound (Couldn't find Calendar with 'id'=1):
+  
+app/controllers/calendar_controller.rb:19:in `show'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (undefined local variable or method `appointment' for #<#<Class:0x007fcfe12f9ed8>:0x007fcfdb55eff8>):
+    14:    data-target="#exerciseModal" 
+    15:    data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
+    16: 
+    17: <center><a class="btn btn-med btn-primary" href="/user/<%=@user_id%>/calendar/<%=appointment.id%>" data-toggle="modal" 
+    18:    data-target="#exerciseModal" 
+    19:    >Click to Add Event to Calendar</a></center>
+    20:   
+  
+app/views/calendar/_calendar.html.erb:17:in `_app_views_calendar__calendar_html_erb__899120914933724079_70265357300860'
+app/views/calendar/index.html.erb:1:in `_app_views_calendar_index_html_erb___3918376764254505577_70265357411540'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActiveRecord::RecordNotFound (Couldn't find Calendar with 'id'=1):
+  
+app/controllers/calendar_controller.rb:19:in `show'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActiveRecord::RecordNotFound (Couldn't find Calendar with 'id'=1):
+  
+app/controllers/calendar_controller.rb:19:in `show'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10: <td><%= link_to 'Delete', user_calendar_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    11: 
+    12: <div class="div-pillar">
+    13:   <% @user_appointments.each do |event|%>
+    14:   <br>
+    15: <div class="w3-container">
+    16:   <div class="w3-card-4">
+  
+app/views/calendar/show.html.erb:13:in `_app_views_calendar_show_html_erb___1485062231839183184_70265340022840'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/calendar_controller.rb:4:in `index'
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)
+Started GET "/user/1/calendar" for ::1 at 2016-09-26 10:50:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CalendarController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering calendar/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered simple_calendar/_month_calendar.html.erb (60.8ms)
+  Rendered calendar/_calendar.html.erb (109.8ms)
+  Rendered calendar/index.html.erb within layouts/application (113.3ms)
+Completed 200 OK in 547ms (Views: 480.7ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/user/1/calendar" for ::1 at 2016-09-26 10:50:07 -0700
+Processing by CalendarController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering calendar/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.5ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered simple_calendar/_month_calendar.html.erb (7.2ms)
+  Rendered calendar/_calendar.html.erb (17.4ms)
+  Rendered calendar/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 60ms (Views: 55.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/user/1/calendar" for ::1 at 2016-09-26 10:51:00 -0700
+Processing by CalendarController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering calendar/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered simple_calendar/_month_calendar.html.erb (8.0ms)
+  Rendered calendar/_calendar.html.erb (17.6ms)
+  Rendered calendar/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 65ms (Views: 61.0ms | ActiveRecord: 1.0ms)
+
+
+  
+SyntaxError (/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/index.html.erb:62: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/macbook/Desktop/Msg-me-fit/app/views/calendar/index.html.erb:64: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/calendar/index.html.erb:62: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/calendar/index.html.erb:64: syntax error, unexpected end-of-input, expecting keyword_end
+config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)

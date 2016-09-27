@@ -99,20 +99,40 @@ div.field, div.actions {
  */
 
 
-
+.col {
+    display:inline-block;
+    vertical-align:top;
+}
 .simple-calendar {
 background-color: white;
   width: 80%;
+  height: 100%;
   float: left;
-  padding: 10px;
-  padding-left: 25px;
+  padding: 20px;
+}
+.shadow{
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+.div-pillar{
+  width: 17%;
+  height: 100%;
+}
+.event-list{
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-right: 30px;
 }
 .calendar-heading {
   text-align: center;
-  font-size: 150%;
-  font: 28px Tahoma, Helvetica, Arial, Sans-Serif;
-  text-align: center;
   padding: 10px;
+
+}
+.calendar-title{
+  font: 25px Tahoma, Helvetica, Arial, Sans-Serif;
+  color: #346fa1;
 
 }
 
@@ -846,7 +866,18 @@ background-color: white;
     display: inline-block;
     margin-bottom: 25px;
 }
-
+.tab-text{
+    font-size:20px;
+    color: white;
+    font-family: 'Helvetica';
+    word-spacing: 2px;
+    line-height: 125%;
+}
+.tab-title{
+    font-size:35px;
+    color:  black;
+    
+}
 .title{
     font-size:35px;
     text-shadow: 2px 3px 0px #fff, 5px 8px 5px rgba(0,0,0,0.1);
@@ -892,7 +923,7 @@ background-color: white;
 }
 .dark-header{
     font-size:50px;
-    text-shadow: 2px 3px 0px #389c94, 5px 8px 5px rgba(0,0,0,0.1);
+    text-shadow: 2px 3px 0px #587a9b, 5px 8px 5px rgba(0,0,0,0.1);
     color:  #2d2d2d;
 }
 .dark-paragraph{
@@ -983,6 +1014,59 @@ div.desc {
     content: "";
     display: table;
     clear: both;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+* { 
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+
+
+.acc-container {
+  width:90%;
+  margin:30px auto 0 auto;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  -o-border-radius:8px;
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.acc-btn { 
+  width:100%;
+  margin:0 auto;
+  padding:20px 25px;
+  cursor:pointer;
+  background:#000000;
+  border-bottom:1px solid #00cccc;
+}
+
+.acc-content {
+  height:0px;
+  width:100%;
+  margin:0 auto;
+  overflow:hidden;
+  background:#191919;
+  color:white;
+}
+
+.acc-content-inner {
+  padding:30px;
+}
+
+.open {
+  height: auto;
+}
+
+
+
+.selected {
+  color:#00cccc;
 }
 /* line 2, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
 .simple-calendar table {
