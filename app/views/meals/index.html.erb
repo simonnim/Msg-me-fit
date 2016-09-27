@@ -21,17 +21,19 @@
 
 
 <br><br>
+<center>
 <% @meal.each do |meal| %>
-	<div class="responsive">
-    <div class="holder smooth">
-        <img src="/assets/<%=meal.meal%>.jpg" alt="food" width="459px" height="258px" />
+	<div class="responsive-img" >
+    <div class="holder smooth" >
+        <img src="/assets/<%=meal.meal%>.jpg" alt="food" width="440px" height="300px" />
         <div class="go-top">
             <p>
 						    Ingredients: <%= meal.ingredients %><br><br> 
     						Directions:<%= meal.directions %> 
             </p>
         </div>
-        <center><h3><%= meal.meal %> </h3></center>
+        <center><h8><%= meal.meal %> </h8></center>
     </div>
-  </div>
+	</div>
+</center>
  <% end %> 

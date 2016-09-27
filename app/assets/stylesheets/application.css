@@ -1019,7 +1019,7 @@ h1, h2
 }
 .smooth:hover
 {
-    opacity: 0.8;
+    opacity: 1;
     box-shadow: 0px 0px 10px ;
 }
 
@@ -1033,7 +1033,7 @@ h1, h2
     color: #FFFFFF;
     position: absolute;
     bottom: 0px;
-    top: 600px;
+    top: 100%;
     width: 95%;
     text-align:center;   
     font-size: 18px;
@@ -1050,12 +1050,8 @@ h1, h2
 }
 .go-top p
 {
-    font-size: 10px;
+    font-size: 70%;
+    font-weight:bold;
 }
-
-
-
-
-
 
 
