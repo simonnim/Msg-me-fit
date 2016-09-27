@@ -984,3 +984,160 @@ Slice veggies for pasta.
 In a bowl, mix tahini, sesame oil and Bragg's Liquid Aminos.
 Place all ingredients into a large bowl, including cooked shrimp. Pour the Tahini sauce you made over the meal. Toss it to make sure all sides are covered in the sauce.
 Sprinkle sesame seeds on top. And then devour!", user_id: 1)
+
+Meal.create(meal: "THAI SCRAMBLE", ingredients:"
+GRAPESEED OIL 1/2 TBSP,
+FRESH GINGER, MINCED 1 TS,P
+GARLIC, MINCED 1 SMALL CLOVE,
+SCALLIONS, SLICED 1 TBSP,
+EGGS 3 LARGE, WHISKED TOGETHER IN A SMALL BOWL,
+SALT AND FRESHLY GROUND PEPPER TO TASTE,
+CHILI POWDER 1 TSP,
+FRESH CILANTRO, CHOPPED 1 TBSP", directions: "Coat a medium skillet with the grapeseed oil (any oil or cooking spray will work) and heat over medium-high heat. Add the ginger, garlic, and scallions. Sauté for 30 seconds, and then add the eggs.
+Cook the eggs, stirring frequently with a spatula and removing the skillet from the heat as necessary to prevent sticking, until the eggs are cooked through. Season with salt, pepper, chili, and cilantro.", user_id: 1)
+
+Meal.create(meal: "BAKED FRENCH TOAST", ingredients: "6 slices Ezekiel Bread
+6 large Eggs,
+1/2 cup Low-fat Geek Yogurt,
+1 1/2 cups Milk,
+2 tbsp Sugar,
+1 tsp Vanilla Extract,
+1 tsp Maple Extract,
+1/2 cup Pecans", directions: "Preheat the oven to 350 degrees F.
+Lay bread slices in a shallow baking dish. Make sure they do not over lap.
+In a bowl, whisk together eggs, Greek yogurt, milk, sugar, and extracts until well combined.
+Pour egg mixture over the bread slices, making sure they are fully coated.
+Top bread with pecans and then cover baking dish with foil.
+Bake for 25 minutes and then serve with sugar-free maple syrup.", user_id: 1)
+
+Meal.create(meal: "High Protein Waffles", ingredients: "1 1/2 cups Oatmeal,
+1/2 cup Coconut Flour,
+1/4 cup Vanilla Protein Powder,
+1/8 cup Sugar or Sugar Substitute,
+2 tsp Baking Powder,
+1/2 tsp. Salt,
+2 Eggs, beaten,
+1/3 cup no-sugar added Applesauce,
+1/2 cup Low-fat Greek Yogurt,
+1 cup Skim Milk,
+1/4 cup dried Cranberries,
+1/2 cup fresh Blueberries,
+1/4 cup Sugar-free Maple Syrup", directions: "Mix together oats, coconut flour, protein powder, sugar, baking powder, and cranberries in a large bowl.
+In another bowl, whisk together the eggs, oil, cottage cheese, and milk until smooth.
+Slowly combine dry ingredients with wet ingredients.
+Pour the batter into a waffle maker according to maker directions and cook.
+Once waffles are done, top with fresh blueberries and syrup.", user_id: 1)
+
+Meal.create(meal: "Steak And Eggs Breakfast", ingredients: "2 tbsp Olive Oil,
+4 oz. Sirloin Steak, about 1 inch thick,
+Salt and Pepper, to taste,
+2 Whole Eggs,
+1/8 tsp pureed Garlic,
+1 tbsp sliced Green Onion,
+1 medium Sweet Potato, cut into cubes", directions: "Preheat oven to 350 degrees F.
+Heat 1 tbsp olive oil over medium heat.
+While oil is heating, gently tenderize the steak, adding salt and pepper to taste.
+Place the steak in the skillet and cook for about 5 minutes before turning over.
+Cook for another five minutes, or slightly longer depending your preference.
+Transfer the steak to a plate and cover with foil to keep it warm.
+Pour 1/2 tbsp. of olive oil to the same skillet and then add both eggs.
+Add garlic and green onion and scramble for 3-4 minutes, or until eggs are cooked.
+While eggs are cooking, place sweet potatoes in a bowl with a small amount of water and cover.
+Microwave potatoes for 3 minutes.
+When eggs are done, remove from pan and place on plate with the steak, and cover.
+Finally, add the remaining 1/2 tbsp. of olive oil to the skillet and cook sweet potatoes until they're crispy.
+Serve potatoes alongside steak and eggs.", user_id: 1)
+
+Meal.create(meal: "SRIRACHA TURKEY POLENTA SLIDERS", ingredients: "POLENTA
+ITALIAN POLENTA: 3 1/2-INCH THICK WITH SIDES TRIMMED DOWN,
+GRAPESEED OIL: 1 TSP,
+GHEE: 1/2 TBSP
+SALT AND PEPPER TO TASTE
+TURKEY SLIDERS:
+GROUND TURKEY: 12 OZ.
+MUSHROOM: 1 DICED
+SLICED GREEN ONION WHITE END ONLY: 1
+SRIRACHA: 1 TBSP
+ONION POWDER: 1/4 TSP
+SALT AND PEPPER: TO TASTE
+TOPPINGS
+ASPARAGUS SPEARS: 3 (TOPS CUT OFF AND BOTTOMS SLICED)
+SRIRACHA: 1 TBSP
+GRAPESEED OIL: 1 TSP", directions: "", user_id: 1)
+
+Meal.create(meal: "FISH BURGER", ingredients:"
+WILD FLOUNDER: 6 OZ.,
+QUINOA: 1/4 CUP,
+CHIA SEEDS: 1 TBSP,
+BABY KALE: 1 HANDFUL,
+CUCUMBER: 1/8,
+JALAPENO: TO YOUR LIKING,
+VEGENAISE MAYO: 1/2 TBSP,
+WHOLE-WHEAT BUN: 1,
+GARLIC CLOVE: 1,
+WHOLE-WHEAT BREAD CRUMBS: 1/8 CUP,
+SALT AND PEPPER: TO TASTE,
+CURRY: TO TASTE,
+LEMON JUICE: TO TASTE", directions: "Cook quinoa for 15 minutes with salt and curry. Jamaican curry is a great choice!
+Cook flounder for a minute each side on a low flame.
+Preheat oven or grill to 425 degrees.
+In a bowl, combine chia seeds, quinoa, flounder, minced garlic clove, bread crumbs, salt, pepper, and some chopped kale. Form into patty and put in oven for 8-10 minutes.
+Dice up peeled cucumber and jalapeno. Mix in with mayo and a splash of lemon juice.
+Toast buns, and combine everything to form your burger. Enjoy!", user_id: 1)
+
+Meal.create(meal: "QUINOA SALAD", ingredients: "1 cup uncooked, dry Quinoa,
+1 cup shelled, frozen Edamame,
+1 Red Bell Pepper,
+1/4 cup chopped Cilantro,
+1 Lime,
+1 tbsp Olive Oil,
+1/2 tsp each of Garlic Powder, Onion Powder, Cumin, and Paprika,
+Salt and Pepper, to taste", directions: "Bring 2 cups of water and 1 cup dry quinoa to a rolling boil. Boil for 2 minutes.
+Reduce to a simmer and cover. Allow to cook for another 15 minutes, then fluff with a fork.
+In a separate small saucepan, boil frozen edamame in water for 5 minutes, or until fully cooked.
+Once quinoa and edamame are fully cooked, add all ingredients in a large bowl and mix until all flavors are incorporated.", user_id: 1)
+
+Meal.create(meal: "STACKED PORTABELLAS", ingredients: "2 large Mushroom Portabella Caps rinsed clean and dried,
+1 cup cooked Quinoa,
+1/2 cup crumbled Tempeh,
+1/2 Onion, diced,
+1 cup Spinach,
+1 Tomato, sliced,
+2 tbsp shredded Almond Cheese or Fat-free Mozzarella,
+1 tbsp Olive Oil
+1/2 tbsp each of Paprika, Cumin, Garlic Powder, and Onion Powder,
+Sea Salt and Black Pepper, to taste", directions: "Turn on oven to high broil.
+Heat olive oil in a large saute pan over medium heat.
+Add onion and tempeh to pan and saute for 2-3 minutes, or until onion begins to soften.
+Add quinoa, spices, salt and pepper and saute a few more minutes.
+On a baking sheet, place portabello mushrooms brushed lightly with olive oil.
+Stack mushroom caps with spinach, quinoa mixture, sliced tomatoes, and shredded cheese.
+Broil for 5 minutes.", user_id: 1)
+
+Meal.create(meal: "BEEF NOODLE SOUP", ingredients: "
+LEAN GROUND BEEF 1 LB.,
+LOW-SODIUM BEEF BROTH 2 CUPS,
+WATER 1 CUP,
+CARROTS, SLICED 1 CUP,
+CELERY, SLICED 1 CUP,
+BROCCOLI FLORETS 2 CUPS,
+SNOW PEAS 1/2 CUP,
+BEAN SPROUTS 1 CUP,
+GARLIC, CRUSHED 1/2 CLOVE,
+ANGEL HAIR PASTA (IF DESIRED) 2 CUPS
+", directions: "Brown the beef in a skillet over medium heat. In a pot, boil the beef broth and water.
+Once boiling, add carrots, celery, and snow peas. Cook for 2-3 minutes. Then add broccoli, bean sprouts, and ground beef; cook for another 1-2 minutes.
+Stir garlic and pasta, and simmer over low heat for 8 minutes.
+Serve immediately.", user_id: 1)
+
+Meal.create(meal: "SUPERHERO CHICKEN", ingredients: "
+BONELESS, SKINLESS CHICKEN BREAST 12 OZ.,
+HONEY 1 TSP,
+ORANGE JUICE 1 TSP,
+LEMON", directions: "Preheat oven to 375 degrees F.
+Coat a baking pan with nonstick spray, and place chicken in pan.
+In a separate bowl, combine honey, orange juice, and lemon juice. Pour over chicken.
+Cover pan with tin foil and bake for 10 minutes.
+Remove pan from oven to flip chicken, and then return it to the oven for another 10-15 minutes.
+For a full meal, pair chicken with green vegetables and, depending on your carbohydrate needs, a starch.
+", user_id: 1)
