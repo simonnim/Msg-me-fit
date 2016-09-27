@@ -1,4 +1,20 @@
+<div>
+<% @meal.each do |meal| %>
+	<div>
+	<%= meal.meal %>
+	</div>
+	<div>
+	<%= meal.ingredients %>
+	</div>
+	<div>
+	<%= meal.directions %>
+	</div><br><br>
+	<% end %>
+</div>
 
 
 
+
+<div>
 <%= link_to "Add New Meal", new_user_meal_path(@user) %>
+</div>

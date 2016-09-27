@@ -2,7 +2,7 @@ class MealsController < ApplicationController
 
 	def index
 		@user = User.find(params[:user_id])
-		@meal = Meal.new
+		@meal = Meal.all
 	end
 
 	def new

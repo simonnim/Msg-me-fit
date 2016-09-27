@@ -4,7 +4,15 @@
 <div class="form-group">
    <%= f.label :meal%>
    <%= f.text_field :meal%>
+ 	 <div>
+   <%= f.label :ingredients%>
+   <%= f.text_field :ingredients%>
+   </div>
+   <div>
+   <%= f.label :directions%>
+   <%= f.text_field :directions%>
    <%= f.hidden_field :user_id, :value => current_user.id %>
+   </div>
 </div>
 <div class="form-group">
    <%= f.submit "submit", class: "btn btn-default" %>
