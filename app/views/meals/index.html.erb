@@ -15,19 +15,23 @@
 <div>
 <center><%= link_to "Add New Meal", new_user_meal_path(@user) %></center>
 </div>
+
 <br><br><br>
-<% @meal.each do |meal| %>
-<div class="responsive" >
-  <div class="img" >
-    <a target="_blank" href="">
-      <img src="/assets/<%=meal.meal%>.jpg" class="img-responsive" style="max-width:auto;" alt="chicken" >
-    </a>
-    <a href=""><div class="desc"><%= meal.meal %></div></a>
-    <!-- Ingredients: <%= meal.ingredients %><br><br> -->
-    <!-- Directions:<%= meal.directions %> -->
-  </div><br><br>
-</div>
-  <% end %>
+
 
 
 <br><br>
+<% @meal.each do |meal| %>
+	<div class="responsive">
+    <div class="holder smooth">
+        <img src="/assets/<%=meal.meal%>.jpg" alt="food" width="459px" height="258px" />
+        <div class="go-top">
+            <p>
+						    Ingredients: <%= meal.ingredients %><br><br> 
+    						Directions:<%= meal.directions %> 
+            </p>
+        </div>
+        <center><h3><%= meal.meal %> </h3></center>
+    </div>
+  </div>
+ <% end %> 

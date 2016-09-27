@@ -985,3 +985,77 @@ div.desc {
 .selected {
   color:#00cccc;
 }
+
+
+body
+{
+    background-color: #E5E5E5;
+    font-family: Tahoma, Calibri, 'Trebuchet MS' , Arial;
+    margin: 20px;
+    color: #666666;
+}
+h1, h2
+{
+    clear: both;
+    font-weight: normal;
+    text-shadow: 1px 1px 0px #FFFFFF;
+}
+
+/* Common division block */
+.holder
+{
+    border: 6px solid #FFFFFF;
+    float: left;
+    margin: 10px;
+    position: relative;    
+    overflow: hidden;
+}
+
+
+/* Smooth Caption */
+.smooth
+{
+    opacity: 1;    
+}
+.smooth:hover
+{
+    opacity: 0.8;
+    box-shadow: 0px 0px 10px ;
+}
+
+.smooth:hover > .go-left
+{    
+    right:0px;    
+}
+.go-top
+{
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    top: 600px;
+    width: 95%;
+    text-align:center;   
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    -webkit-transition: 0.5s Ease;
+    -moz-transition: 0.5s Ease;
+    -o-transition: 0.5s Ease;
+    transition: 0.5s Ease;
+}
+.smooth:hover > .go-top
+{    
+    top:10px;    
+}
+.go-top p
+{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
