@@ -896,16 +896,90 @@ Exerciselist.create(exercise: "zercher squats", muscle: "quadriceps")
 Exerciselist.create(exercise: "zottman curl", muscle: "biceps")
 Exerciselist.create(exercise: "zottman preacher curl", muscle: "biceps")
 
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
-Meal.create(meal: "Chicken and Brown Rice", ingredients: "4 oz Brown Rice, 8 oz Chicken breast, 4 oz Water, Salt, Pepper", directions: "Cook Rice until done, Cook chicken until done, salt and pepper to taste", user_id: 1)
+Meal.create(meal: "BBQ CHICKEN WRAPPED ASPARAGUS", ingredients: "
+CHICKEN 2-3 OZ THINLY CUT,
+ASPARAGUS 12,
+BBQ SAUCE 2 TBSP,
+CUMIN, PAPRIKA, GARLIC, PEPPER,
+BELL PEPPERS 1 CUP DICED,
+BROWN RICE 1/2 CUP,
+FRUIT OPTIONAL", directions: "Set oven to 405°F.
+Measure and cut chicken breasts into thin, 2-3 oz pieces. Feel free to further flatten the chicken with a mallet.
+Season chicken cutlets with 1 tbsp barbecue sauce (for each piece) and your choice of seasonings.
+Chop the ends off asparagus and wrap the chicken around 6 asparagus spears.
+Place the chicken on a baking sheet with the open facing down.
+Bake in the oven for about 8-10 minutes.", user_id: 1)
+
+Meal.create(meal: "	WILD GAME AND BLACK BEAN STUFFED BELL PEPPER", ingredients: "
+WILD GAME 6 OZ,
+BLACK BEANS 1/2 CUP,
+BELL PEPPERS 2,
+SALSA 4 TBSP,
+GOAT CHEESE 2 TBSP,
+PARSLEY,
+BROWN RICE 1/4 CUP,
+PINEAPPLE,
+", directions: "Set oven to 405°F.
+Cut tops off bell peppers and remove the seeds inside.
+Spray a baking sheet and place the bell peppers on the sheet with the open-side facing down. Bake for 10-12 minutes.
+Lightly spray a skillet with Kelapo Coconut Oil and place on medium heat. Add the diced onions.
+Add ground wild game meat to the skillet. When the meat is nearly finished, add in beans, fresh parsley, 2 heaping tbsp of pico de gallo, salsa, or diced tomatoes. Mix with a spatula.
+Remove the bell peppers from the oven and flip them over. Add in game and beans mixture. Top with goat cheese (or low fat mozzarella cheese) and fresh parsley (if desired)
+Bake in the oven for 8-10 minutes.", user_id: 1)
+
+Meal.create(meal: "	STUFFED MUSCLE EGGS WITH PITA BREAD", ingredients:"
+WILD SALMON 1 CAN LOW SODIUM,
+HARDBOILED EGGS 2,
+GREEK YOGURT 1 TBSP,
+SEASONING TO TASTE,
+LETTUCE 1 LEAF,
+CHERRY TOMATOES 5,
+PITA POCKET 1/2 WHOLE,
+GOAT CHEESE 1 TBSP,
+MUSTARD
+KUMQUATS", directions:"Boil 2 eggs. Peel them and slice them in half. Remove the yolk from 1 egg (or both eggs) and add to a bowl.
+Add 1/2 can wild salmon to the bowl along with 1 tbsp Greek yogurt, onions, and your other choice of seasonings.
+Mix the ingredients together; then stuff the eggs. Or, add egg whites to the mixture to create a salmon salad.
+Eat the meal with pita bread or stuff the pita with the salad, lettuce, and tomatoes.", user_id: 1)
+
+Meal.create(meal:"	SPICY FLANK STEAK KABOBS WITH SWEET POTATO", ingredients: "FLANK STEAK 5 OZ,
+SWEET POTATO 1 SMALL,
+ZUCCHINI 1/2 MEDIUM,
+BELL PEPPER 1,
+SEASONING,
+BLUEBERRIES 1/8 CUP,
+SHAVED ALMONDS 1 TBSP,
+RAW ORGANIC HONEY 1 TBSP,
+CHERRIES", directions: "Set oven to 405°F.
+Wrap the sweet potato in foil and place in the oven. If you cannot find a whole sweet potato close to your serving size, then simply cut the sweet potato into small pieces, measure them to ensure your serving size portion and bake them on a baking sheet lined with aluminum foil. Bake for about 45 minutes depending on the size. If they are cut in chunks, then bake for only 25-30 minutes.
+Cut flank steak into very small pieces. Season with your choice of seasonings.
+Chop 1 zucchini and 1 bell pepper into small pieces for the kabob.
+Assemble the kabobs, alternating between beef, bell pepper, and zucchini.
+Place the assembled kabob on a baking sheet/pan and bake for 8-12 minutes depending how well you like your meat cooked.", user_id: 1)
+
+Meal.create(meal: "TURKEY MEATLOAF WITH SPINACH AND WHOLE WHEAT PEARL", ingredients: "
+GROUND TURKEY 5 OZ,
+RED ONIONS 3/4 CUP,
+MARINARA SAUCE 1/3 CUP,
+SPINACH1 CUP RAW,
+SEASONINGS PARSLEY, BASIL, GARLIC, ONION, DASH OF CORIANDER, PEPPER, SEA SALT (PINCH),
+COUSCOUS 1/2 CUP,
+OLIVE OIL 1 TBSP,
+PINEAPPLE", directions: "Set oven to 405°F.
+Season ground turkey with your choice of seasonings. Add in your choice of diced veggies.
+Lightly spray your muffin pan with Kelapo Coconut Oil. Place the ground turkey inside of the muffin holders. Depending on how big your muffin pan is and your singular serving, you may have to use 2 muffin holders for each serving.
+Top each serving with 1 tbsp marinara sauce.
+Bake in the oven for about 8-10 minutes. If you use less lean ground turkey, you can consider increasing the cooking time to 10-12 minutes.
+Boil couscous using water and low sodium chicken or vegetable broth. Add cilantro or onions while cooking for added flavor. Set aside, and allow to cool. Add 1 tbsp olive tapenade to couscous if desired.", user_id: 1)
+
+Meal.create(meal: "6	SESAME TAHINI SHRIMP AND ZUCCHINI LINGUINE PASTA SALAD", ingredients: "
+SHRIMP 6 OZ,
+LARGE ZUCCHINI 1 LARGE,
+BELL PEPPERS 1.5 CUP SLICED,
+ROASTED TAHINI BUTTER 1 TBSP,
+SESAME SEEDS 1/2 TBSP,
+BLUEBERRIES OPTIONAL", directions: "Cut zucchini using a Julienne shredder in order to make the raw linguine.
+Slice veggies for pasta.
+In a bowl, mix tahini, sesame oil and Bragg's Liquid Aminos.
+Place all ingredients into a large bowl, including cooked shrimp. Pour the Tahini sauce you made over the meal. Toss it to make sure all sides are covered in the sauce.
+Sprinkle sesame seeds on top. And then devour!", user_id: 1)
