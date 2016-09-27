@@ -1,3 +1,85 @@
+// Place all the styles related to the calendar controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* line 1, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -10,11 +92,12 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
- *= require simple_calendar
- *= require rails_bootstrap_forms
+
+
+
+
  */
+
 
 .col {
     display:inline-block;
@@ -1019,7 +1102,7 @@ h1, h2
 }
 .smooth:hover
 {
-    opacity: 1;
+    opacity: 0.8;
     box-shadow: 0px 0px 10px ;
 }
 
@@ -1033,7 +1116,7 @@ h1, h2
     color: #FFFFFF;
     position: absolute;
     bottom: 0px;
-    top: 100%;
+    top: 600px;
     width: 95%;
     text-align:center;   
     font-size: 18px;
@@ -1050,8 +1133,83 @@ h1, h2
 }
 .go-top p
 {
-    font-size: 70%;
-    font-weight:bold;
+    font-size: 10px;
 }
 
 
+
+
+
+
+
+/* line 2, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar table {
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  background-color: transparent;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+/* line 13, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar tr {
+  border-collapse: collapse;
+}
+/* line 17, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar th {
+  padding: 6px;
+  border-bottom: 2px solid #dddddd;
+  border-collapse: collapse;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-top: 0px none #333333;
+  box-sizing: border-box;
+  text-align: left;
+}
+/* line 28, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar td {
+  padding: 6px;
+  vertical-align: top;
+  width: 14%;
+  border: 1px solid #ddd;
+  border-top-color: #dddddd;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: #dddddd;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: #dddddd;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #dddddd;
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+/* line 48, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .day {
+  height: 80px;
+}
+/* line 60, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .today {
+  background: #FFFFC0;
+}
+/* line 69, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .prev-month {
+  background: #DDD;
+}
+/* line 72, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .next-month {
+  background: #DDD;
+}
+.rails-bootstrap-forms-date-select select,
+.rails-bootstrap-forms-time-select select,
+.rails-bootstrap-forms-datetime-select select {
+  display: inline-block;
+  width: auto;
+}
+
+.rails-bootstrap-forms-error-summary {
+  margin-top: 10px;
+}
