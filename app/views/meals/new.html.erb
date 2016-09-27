@@ -1,14 +1,15 @@
 
 <h1 class="form-group">Meal</h1>
 <%= form_for :meal, url: user_meals_path do |f| %>
-<div class="form-group">
+	<div class="form-group">
    <%= f.label :meal%>
    <%= f.text_field :meal%>
- 	 <div>
+   </div>
+ 	 <div class="form-group">
    <%= f.label :ingredients%>
    <%= f.text_field :ingredients%>
    </div>
-   <div>
+   <div class="form-group">
    <%= f.label :directions%>
    <%= f.text_field :directions%>
    <%= f.hidden_field :user_id, :value => current_user.id %>
