@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
 <% @meal.each do |meal| %>
 	<div>
 	<%= meal.meal %>
@@ -11,7 +11,18 @@
 	</div><br><br>
 	<% end %>
 </div>
-
+ -->
+<br><br><br>
+<% @meal.each do |meal| %>
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="">
+      <img src="/assets/chicken.jpg" class="img-thumbnail hover" alt="chicken" width="304" height="236">
+    </a>
+    <a href=""><div class="desc"><%= meal.meal %></div></a>
+  </div>
+</div>
+  <% end %>
 
 
 
