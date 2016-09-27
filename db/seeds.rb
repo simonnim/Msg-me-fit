@@ -910,6 +910,22 @@ Chop the ends off asparagus and wrap the chicken around 6 asparagus spears.
 Place the chicken on a baking sheet with the open facing down.
 Bake in the oven for about 8-10 minutes.", user_id: 1)
 
+
+Meal.create(meal: "	STUFFED MUSCLE EGGS WITH PITA BREAD", ingredients:"
+WILD SALMON 1 CAN LOW SODIUM,
+HARDBOILED EGGS 2,
+GREEK YOGURT 1 TBSP,
+SEASONING TO TASTE,
+LETTUCE 1 LEAF,
+CHERRY TOMATOES 5,
+PITA POCKET 1/2 WHOLE,
+GOAT CHEESE 1 TBSP,
+MUSTARD
+KUMQUATS", directions:"Boil 2 eggs. Peel them and slice them in half. Remove the yolk from 1 egg (or both eggs) and add to a bowl.
+Add 1/2 can wild salmon to the bowl along with 1 tbsp Greek yogurt, onions, and your other choice of seasonings.
+Mix the ingredients together; then stuff the eggs. Or, add egg whites to the mixture to create a salmon salad.
+Eat the meal with pita bread or stuff the pita with the salad, lettuce, and tomatoes.", user_id: 1)
+
 Meal.create(meal: "	WILD GAME AND BLACK BEAN STUFFED BELL PEPPER", ingredients: "
 WILD GAME 6 OZ,
 BLACK BEANS 1/2 CUP,
@@ -926,21 +942,6 @@ Lightly spray a skillet with Kelapo Coconut Oil and place on medium heat. Add th
 Add ground wild game meat to the skillet. When the meat is nearly finished, add in beans, fresh parsley, 2 heaping tbsp of pico de gallo, salsa, or diced tomatoes. Mix with a spatula.
 Remove the bell peppers from the oven and flip them over. Add in game and beans mixture. Top with goat cheese (or low fat mozzarella cheese) and fresh parsley (if desired)
 Bake in the oven for 8-10 minutes.", user_id: 1)
-
-Meal.create(meal: "	STUFFED MUSCLE EGGS WITH PITA BREAD", ingredients:"
-WILD SALMON 1 CAN LOW SODIUM,
-HARDBOILED EGGS 2,
-GREEK YOGURT 1 TBSP,
-SEASONING TO TASTE,
-LETTUCE 1 LEAF,
-CHERRY TOMATOES 5,
-PITA POCKET 1/2 WHOLE,
-GOAT CHEESE 1 TBSP,
-MUSTARD
-KUMQUATS", directions:"Boil 2 eggs. Peel them and slice them in half. Remove the yolk from 1 egg (or both eggs) and add to a bowl.
-Add 1/2 can wild salmon to the bowl along with 1 tbsp Greek yogurt, onions, and your other choice of seasonings.
-Mix the ingredients together; then stuff the eggs. Or, add egg whites to the mixture to create a salmon salad.
-Eat the meal with pita bread or stuff the pita with the salad, lettuce, and tomatoes.", user_id: 1)
 
 Meal.create(meal:"	SPICY FLANK STEAK KABOBS WITH SWEET POTATO", ingredients: "FLANK STEAK 5 OZ,
 SWEET POTATO 1 SMALL,
