@@ -973,7 +973,7 @@ Top each serving with 1 tbsp marinara sauce.
 Bake in the oven for about 8-10 minutes. If you use less lean ground turkey, you can consider increasing the cooking time to 10-12 minutes.
 Boil couscous using water and low sodium chicken or vegetable broth. Add cilantro or onions while cooking for added flavor. Set aside, and allow to cool. Add 1 tbsp olive tapenade to couscous if desired.", user_id: 1)
 
-Meal.create(meal: "6	SESAME TAHINI SHRIMP AND ZUCCHINI LINGUINE PASTA SALAD", ingredients: "
+Meal.create(meal: "SESAME TAHINI SHRIMP AND ZUCCHINI LINGUINE PASTA SALAD", ingredients: "
 SHRIMP 6 OZ,
 LARGE ZUCCHINI 1 LARGE,
 BELL PEPPERS 1.5 CUP SLICED,

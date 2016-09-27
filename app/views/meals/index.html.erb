@@ -12,12 +12,15 @@
 	<% end %>
 </div>
  -->
+<div>
+<center><%= link_to "Add New Meal", new_user_meal_path(@user) %></center>
+</div>
 <br><br><br>
 <% @meal.each do |meal| %>
-<div class="responsive">
-  <div class="img">
+<div class="responsive" >
+  <div class="img" >
     <a target="_blank" href="">
-      <img src="/assets/<%=meal.meal%>.jpg"  alt="chicken" width="304" height="236">
+      <img src="/assets/<%=meal.meal%>.jpg" class="img-responsive" style="max-width:auto;" alt="chicken" >
     </a>
     <a href=""><div class="desc"><%= meal.meal %></div></a>
     <!-- Ingredients: <%= meal.ingredients %><br><br> -->
@@ -28,6 +31,3 @@
 
 
 <br><br>
-<div>
-<%= link_to "Add New Meal", new_user_meal_path(@user) %>
-</div>
