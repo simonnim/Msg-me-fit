@@ -10,7 +10,7 @@ class UserController < ApplicationController
 	end
 
 	def create
-		@user = User.new(name: params[:name], password: params[:password], email: params[:email])
+		@user = User.new(name: params[:name], password: params[:password], email: params[:email], phonenumber: params[:phonenumber])
 		@stats = Stats.new(weight: params[:weight], bench: params[:bench], squat: params[:squat],deadlift: params[:deadlift], overheadpress: params[:overheadpress], barbellrow: params[:barbellrow])
 		if @user.save
 			session[:user_id] = @user.id

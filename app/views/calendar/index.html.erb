@@ -14,7 +14,9 @@
 <div class="event-list">
 <center><a class="btn btn-med btn-primary" data-toggle="modal" 
    data-target="#exerciseModal" 
-   data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center>
+   data-remote="assets/ali.jpg">Click to Add Event to Calendar</a></center><br>
+
+
 
   <div class="event-item" ><% @user_appointments.each do |event|%>
   <br>
@@ -41,6 +43,7 @@
 </div>
 
 
+
  <div id="exerciseModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
@@ -63,3 +66,12 @@
     </div>
  </div>
 
+
+<%= form_for :number do |f| %>
+  <%= f.label :number_to_send_to %>
+  <%= f.telephone_field :number_to_send_to %><br>
+  <%= f.label :text_field %>
+  <%= f.text_area :text_field %>
+
+  <%= f.submit 'Send text' %>
+<% end %>

@@ -22,6 +22,7 @@
     </div>
 </div>
 <center>
+
 <% @meal.each do |meal| %>
 	<div class="responsive-img " >
     <div class="holder smooth shadow" >
@@ -36,14 +37,5 @@
     </div>
 	</div>
 </center>
- <% end %> 
+<% end %> 
 
-<%= form_for :number do |f| %>
-  <%= f.label :number_to_send_to %>
-  <%= f.telephone_field :number_to_send_to %><br />
-
-  <%= f.label :text_field %>
-  <%= f.text_area :text_field %>
-
-  <%= f.submit 'Send text' %>
-<% end %>

@@ -6,13 +6,17 @@ class CalendarController < ApplicationController
 	end
 	
 	def create
+		
+		
 		@user_id = current_user.id
-		@Calendar = Calendar.new(calendar_params)
+		@Calendar = Calendar.new(category: params[:category], description: params[:description], title: params[:title], time: params[:time], user_id: params[:user_id])
     if @Calendar.save
       redirect_to "/user/#{@user_id}/calendar"
+			send_text_message
     else
       redirect_to "/user/#{@user_id}/calendar"
     end
+
 	end
 
 	 def show
@@ -29,8 +33,25 @@ class CalendarController < ApplicationController
     redirect_to "/user/#{@user_id}/calendar"
   end
 
-	private
-	def calendar_params
-		params.require(:calendar).permit(:category, :description, :title, :time,:user_id )
+	def send_text_message
+		number_to_send_to = params[:number][:number_to_send_to]
+		twilio_body = params[:number][:text_field]
+
+		twilio_sid = ENV['TWILIO_ACCOUNT_SID']
+		twilio_token = ENV['TWILIO_AUTH_TOKEN']
+		twilio_phone_number = ENV['TWILIO_NUMBER']
+
+		@twilio_client = Twilio::REST::Client.new(twilio_sid, twilio_token)
+
+		@twilio_client.account.sms.messages.create(
+			:from => twilio_phone_number,
+			:to => number_to_send_to,
+			:body => twilio_body
+			)
 	end
+
+	# private
+	# def calendar_params
+	# 	params.require(:calendar).permit(:category, :description, :title, :time,:user_id )
+	# end
 end
