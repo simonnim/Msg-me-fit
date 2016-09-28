@@ -9,6 +9,15 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
+require 'bcrypt'
+require 'dotenv'
+Dotenv.load
+require 'twilio-ruby'
+
+TWILIO_ACCOUNT_SID = ENV['TWILIO_ACCOUNT_SID']
+TWILIO_AUTH_TOKEN = ENV['TWILIO_AUTH_TOKEN']
+TWILIO_NUMBER = ENV['TWILIO_NUMBER']
+
 # require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
