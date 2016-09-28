@@ -1,0 +1,1269 @@
+// Place all the styles related to the calendar controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* line 1, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /Users/macbook/Desktop/Msg-me-fit/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+ */
+
+
+.col {
+    display:inline-block;
+    vertical-align:top;
+}
+.simple-calendar {
+background-color: white;
+  width: 80%;
+  height: 100%;
+  float: left;
+  padding: 20px;
+}
+.shadow{
+    -webkit-box-shadow: 0 7px 4px #777;
+    -moz-box-shadow: 0 7px 4px #777;
+    box-shadow: 0 7px 4px #777;
+
+}
+.shadowcal{
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+.shadow2{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+.div-pillar{
+  width: 17%;
+  height: 100%;
+}
+.event-list{
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-right: 30px;
+}
+.calendar-heading {
+  font-family: 'Oswald';
+  text-align: center;
+}
+.stats-heading {
+  font-family: 'Oswald';
+  font-size: 40px;
+  text-align: center;
+}
+.stats-item{
+    font-family: 'Pacifico';
+    text-align: center;
+    font-size: 37.5px;
+    line-height: 100%;
+}
+.calendar-title{
+  font: 40px 'Pacifico';
+  color: #346fa1;
+
+}
+.barbell{
+    background-image: url('http://i0006.photobucket.com/albums/0006/findstuff22/Quotes%20and%20Sayings/Beautiful%20or%20Beauty/quote.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.today {
+    background: #cccccc !important;
+  }
+
+.next-month {
+    background-color: #8f98a0 !important;
+  }
+
+.prev-month {
+    background: #587a9b !important;
+  }
+
+.intro {
+	text-align: center;
+}
+
+.form {
+	width: 85%;
+	float: right;
+}
+
+
+.switch{
+    margin-right: 20px;
+}
+#navbar-full .navbar{
+    border-radius: 0 !important;
+    margin-bottom: 0;
+}
+.navigation-example{
+    margin-top: 0px;
+}
+.space{
+    height: 130px;
+    display: block;
+}
+.navigation-example .img-src{
+    background-attachment: scroll; 
+}
+.main{
+    background-color: #FFFFFF;
+}
+.navigation-example{
+    height: 660px;
+    background-image: url('../img/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+#notifications{
+    background-color: #FFFFFF;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.tim-note{
+    text-transform: capitalize;
+}
+
+.card{
+    background-color: #FFFFFF;
+    padding: 10px 0 20px;
+    width: 100%;
+}
+.card h3{
+    margin-bottom: 20px;
+}
+.card button{
+    margin-top: 30px;
+}
+.subscribe-form{
+    padding-top: 20px;
+}
+.subscribe-form .form-control{
+    
+}
+
+.space-100{
+    height: 100px;
+    display: block;
+    width: 100%;
+}
+
+.be-social{
+    padding-bottom: 20px;
+    margin: 0 auto 40px;
+}
+.txt-white{
+    color: #FFFFFF;
+}
+.txt-gray{
+    color: #ddd !important;
+}
+.footer{
+    background-color: #DDDDDD;
+    background-image: url('../img/cover_4_blur.jpg');
+    background-attachment: fixed;
+    position: relative;
+}
+.heart{
+    color: #FF3B30;
+}
+.footer .overlayer{
+    background-color: rgba(27, 27, 27, 0.7);
+    position: relative;
+}
+.footer .credits {
+    margin-top: 25px;
+    padding: 20px 0 15px;
+    text-align: center;
+    color: #EEE;
+}
+.footer .credits a{
+    color: #FFFFFF;
+}
+.social-share{
+    float: left;
+    margin-right: 8px;
+}
+.social-share a{
+    color: #FFFFFF;
+}
+#subscribe_email{
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.pick-class-label{
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    margin-right: 10px;
+    padding: 15px 23px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.parallax-pro{
+  width:100%;
+  display: block;
+  position: relative;
+  background-color: #000;
+}
+.parallax-pro > .img-src{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+}
+.parallax-pro:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    display: block;
+    content: "";
+    z-index: 0;
+}
+.parallax-pro .container{
+    padding-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+.parallax-pro .hello a{
+    color: #fff;
+    text-decoration: none;
+}
+.parallax-pro .hello{
+    font-size: 48px;
+    font-weight: 300;
+    position: relative;
+    margin: 30px auto 50px;
+}
+.parallax-pro .label{
+    font-size: 18px;
+    position: absolute;
+    text-transform: uppercase;
+    background-color: #FF9500;
+    color: #FFFFFF;
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+.parallax-pro small{
+    padding-top: 15px;
+    font-size: 20px;
+    display: block;
+    color: #fff;
+}
+.parallax-pro ul{
+     width: 280px;
+    margin: 0 auto;
+}
+.parallax-pro li{
+    padding: 9px 0;
+    border-bottom: 1px solid #777;
+}
+.parallax-pro .actions{
+    margin-top: 40px;
+}
+.parallax-pro .actions{
+    margin-left: 10px;
+}
+.parallax-pro .motto{
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
+    text-transform: uppercase;
+    z-index: 3;
+    margin: 0 auto;
+    top: 22%;
+    width: 285px;
+}
+.parallax-pro .motto .pro{
+    position: absolute;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    color: #333333;
+    text-shadow: 0 0 0;
+}
+.parallax-pro .motto .square{
+       padding: 7px 14px;
+    height: auto;
+    width: auto;
+    line-height: inherit;
+    border-radius: 6px;
+    bottom: 22px;
+    right: -25px;
+    color: #FFFFFF;
+    background-color: #ff9500;
+    font-weight: 300;
+    background-color: #ff9500;
+}
+.social-share{
+    margin-right: 0px;
+    margin-top: 10px;
+}
+.footer h4{
+    margin: 0px 0 20px;
+}
+.space-30{
+    height: 30px;
+    display: block;
+}
+.credits{
+    display: block;
+    margin: 15px 0;
+    color: #ddd;
+    opacity: .8;
+}
+.credits a{
+    color: #FFFFFF;
+}
+.sharing-title{
+    margin: 10px;
+    line-height: 40px;
+}
+.social-line{
+    padding: 5px 0;
+}
+.section-gray{
+    padding: 10px 0;
+    background-color: #EEE;
+}
+.section-gray h5{
+    margin: 0;
+    line-height: 40px;
+}
+
+.blurred-container{
+  position:relative;
+  width:100%;
+  height:540px;
+  top:0;
+  left:0;
+}
+.blurred-container > .img-src{
+    position:fixed;
+    width:100%;
+    height:540px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+.blur{
+  opacity:0;
+}
+
+.logo-container{
+    margin-top: 10px;
+}
+.logo-container .logo{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+.logo-container .logo img{
+    width: 100%;
+}
+.logo-container .brand{
+    font-size: 18px;
+    color: #FFFFFF;
+    float: left;
+    height: 50px;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 60px;
+}
+.blurred-container .motto{
+    color: #FFFFFF;
+    font-size: 76px;
+    font-weight: 600;
+
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+    text-transform: uppercase;
+    top: 100px;
+    z-index: 3;
+
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 306px;
+    height: 0;
+}
+.blurred-container .motto .border{
+    float: left;
+    border: 3px solid #FFFFFF;
+    padding: 0px 30px;
+    text-align: center;
+}
+.blurred-container .motto .no-right-border{
+    border-right: none;
+}
+
+@media (max-width: 768px){
+    .blurred-container .motto{
+        font-size: 60px;
+        width: 268px;
+        top: 130px;
+    }
+}
+.main{
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+#buttons .btn, #tooltips .btn{
+    margin-bottom: 15px;
+}
+.img-dog{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+#navbar-full .navbar{
+    border-radius: 0 !important;
+    margin-bottom: 0;
+}
+.navigation-example{
+    margin-top: 0px;
+}
+.space{
+    height: 130px;
+    display: block;
+}
+.navigation-example .img-src{
+    background-attachment: scroll; 
+}
+
+
+.navigation-example{
+    height: 100%;
+    background-image: url('http://wallpapercave.com/wp/EnDM8YS.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+#notifications{
+    background-color: #FFFFFF;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.tim-note{
+    text-transform: capitalize;
+}
+
+.card{
+    background-color: #FFFFFF;
+    padding: 10px 0 20px;
+    width: 100%;
+}
+.card h3{
+    margin-bottom: 20px;
+}
+.card button{
+    margin-top: 30px;
+}
+.subscribe-form{
+    padding-top: 20px;
+}
+.subscribe-form .form-control{
+    
+}
+
+.space-100{
+    height: 100px;
+    display: block;
+    width: 100%;
+}
+
+.be-social{
+    padding-bottom: 20px;
+    margin: 0 auto 40px;
+}
+.txt-white{
+    color: #FFFFFF;
+}
+.txt-gray{
+    color: #ddd !important;
+}
+.heart{
+    color: #FF3B30;
+}
+.footer .overlayer{
+    background-color: rgba(27, 27, 27, 0.7);
+    position: relative;
+}
+.footer .credits {
+    margin-top: 25px;
+    padding: 20px 0 15px;
+    text-align: center;
+    color: #EEE;
+}
+.footer .credits a{
+    color: #FFFFFF;
+}
+.social-share{
+    float: left;
+    margin-right: 8px;
+}
+.social-share a{
+    color: #FFFFFF;
+}
+#subscribe_email{
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.pick-class-label{
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    margin-right: 10px;
+    padding: 15px 23px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.parallax-pro{
+  width:100%;
+  display: block;
+  position: relative;
+  background-color: #000;
+}
+.parallax-pro > .img-src{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+}
+.parallax-pro:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    display: block;
+    content: "";
+    z-index: 0;
+}
+.parallax-pro .container{
+    padding-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+.parallax-pro .hello a{
+    color: #fff;
+    text-decoration: none;
+}
+.parallax-pro .hello{
+    font-size: 48px;
+    font-weight: 300;
+    position: relative;
+    margin: 30px auto 50px;
+}
+.parallax-pro .label{
+    font-size: 18px;
+    position: absolute;
+    text-transform: uppercase;
+    background-color: #FF9500;
+    color: #FFFFFF;
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+.parallax-pro small{
+    padding-top: 15px;
+    font-size: 20px;
+    display: block;
+    color: #fff;
+}
+.parallax-pro ul{
+     width: 280px;
+    margin: 0 auto;
+}
+.parallax-pro li{
+    padding: 9px 0;
+    border-bottom: 1px solid #777;
+}
+.parallax-pro .actions{
+    margin-top: 40px;
+}
+.parallax-pro .actions{
+    margin-left: 10px;
+}
+.parallax-pro .motto{
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
+    text-transform: uppercase;
+    z-index: 3;
+    margin: 0 auto;
+    top: 22%;
+    width: 285px;
+}
+.parallax-pro .motto .pro{
+    position: absolute;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    color: #333333;
+    text-shadow: 0 0 0;
+}
+.parallax-pro .motto .square{
+       padding: 7px 14px;
+    height: auto;
+    width: auto;
+    line-height: inherit;
+    border-radius: 6px;
+    bottom: 22px;
+    right: -25px;
+    color: #FFFFFF;
+    background-color: #ff9500;
+    font-weight: 300;
+    background-color: #ff9500;
+}
+.social-share{
+    margin-right: 0px;
+    margin-top: 10px;
+}
+.footer h4{
+    margin: 0px 0 20px;
+}
+.space-30{
+    height: 30px;
+    display: block;
+}
+.credits{
+    display: block;
+    margin: 15px 0;
+    color: #ddd;
+    opacity: .8;
+}
+.credits a{
+    color: #FFFFFF;
+}
+.sharing-title{
+    margin: 10px;
+    line-height: 40px;
+}
+.social-line{
+    padding: 5px 0;
+}
+.section-gray{
+    padding: 10px 0;
+    background-color: #EEE;
+}
+.section-gray h5{
+    margin: 0;
+    line-height: 40px;
+}
+
+.blurred-container{
+  position:relative;
+  width:100%;
+  height:725px;
+  top:0;
+  left:0;
+}
+.blurred-container > .img-src{
+    background-image: url('http://wallpapercave.com/wp/EnDM8YS.jpg');
+    position:relative;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position: center center;
+}
+.blur{
+  opacity:0;
+}
+
+.logo-container{
+    margin-top: 10px;
+}
+.logo-container .logo{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+.logo-container .logo img{
+    width: 100%;
+}
+.logo-container .brand{
+    font-size: 18px;
+    color: #FFFFFF;
+    float: left;
+    height: 50px;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 60px;
+}
+.blurred-container .motto{
+    color: #FFFFFF;
+    font-size: 76px;
+    font-weight: 600;
+
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+    text-transform: uppercase;
+    top: 100px;
+    z-index: 3;
+
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 306px;
+    height: 0;
+}
+.blurred-container .motto .border{
+    float: left;
+    border: 3px solid #FFFFFF;
+    padding: 0px 30px;
+    text-align: center;
+}
+.blurred-container .motto .no-right-border{
+    border-right: none;
+}
+
+@media (max-width: 768px){
+    .blurred-container .motto{
+        font-size: 60px;
+        width: 268px;
+        top: 130px;
+    }
+}
+
+
+#buttons .btn, #tooltips .btn{
+    margin-bottom: 15px;
+}
+.img-dog{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.tab-text{
+    font-size:20px;
+    color: white;
+    font-family: 'Helvetica';
+    word-spacing: 2px;
+    line-height: 125%;
+}
+.tab-title{
+    font-size:35px;
+    color:  black;
+    
+}
+.title{
+    font-size:35px;
+    text-shadow: 2px 3px 0px #fff, 5px 8px 5px rgba(0,0,0,0.1);
+    color:  #333333;
+}
+
+.subtitle { width: 38%; 
+    background: url('http://i47.tinypic.com/a9l0g3.png') top left no-repeat; 
+    padding-left: 45px;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 18px;
+    color:  #666666;
+}
+.subtitle p { padding-right: 35px; 
+    line-height: 18px; 
+    background: url('http://i48.tinypic.com/eb1yrr.png') bottom right no-repeat; 
+    padding-bottom: 25px; 
+    color: #666666; 
+    font-size: 20px;
+    font-family: 'Lucida Sans Typewriter'; }
+
+.author {
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color:  #333333;
+    font-size: 25px;
+    text-align: right;
+}
+.grey-container{
+    background-image: url('/assets/graydient.jpg');
+}
+
+.white-container{
+    background-color: white;
+}
+.invisible-ink{
+    color:white;
+}
+.header{
+    font-size:50px;
+    font-family: 'Pacifico';
+    color:  #f8f8ff;
+}
+.oswald{
+    font-family: 'Oswald';
+}
+.lato{
+    font-family: 'Lato';
+}
+.dark-header{
+    font-size:55px;
+    font-family: 'Pacifico';
+    color:  #2d2d2d;
+}
+.dark-paragraph{
+    font-family: 'Lato';
+    font-weight: bold;
+    line-height: 150%;
+    font-size: 20px;
+    color: #2d2d2d;
+}
+.white-paragraph{
+    font-family: 'Lato';
+    font-weight: bold;
+    line-height: 150%;
+    font-size: 20px;
+    color: white;
+}
+.container{
+    padding-top:2%; 
+    padding-bottom: 3%; 
+}
+.list li:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+
+
+.list {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+
+
+.list li {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #ccc;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+  display: block;
+}
+
+.hover li:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+* { 
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+
+
+.acc-container {
+  width:90%;
+  margin:30px auto 0 auto;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  -o-border-radius:8px;
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.acc-btn { 
+  width:100%;
+  margin:0 auto;
+  padding:20px 25px;
+  cursor:pointer;
+  background:#000000;
+  border-bottom:1px solid #00cccc;
+}
+
+.acc-content {
+  height:0px;
+  width:100%;
+  margin:0 auto;
+  overflow:hidden;
+  background:#191919;
+  color:white;
+}
+
+.acc-content-inner {
+  padding:30px;
+}
+
+.open {
+  height: auto;
+}
+
+
+
+.selected {
+  color:#00cccc;
+}
+
+
+body
+{
+    background-color: #E5E5E5;
+    font-family: Tahoma, Calibri, 'Trebuchet MS' , Arial;
+    margin: 20px;
+    color: #666666;
+}
+h1, h2
+{
+    clear: both;
+    font-weight: normal;
+    text-shadow: 1px 1px 0px #FFFFFF;
+}
+
+/* Common division block */
+.holder
+{
+    border: 6px solid #FFFFFF;
+    float: left;
+    margin: 10px;
+    position: relative;    
+    overflow: hidden;
+
+}
+
+
+/* Smooth Caption */
+.smooth
+{
+    opacity: 1;    
+}
+.smooth:hover
+{
+    opacity: 1;
+    box-shadow: 0px 0px 10px ;
+}
+
+.smooth:hover > .go-left
+{    
+    right:0px;    
+}
+.go-top
+{
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    top: 100%;
+    width: 95%;
+    text-align:center;   
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    -webkit-transition: 0.5s Ease;
+    -moz-transition: 0.5s Ease;
+    -o-transition: 0.5s Ease;
+    transition: 0.5s Ease;
+}
+.smooth:hover > .go-top
+{    
+    top:10px;    
+}
+.go-top p
+{
+    font-size: 70%;
+    font-weight:bold;
+}
+
+.go-left
+{
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    top: 100%;
+    width: 95%;
+    text-align:center;   
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    -webkit-transition: 0.5s Ease;
+    -moz-transition: 0.5s Ease;
+    -o-transition: 0.5s Ease;
+    transition: 0.5s Ease;
+}
+.smooth:hover > .go-left
+{    
+    right:0px;    
+}
+/* line 2, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar table {
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  background-color: transparent;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+/* line 13, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar tr {
+  border-collapse: collapse;
+}
+/* line 17, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar th {
+  padding: 6px;
+  border-bottom: 2px solid #dddddd;
+  border-collapse: collapse;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-top: 0px none #333333;
+  box-sizing: border-box;
+  text-align: left;
+}
+/* line 28, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar td {
+  padding: 6px;
+  vertical-align: top;
+  width: 14%;
+  border: 1px solid #ddd;
+  border-top-color: #dddddd;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: #dddddd;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: #dddddd;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #dddddd;
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+/* line 48, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .day {
+  height: 80px;
+}
+/* line 60, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .today {
+  background: #FFFFC0;
+}
+/* line 69, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .prev-month {
+  background: #DDD;
+}
+/* line 72, /Users/macbook/.rvm/gems/ruby-2.2.3/gems/simple_calendar-2.1.5/app/assets/stylesheets/simple_calendar.scss */
+.simple-calendar .next-month {
+  background: #DDD;
+}
+.rails-bootstrap-forms-date-select select,
+.rails-bootstrap-forms-time-select select,
+.rails-bootstrap-forms-datetime-select select {
+  display: inline-block;
+  width: auto;
+}
+
+.rails-bootstrap-forms-error-summary {
+  margin-top: 10px;
+}

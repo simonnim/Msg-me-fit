@@ -6,15 +6,17 @@ class UserController < ApplicationController
 
 	def show
 		@user = User.find(session[:user_id])
+		@stats = Stats.all
 	end
 
 	def create
 		@user = User.new(name: params[:name], password: params[:password], email: params[:email])
+		@stats = Stats.new(weight: params[:weight], bench: params[:bench], squat: params[:squat],deadlift: params[:deadlift], overheadpress: params[:overheadpress], barbellrow: params[:barbellrow])
 		if @user.save
 			session[:user_id] = @user.id
-			redirect_to '/'
-		else
-			render 'new'
+			redirect_to '/user/show'
+		elsif @stats.save
+			redirect_to '/user/show'
 		end
 	end
 
