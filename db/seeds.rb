@@ -896,7 +896,7 @@ Exerciselist.create(exercise: "zercher squats", muscle: "quadriceps")
 Exerciselist.create(exercise: "zottman curl", muscle: "biceps")
 Exerciselist.create(exercise: "zottman preacher curl", muscle: "biceps")
 
-Meal.create(meal: "BBQ Chicken Wrapped Asparagus", ingredients: "Chicken 2-3 oz Thinly Cut, Asparagus 12, BBQ Sauce 2 Tbsp, Cumin, Paprika, Garlic, Pepper, Bell Peppers 1 CUP Diced, Brown Rice 1/2 Cup, Fruit Optional", directions: "Set oven to 405°F.
+Meal.create(meal: "BBQ Chicken and Asparagus", ingredients: "Chicken 2-3 oz Thinly Cut, Asparagus 12, BBQ Sauce 2 Tbsp, Cumin, Paprika, Garlic, Pepper, Bell Peppers 1 CUP Diced, Brown Rice 1/2 Cup, Fruit Optional", directions: "Set oven to 405°F.
 Measure and cut chicken breasts into thin, 2-3 oz pieces. Feel free to further flatten the chicken with a mallet.
 Season chicken cutlets with 1 tbsp barbecue sauce (for each piece) and your choice of seasonings.
 Chop the ends off asparagus and wrap the chicken around 6 asparagus spears.
