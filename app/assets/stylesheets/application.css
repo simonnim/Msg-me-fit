@@ -57,10 +57,27 @@ background-color: white;
   font-family: 'Oswald';
   text-align: center;
 }
+.stats-heading {
+  font-family: 'Oswald';
+  font-size: 40px;
+  text-align: center;
+}
+.stats-item{
+    font-family: 'Pacifico';
+    text-align: center;
+    font-size: 37.5px;
+    line-height: 100%;
+}
 .calendar-title{
   font: 40px 'Pacifico';
   color: #346fa1;
 
+}
+.barbell{
+    background-image: url('http://i0006.photobucket.com/albums/0006/findstuff22/Quotes%20and%20Sayings/Beautiful%20or%20Beauty/quote.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
 .today {
