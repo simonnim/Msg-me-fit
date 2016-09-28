@@ -10,11 +10,9 @@ class MealsController < ApplicationController
 	end
 
 	def create
-		@meal = Meal.new
-		# (meal_params)
-		# if @meal.save
-		# 	redirect_to "/"
-		# end
+		# calls on twilio API
+		send_text_message
+		redirect_to user_meals_path
 	end
 
 	def show
@@ -38,8 +36,4 @@ class MealsController < ApplicationController
 			)
 	end
 
-	private
-  # def meal_params
-  #   params.require(:meal).permit(:meal, :directions, :ingredients, :user_id)
-  # end
 end
