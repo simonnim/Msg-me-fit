@@ -19,8 +19,8 @@
 <br><br>
 <center>
 <% @meal.each do |meal| %>
-	<div class="responsive-img" >
-    <div class="holder smooth" >
+	<div class="responsive-img " >
+    <div class="holder smooth shadow" >
         <img src="/assets/<%=meal.meal%>.jpg" alt="food" width="440px" height="300px" />
         <div class="go-top">
             <p>
@@ -28,7 +28,7 @@
     						Directions:<%= meal.directions %> 
             </p>
         </div>
-        <center><h8><%= meal.meal %> </h8></center>
+        <center><h3><%= meal.meal %> </h3></center>
     </div>
 	</div>
 </center>

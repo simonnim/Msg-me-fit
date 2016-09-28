@@ -896,14 +896,7 @@ Exerciselist.create(exercise: "zercher squats", muscle: "quadriceps")
 Exerciselist.create(exercise: "zottman curl", muscle: "biceps")
 Exerciselist.create(exercise: "zottman preacher curl", muscle: "biceps")
 
-Meal.create(meal: "BBQ CHICKEN WRAPPED ASPARAGUS", ingredients: "
-CHICKEN 2-3 OZ THINLY CUT,
-ASPARAGUS 12,
-BBQ SAUCE 2 TBSP,
-CUMIN, PAPRIKA, GARLIC, PEPPER,
-BELL PEPPERS 1 CUP DICED,
-BROWN RICE 1/2 CUP,
-FRUIT OPTIONAL", directions: "Set oven to 405°F.
+Meal.create(meal: "BBQ Chicken Wrapped Asparagus", ingredients: "Chicken 2-3 oz Thinly Cut, Asparagus 12, BBQ Sauce 2 Tbsp, Cumin, Paprika, Garlic, Pepper, Bell Peppers 1 CUP Diced, Brown Rice 1/2 Cup, Fruit Optional", directions: "Set oven to 405°F.
 Measure and cut chicken breasts into thin, 2-3 oz pieces. Feel free to further flatten the chicken with a mallet.
 Season chicken cutlets with 1 tbsp barbecue sauce (for each piece) and your choice of seasonings.
 Chop the ends off asparagus and wrap the chicken around 6 asparagus spears.
@@ -911,92 +904,43 @@ Place the chicken on a baking sheet with the open facing down.
 Bake in the oven for about 8-10 minutes.", user_id: 1)
 
 
-Meal.create(meal: "	STUFFED MUSCLE EGGS WITH PITA BREAD", ingredients:"
-WILD SALMON 1 CAN LOW SODIUM,
-HARDBOILED EGGS 2,
-GREEK YOGURT 1 TBSP,
-SEASONING TO TASTE,
-LETTUCE 1 LEAF,
-CHERRY TOMATOES 5,
-PITA POCKET 1/2 WHOLE,
-GOAT CHEESE 1 TBSP,
-MUSTARD
-KUMQUATS", directions:"Boil 2 eggs. Peel them and slice them in half. Remove the yolk from 1 egg (or both eggs) and add to a bowl.
+Meal.create(meal: "Stuffed Muscle Eggs with Pita Bread", ingredients:
+"Wild Salmon 1 CAN LOW Sodium, Hardboiled Eggs 2, Greek Yogurt 1 Tbsp, Seasoning to Taste, Lettuce 1 Leaf, Cherry Tomatoes 5, Pita Pocket 1/2 Whole, Goat Cheese 1 Tbsp, Mustard Kumquats", directions:"Boil 2 eggs. Peel them and slice them in half. Remove the yolk from 1 egg (or both eggs) and add to a bowl.
 Add 1/2 can wild salmon to the bowl along with 1 tbsp Greek yogurt, onions, and your other choice of seasonings.
 Mix the ingredients together; then stuff the eggs. Or, add egg whites to the mixture to create a salmon salad.
 Eat the meal with pita bread or stuff the pita with the salad, lettuce, and tomatoes.", user_id: 1)
 
-Meal.create(meal: "	WILD GAME AND BLACK BEAN STUFFED BELL PEPPER", ingredients: "
-WILD GAME 6 OZ,
-BLACK BEANS 1/2 CUP,
-BELL PEPPERS 2,
-SALSA 4 TBSP,
-GOAT CHEESE 2 TBSP,
-PARSLEY,
-BROWN RICE 1/4 CUP,
-PINEAPPLE,
-", directions: "Set oven to 405°F.
-Cut tops off bell peppers and remove the seeds inside.
-Spray a baking sheet and place the bell peppers on the sheet with the open-side facing down. Bake for 10-12 minutes.
+Meal.create(meal: "Wild Game Stuffed Pepper", ingredients: "Wild Game 6 OZ, Black Beans 1/2 Cup, Bell Peppers 2, Salsa 4 Tbsp, Goat Cheese 2 Tbsp, Parsley, Brown Rice 1/4 Cup, Pineapple", directions: "Set oven to 405°F.
+Cut tops off bell peppers and remove the seeds inside. Bake for 10-12 minutes.
 Lightly spray a skillet with Kelapo Coconut Oil and place on medium heat. Add the diced onions.
-Add ground wild game meat to the skillet. When the meat is nearly finished, add in beans, fresh parsley, 2 heaping tbsp of pico de gallo, salsa, or diced tomatoes. Mix with a spatula.
-Remove the bell peppers from the oven and flip them over. Add in game and beans mixture. Top with goat cheese (or low fat mozzarella cheese) and fresh parsley (if desired)
+Add ground wild game meat to the skillet. When the meat is nearly finished, add in beans, fresh parsley, 2 heaping tbsp of pico de gallo, salsa, or diced tomatoes.
+Remove the bell peppers from the oven and flip them over.
 Bake in the oven for 8-10 minutes.", user_id: 1)
 
-Meal.create(meal:"	SPICY FLANK STEAK KABOBS WITH SWEET POTATO", ingredients: "FLANK STEAK 5 OZ,
-SWEET POTATO 1 SMALL,
-ZUCCHINI 1/2 MEDIUM,
-BELL PEPPER 1,
-SEASONING,
-BLUEBERRIES 1/8 CUP,
-SHAVED ALMONDS 1 TBSP,
-RAW ORGANIC HONEY 1 TBSP,
-CHERRIES", directions: "Set oven to 405°F.
-Wrap the sweet potato in foil and place in the oven. If you cannot find a whole sweet potato close to your serving size, then simply cut the sweet potato into small pieces, measure them to ensure your serving size portion and bake them on a baking sheet lined with aluminum foil. Bake for about 45 minutes depending on the size. If they are cut in chunks, then bake for only 25-30 minutes.
+Meal.create(meal:"Spicy Flank Steak with Sweet Potato", ingredients: "Flank Steak 5 OZ, Sweet Potato 1 Small, Zucchini 1/2 Medium, Bell Pepper 1, Seasoning, Blueberries 1/8 Cup, Shaved Almonds 1 Tbsp, RAW Organic Honey 1 Tbsp, Cherries", directions: "Set oven to 405°F.
+Wrap the sweet potato in foil and place in the oven.Bake for about 45 minutes depending on the size. If they are cut in chunks, then bake for only 25-30 minutes.
 Cut flank steak into very small pieces. Season with your choice of seasonings.
 Chop 1 zucchini and 1 bell pepper into small pieces for the kabob.
 Assemble the kabobs, alternating between beef, bell pepper, and zucchini.
-Place the assembled kabob on a baking sheet/pan and bake for 8-12 minutes depending how well you like your meat cooked.", user_id: 1)
+Place the assembled kabob on a baking sheet/pan and bake for 8-12 minutes", user_id: 1)
 
-Meal.create(meal: "TURKEY MEATLOAF WITH SPINACH AND WHOLE WHEAT PEARL", ingredients: "
-GROUND TURKEY 5 OZ,
-RED ONIONS 3/4 CUP,
-MARINARA SAUCE 1/3 CUP,
-SPINACH1 CUP RAW,
-SEASONINGS PARSLEY, BASIL, GARLIC, ONION, DASH OF CORIANDER, PEPPER, SEA SALT (PINCH),
-COUSCOUS 1/2 CUP,
-OLIVE OIL 1 TBSP,
-PINEAPPLE", directions: "Set oven to 405°F.
+Meal.create(meal: "Turkey Meatloaf with Spinach", ingredients: "Ground Turkey 5 OZ, RED Onions 3/4 Cup, Marinara Sauce 1/3 Cup, Spinach1 CUP Raw, Seasonings Parsley, Basil, Garlic, Onion, Dash of Coriander, Pepper, SEA Salt (pinch), Couscous 1/2 Cup, Olive OIL 1 Tbsp, Pineapple", directions: "Set oven to 405°F.
 Season ground turkey with your choice of seasonings. Add in your choice of diced veggies.
-Lightly spray your muffin pan with Kelapo Coconut Oil. Place the ground turkey inside of the muffin holders. Depending on how big your muffin pan is and your singular serving, you may have to use 2 muffin holders for each serving.
+Lightly spray your muffin pan with Kelapo Coconut Oil.
 Top each serving with 1 tbsp marinara sauce.
-Bake in the oven for about 8-10 minutes. If you use less lean ground turkey, you can consider increasing the cooking time to 10-12 minutes.
-Boil couscous using water and low sodium chicken or vegetable broth. Add cilantro or onions while cooking for added flavor. Set aside, and allow to cool. Add 1 tbsp olive tapenade to couscous if desired.", user_id: 1)
+Bake in the oven for about 8-10 minutes.
+Boil couscous using water and low sodium chicken or vegetable broth. Add cilantro or onions while cooking for added flavor.", user_id: 1)
 
-Meal.create(meal: "SESAME TAHINI SHRIMP AND ZUCCHINI LINGUINE PASTA SALAD", ingredients: "
-SHRIMP 6 OZ,
-LARGE ZUCCHINI 1 LARGE,
-BELL PEPPERS 1.5 CUP SLICED,
-ROASTED TAHINI BUTTER 1 TBSP,
-SESAME SEEDS 1/2 TBSP,
-BLUEBERRIES OPTIONAL", directions: "Cut zucchini using a Julienne shredder in order to make the raw linguine.
+Meal.create(meal: "Shrimp and Zucchini Linguine", ingredients: "Shrimp 6 OZ, Large Zucchini 1 Large, Bell Peppers 1.5 CUP Sliced, Roasted Tahini Butter 1 Tbsp, Sesame Seeds 1/2 Tbsp, Blueberries Optional", directions: "Cut zucchini using a Julienne shredder in order to make the raw linguine.
 Slice veggies for pasta.
 In a bowl, mix tahini, sesame oil and Bragg's Liquid Aminos.
-Place all ingredients into a large bowl, including cooked shrimp. Pour the Tahini sauce you made over the meal. Toss it to make sure all sides are covered in the sauce.
-Sprinkle sesame seeds on top. And then devour!", user_id: 1)
+Place all ingredients into a large bowl, including cooked shrimp. Pour the Tahini sauce you made over the meal", user_id: 1)
 
-Meal.create(meal: "THAI SCRAMBLE", ingredients:"
-GRAPESEED OIL 1/2 TBSP,
-FRESH GINGER, MINCED 1 TS,P
-GARLIC, MINCED 1 SMALL CLOVE,
-SCALLIONS, SLICED 1 TBSP,
-EGGS 3 LARGE, WHISKED TOGETHER IN A SMALL BOWL,
-SALT AND FRESHLY GROUND PEPPER TO TASTE,
-CHILI POWDER 1 TSP,
-FRESH CILANTRO, CHOPPED 1 TBSP", directions: "Coat a medium skillet with the grapeseed oil (any oil or cooking spray will work) and heat over medium-high heat. Add the ginger, garlic, and scallions. Sauté for 30 seconds, and then add the eggs.
-Cook the eggs, stirring frequently with a spatula and removing the skillet from the heat as necessary to prevent sticking, until the eggs are cooked through. Season with salt, pepper, chili, and cilantro.", user_id: 1)
+Meal.create(meal: "Thai Scramble", ingredients:"
+Grapeseed OIL 1/2 Tbsp, Fresh Ginger, Minced 1 Ts,p Garlic, Minced 1 Small Clove, Scallions, Sliced 1 Tbsp, Eggs 3 Large, Whisked Together in a Small Bowl, Salt AND Freshly Ground Pepper to Taste, Chili Powder 1 Tsp, Fresh Cilantro, Chopped 1 Tbsp", directions: "Coat a medium skillet with the grapeseed oil (any oil or cooking spray will work) and heat over medium-high heat. Add the ginger, garlic, and scallions. Sauté for 30 seconds, and then add the eggs.
+Cook the eggs, stirring frequently with a spatula and removing the skillet from the heat as necessary to prevent sticking, until the eggs are cooked through", user_id: 1)
 
-Meal.create(meal: "BAKED FRENCH TOAST", ingredients: "6 slices Ezekiel Bread
+Meal.create(meal: "Baked French Toast", ingredients: "6 slices Ezekiel Bread
 6 large Eggs,
 1/2 cup Low-fat Geek Yogurt,
 1 1/2 cups Milk,
@@ -1024,7 +968,6 @@ Meal.create(meal: "High Protein Waffles", ingredients: "1 1/2 cups Oatmeal,
 1/2 cup fresh Blueberries,
 1/4 cup Sugar-free Maple Syrup", directions: "Mix together oats, coconut flour, protein powder, sugar, baking powder, and cranberries in a large bowl.
 In another bowl, whisk together the eggs, oil, cottage cheese, and milk until smooth.
-Slowly combine dry ingredients with wet ingredients.
 Pour the batter into a waffle maker according to maker directions and cook.
 Once waffles are done, top with fresh blueberries and syrup.", user_id: 1)
 
@@ -1034,58 +977,22 @@ Salt and Pepper, to taste,
 2 Whole Eggs,
 1/8 tsp pureed Garlic,
 1 tbsp sliced Green Onion,
-1 medium Sweet Potato, cut into cubes", directions: "Preheat oven to 350 degrees F.
-Heat 1 tbsp olive oil over medium heat.
-While oil is heating, gently tenderize the steak, adding salt and pepper to taste.
+1 medium Sweet Potato, cut into cubes", directions: "
 Place the steak in the skillet and cook for about 5 minutes before turning over.
 Cook for another five minutes, or slightly longer depending your preference.
-Transfer the steak to a plate and cover with foil to keep it warm.
-Pour 1/2 tbsp. of olive oil to the same skillet and then add both eggs.
 Add garlic and green onion and scramble for 3-4 minutes, or until eggs are cooked.
 While eggs are cooking, place sweet potatoes in a bowl with a small amount of water and cover.
-Microwave potatoes for 3 minutes.
-When eggs are done, remove from pan and place on plate with the steak, and cover.
-Finally, add the remaining 1/2 tbsp. of olive oil to the skillet and cook sweet potatoes until they're crispy.
-Serve potatoes alongside steak and eggs.", user_id: 1)
+Microwave potatoes for 3 minutes.", user_id: 1)
 
-Meal.create(meal: "SRIRACHA TURKEY POLENTA SLIDERS", ingredients: "POLENTA
-ITALIAN POLENTA: 3 1/2-INCH THICK WITH SIDES TRIMMED DOWN,
-GRAPESEED OIL: 1 TSP,
-GHEE: 1/2 TBSP
-SALT AND PEPPER TO TASTE
-TURKEY SLIDERS:
-GROUND TURKEY: 12 OZ.
-MUSHROOM: 1 DICED
-SLICED GREEN ONION WHITE END ONLY: 1
-SRIRACHA: 1 TBSP
-ONION POWDER: 1/4 TSP
-SALT AND PEPPER: TO TASTE
-TOPPINGS
-ASPARAGUS SPEARS: 3 (TOPS CUT OFF AND BOTTOMS SLICED)
-SRIRACHA: 1 TBSP
-GRAPESEED OIL: 1 TSP", directions: "", user_id: 1)
+Meal.create(meal: "Sriracha Turkey Polenta Sliders", ingredients: "Polenta Italian Polenta: 3 1/2-inch Thick With Sides Trimmed Down, Grapeseed Oil: 1 Tsp, Ghee: 1/2 Tbsp Salt AND Pepper to Taste Turkey Sliders: Ground Turkey: 12 OZ. Mushroom: 1 Diced Sliced Green Onion White END Only: 1 Sriracha: 1 Tbsp Onion Powder: 1/4 TSP Salt AND Pepper: to Taste Toppings Asparagus Spears: 3 (tops CUT OFF AND Bottoms Sliced) Sriracha: 1 Tbsp Grapeseed Oil: 1 TSP", directions: "Mix everything together and then beep boop you're done", user_id: 1)
 
-Meal.create(meal: "FISH BURGER", ingredients:"
-WILD FLOUNDER: 6 OZ.,
-QUINOA: 1/4 CUP,
-CHIA SEEDS: 1 TBSP,
-BABY KALE: 1 HANDFUL,
-CUCUMBER: 1/8,
-JALAPENO: TO YOUR LIKING,
-VEGENAISE MAYO: 1/2 TBSP,
-WHOLE-WHEAT BUN: 1,
-GARLIC CLOVE: 1,
-WHOLE-WHEAT BREAD CRUMBS: 1/8 CUP,
-SALT AND PEPPER: TO TASTE,
-CURRY: TO TASTE,
-LEMON JUICE: TO TASTE", directions: "Cook quinoa for 15 minutes with salt and curry. Jamaican curry is a great choice!
+Meal.create(meal: "Fish Burger", ingredients:"Wild Flounder: 6 Oz., Quinoa: 1/4 Cup, Chia Seeds: 1 Tbsp, Baby Kale: 1 Handful, Cucumber: 1/8, Jalapeno: to Your Liking, Vegenaise Mayo: 1/2 Tbsp, Whole-wheat Bun: 1, Garlic Clove: 1, Whole-wheat Bread Crumbs: 1/8 Cup, Salt AND Pepper: to Taste, Curry: to Taste, Lemon Juice: to Taste", directions: "Cook quinoa for 15 minutes with salt and curry. Jamaican curry is a great choice!
 Cook flounder for a minute each side on a low flame.
 Preheat oven or grill to 425 degrees.
 In a bowl, combine chia seeds, quinoa, flounder, minced garlic clove, bread crumbs, salt, pepper, and some chopped kale. Form into patty and put in oven for 8-10 minutes.
-Dice up peeled cucumber and jalapeno. Mix in with mayo and a splash of lemon juice.
-Toast buns, and combine everything to form your burger. Enjoy!", user_id: 1)
+Dice up peeled cucumber and jalapeno. Mix in with mayo and a splash of lemon juice", user_id: 1)
 
-Meal.create(meal: "QUINOA SALAD", ingredients: "1 cup uncooked, dry Quinoa,
+Meal.create(meal: "Quinoa Salad", ingredients: "1 cup uncooked, dry Quinoa,
 1 cup shelled, frozen Edamame,
 1 Red Bell Pepper,
 1/4 cup chopped Cilantro,
@@ -1097,7 +1004,7 @@ Reduce to a simmer and cover. Allow to cook for another 15 minutes, then fluff w
 In a separate small saucepan, boil frozen edamame in water for 5 minutes, or until fully cooked.
 Once quinoa and edamame are fully cooked, add all ingredients in a large bowl and mix until all flavors are incorporated.", user_id: 1)
 
-Meal.create(meal: "STACKED PORTABELLAS", ingredients: "2 large Mushroom Portabella Caps rinsed clean and dried,
+Meal.create(meal: "Stacked Portabellas", ingredients: "2 large Mushroom Portabella Caps rinsed clean and dried,
 1 cup cooked Quinoa,
 1/2 cup crumbled Tempeh,
 1/2 Onion, diced,
@@ -1106,37 +1013,21 @@ Meal.create(meal: "STACKED PORTABELLAS", ingredients: "2 large Mushroom Portabel
 2 tbsp shredded Almond Cheese or Fat-free Mozzarella,
 1 tbsp Olive Oil
 1/2 tbsp each of Paprika, Cumin, Garlic Powder, and Onion Powder,
-Sea Salt and Black Pepper, to taste", directions: "Turn on oven to high broil.
-Heat olive oil in a large saute pan over medium heat.
+Sea Salt and Black Pepper, to taste", directions: "
 Add onion and tempeh to pan and saute for 2-3 minutes, or until onion begins to soften.
 Add quinoa, spices, salt and pepper and saute a few more minutes.
 On a baking sheet, place portabello mushrooms brushed lightly with olive oil.
 Stack mushroom caps with spinach, quinoa mixture, sliced tomatoes, and shredded cheese.
 Broil for 5 minutes.", user_id: 1)
 
-Meal.create(meal: "BEEF NOODLE SOUP", ingredients: "
-LEAN GROUND BEEF 1 LB.,
-LOW-SODIUM BEEF BROTH 2 CUPS,
-WATER 1 CUP,
-CARROTS, SLICED 1 CUP,
-CELERY, SLICED 1 CUP,
-BROCCOLI FLORETS 2 CUPS,
-SNOW PEAS 1/2 CUP,
-BEAN SPROUTS 1 CUP,
-GARLIC, CRUSHED 1/2 CLOVE,
-ANGEL HAIR PASTA (IF DESIRED) 2 CUPS
+Meal.create(meal: "Beef Noodle Soup", ingredients: 
+"Lean Ground Beef 1 Lb., Low-sodium Beef Broth 2 Cups, Water 1 Cup, Carrots, Sliced 1 Cup, Celery, Sliced 1 Cup, Broccoli Florets 2 Cups, Snow Peas 1/2 Cup, Bean Sprouts 1 Cup, Garlic, Crushed 1/2 Clove, Angel Hair Pasta (IF Desired) 2 Cups
 ", directions: "Brown the beef in a skillet over medium heat. In a pot, boil the beef broth and water.
 Once boiling, add carrots, celery, and snow peas. Cook for 2-3 minutes. Then add broccoli, bean sprouts, and ground beef; cook for another 1-2 minutes.
 Stir garlic and pasta, and simmer over low heat for 8 minutes.
 Serve immediately.", user_id: 1)
 
-Meal.create(meal: "SUPERHERO CHICKEN", ingredients: "
-BONELESS, SKINLESS CHICKEN BREAST 12 OZ.,
-HONEY 1 TSP,
-ORANGE JUICE 1 TSP,
-LEMON", directions: "Preheat oven to 375 degrees F.
-Coat a baking pan with nonstick spray, and place chicken in pan.
-In a separate bowl, combine honey, orange juice, and lemon juice. Pour over chicken.
+Meal.create(meal: "Superhero Chicken", ingredients: "Boneless, Skinless Chicken Breast 12 Oz., Honey 1 Tsp, Orange Juice 1 Tsp, Lemon", directions: "In a separate bowl, combine honey, orange juice, and lemon juice. Pour over chicken.
 Cover pan with tin foil and bake for 10 minutes.
 Remove pan from oven to flip chicken, and then return it to the oven for another 10-15 minutes.
 For a full meal, pair chicken with green vegetables and, depending on your carbohydrate needs, a starch.

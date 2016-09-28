@@ -28,9 +28,10 @@ background-color: white;
   padding: 20px;
 }
 .shadow{
-    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 7px 4px #777;
+    -moz-box-shadow: 0 7px 4px #777;
+    box-shadow: 0 7px 4px #777;
+
 }
 .div-pillar{
   width: 17%;
@@ -1009,6 +1010,7 @@ h1, h2
     margin: 10px;
     position: relative;    
     overflow: hidden;
+    
 }
 
 
