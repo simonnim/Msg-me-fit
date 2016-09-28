@@ -1,11 +1,23 @@
-<h1>Event Details</h1>
-<ul>
-	<li>Category: <%= @event.category %></li>
+
+
+
+<div class="w3-card-4">
+
+<header class="w3-container w3-grey">
+  <center><h1>Event Details</h1></center>
+</header>
+
+<div class="w3-container">
+  <p>	<li>Category: <%= @event.category %></li>
 	<li>Title: <%= @event.title %></li>
 	<li>Description: <%= @event.description %></li>
 	<li>Date: <%= (@event.time).strftime("%m/%d/%Y") %></li>
-	<li>Time: <%= (@event.time).strftime("%I:%M%p") %></li>
-</ul>
+	<li>Time: <%= (@event.time).strftime("%I:%M%p") %></li></p>
+</div>
 
-<td><%= link_to 'Delete', user_calendar_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<footer class="w3-container w3-grey">
+<button class="w3-btn-block w3-grey"><h3><%= link_to 'Delete', user_calendar_path, method: :delete, data: { confirm: 'Are you sure?' } %></h3></button>
+  
+</footer>
 
+</div>
