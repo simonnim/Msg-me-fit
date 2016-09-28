@@ -33,6 +33,11 @@ background-color: white;
     box-shadow: 0 7px 4px #777;
 
 }
+.shadow2{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
 .div-pillar{
   width: 17%;
   height: 100%;
@@ -1010,7 +1015,7 @@ h1, h2
     margin: 10px;
     position: relative;    
     overflow: hidden;
-    
+
 }
 
 
@@ -1056,4 +1061,24 @@ h1, h2
     font-weight:bold;
 }
 
-
+.go-left
+{
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    top: 100%;
+    width: 95%;
+    text-align:center;   
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    -webkit-transition: 0.5s Ease;
+    -moz-transition: 0.5s Ease;
+    -o-transition: 0.5s Ease;
+    transition: 0.5s Ease;
+}
+.smooth:hover > .go-left
+{    
+    right:0px;    
+}
