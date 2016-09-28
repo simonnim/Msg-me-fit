@@ -830,7 +830,7 @@ background-color: white;
     text-align: right;
 }
 .grey-container{
-    background-color: #2d2d2d;
+    background-image: url('/assets/graydient.jpg');
 }
 
 .white-container{
@@ -841,22 +841,26 @@ background-color: white;
 }
 .header{
     font-size:50px;
-    text-shadow: 2px 3px 0px #389c94, 5px 8px 5px rgba(0,0,0,0.1);
+    font-family: 'Pacifico';
     color:  #f8f8ff;
 }
 .dark-header{
-    font-size:50px;
-    text-shadow: 2px 3px 0px #587a9b, 5px 8px 5px rgba(0,0,0,0.1);
+    font-size:55px;
+    font-family: 'Pacifico';
     color:  #2d2d2d;
 }
 .dark-paragraph{
-    font-family: 'Helvetica';
-    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: bold;
+    line-height: 150%;
+    font-size: 20px;
     color: #2d2d2d;
 }
 .white-paragraph{
-    font-family: 'Helvetica';
-    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: bold;
+    line-height: 150%;
+    font-size: 20px;
     color: white;
 }
 .container{
