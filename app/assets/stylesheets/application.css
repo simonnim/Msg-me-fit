@@ -33,6 +33,11 @@ background-color: white;
     box-shadow: 0 7px 4px #777;
 
 }
+.shadowcal{
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
 .shadow2{
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
@@ -49,12 +54,11 @@ background-color: white;
   padding-right: 30px;
 }
 .calendar-heading {
+  font-family: 'Oswald';
   text-align: center;
-  padding: 10px;
-
 }
 .calendar-title{
-  font: 25px Tahoma, Helvetica, Arial, Sans-Serif;
+  font: 40px 'Pacifico';
   color: #346fa1;
 
 }
@@ -843,6 +847,12 @@ background-color: white;
     font-size:50px;
     font-family: 'Pacifico';
     color:  #f8f8ff;
+}
+.oswald{
+    font-family: 'Oswald';
+}
+.lato{
+    font-family: 'Lato';
 }
 .dark-header{
     font-size:55px;
