@@ -2,7 +2,7 @@
     <div class="container">
        <h1 class="intro title text-center dark-header"><%= @user.name.capitalize %>'s Profile Page</h1><br><br>
        <p class="dark-paragraph">One of the best feelings in fitness is learning how you've progressed over time. Hard work pays off, and it's an amazing feeling to see how you've transformed both mentally and physically. Be proud of all the hard work you've put into working you butt off, and take a moment to pat yourself on the back. Numbers don't lie! <br><br>
-       Below this black of text, you'll be able to check lift stats that you've uploaded. After a couple entries, you'll see the change in strength. Also, you'll also be able to check up on past events and see how they compare as well. We are in the works of adding a chart to graphically illustrate your gains, so stay tuned!</p> 
+       Below this block of text, you'll be able to check lift stats that you've uploaded. After a couple entries, you'll see the change in strength. Also, you'll also be able to check up on past events and see how they compare as well. We are in the works of adding a chart to graphically illustrate your gains, so stay tuned!</p> 
     </div>
 </div>
 
@@ -11,12 +11,13 @@
    data-target="#statsModal">Add Stats</a></center><br><br>
 
 <% @stats.each do |stat| %>
-
+<a data-toggle="collapse" href="#collapse<%=stat.id%>" style="color: white;">
     <div class="acc-btn" style="background-color: black;   border-bottom:1px solid #00cccc; font-size:50px;">
       <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse<%=stat.id%>" style="color: white;"><div class="stats-heading">Lift Statistics as of <%= (stat.created_at).strftime("%m/%d/%Y")%></div></a>
+        <div class="stats-heading">Lift Statistics as of <%= (stat.created_at).strftime("%m/%d/%Y")%></div>
       </h4>
     </div>
+</a>
     <div id="collapse<%=stat.id%>" class="panel-collapse collapse">
       <ul class="list-group">
         <li class="list-group-item"><div class="stats-item">Weight: <%= stat.weight %></div></li>
@@ -53,5 +54,29 @@
       </div>
     </div>
  </div>
-
-
+<div class="white-container" style="padding-top: 25px;">
+<h1 class="intro title text-center dark-header">Scheduled Exercise and Meals</h1><br>
+  <% @calendar.each do |calendar| %>
+    <center><div class="responsive-img">
+        <ul class="event-list">
+          <li>
+            <time datetime="<%= calendar.time %>">
+              <span class="day"><%= (calendar.time).strftime("%d")%></span>
+              <span class="month"><%= (calendar.time).strftime("%b")%></span>
+              <span class="year"><%= (calendar.time).strftime("%y")%></span>
+            </time>
+            <% if calendar.category == "Exercise" %>
+             <img alt="Exercise" src="/assets/dumbbell.png" />
+             <% elsif calendar.category == "Meal" %>
+            <img alt="Meal" src="/assets/food.png" />
+            <% end %>
+            <div class="info">
+              <h2 class="title"><%= calendar.title %></h2><br>
+              <p class="desc"> <%= calendar.description %></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </center>
+  <% end %>  
+</div>

@@ -7,6 +7,7 @@ class UserController < ApplicationController
 	def show
 		@user = User.find(session[:user_id])
 		@stats = Stats.all
+		@calendar = Calendar.where(user_id: @user.id)
 	end
 
 	def create
