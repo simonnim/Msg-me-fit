@@ -853,7 +853,9 @@ background-color: white;
 .grey-container{
     background-image: url('/assets/graydient.jpg');
 }
-
+.white-gradient{
+    background-image: url('/assets/whitegradient.jpg')
+}
 .white-container{
     background-color: white;
 }
@@ -861,7 +863,7 @@ background-color: white;
     color:white;
 }
 .header{
-    font-size:50px;
+    font-size:60px;
     font-family: 'Pacifico';
     color:  #f8f8ff;
 }
@@ -872,7 +874,7 @@ background-color: white;
     font-family: 'Lato';
 }
 .dark-header{
-    font-size:55px;
+    font-size:60px;
     font-family: 'Pacifico';
     color:  #2d2d2d;
 }
@@ -938,6 +940,7 @@ div.img img {
 
 div.desc {
     padding: 15px;
+    width: 150px;
     text-align: center;
 }
 
@@ -1113,3 +1116,148 @@ h1, h2
 {    
     right:0px;    
 }
+
+    @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic");
+    @import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+    body {
+        padding: 0px;
+        background-color: rgb(220, 220, 220);
+    }
+    
+    .event-list {
+        list-style: none;
+        font-family: 'Lato', sans-serif;
+        margin: 0px;
+        padding: 0px;
+    }
+    .event-list > li {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 5px rgb(51, 51, 51);
+        box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+        padding: 0px;
+        margin: 0px 0px 20px;
+    }
+    .event-list > li > time {
+        display: inline-block;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        background-color: #00cccc;
+        padding: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .event-list > li:nth-child(even) > time {
+        background-color: rgb(165, 82, 167);
+    }
+    .event-list > li > time > span {
+        display: none;
+    }
+    .event-list > li > time > .day {
+        display: block;
+        font-size: 120px;
+        font-weight: 100;
+        line-height: 1;
+    }
+    .event-list > li time > .month {
+        display: block;
+        font-size: 35px;
+        font-weight: 900;
+        line-height: 1;
+    }
+    .event-list > li > img {
+        width: 100%;
+    }
+    .event-list > li > .info {
+        padding-top: 5px;
+        text-align: center;
+    }
+    .event-list > li > .info > .title {
+        font-size: 45px;
+        font-family: 'Pacifico';
+        font-weight: 700;
+        margin: 0px;
+    }
+    .event-list > li > .info > .desc {
+        font-size: 25px;
+        font-family: 'Oswald';
+        font-weight: 300;
+        margin: 0px;
+    }
+    .event-list > li > .info > ul{
+        display: table;
+        list-style: none;
+        margin: 10px 0px 0px;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .event-list > li > .social > ul {
+        margin: 0px;
+    }
+    .event-list > li > .info > ul > li {
+        display: table-cell;
+        cursor: pointer;
+        color: rgb(30, 30, 30);
+        font-size: 11pt;
+        font-weight: 300;
+        padding: 3px 0px;
+    }
+    .event-list > li > .info > ul > li > a {
+        display: block;
+        width: 100%;
+        color: rgb(30, 30, 30);
+        text-decoration: none;
+    } 
+
+    .event-list > li > .info > ul > li:hover,
+    .event-list > li > .social > ul > li:hover {
+        color: rgb(30, 30, 30);
+        background-color: rgb(200, 200, 200);
+    }
+
+    @media (min-width: 768px) {
+        .event-list > li {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 180px;
+            padding: 0px;
+        }
+        .event-list > li > time,
+        .event-list > li > img  {
+            display: inline-block;
+        }
+        .event-list > li > time,
+        .event-list > li > img {
+            width: 180px;
+            float: left;
+        }
+        .event-list > li > .info {
+            width: 385px;
+            height: 180px;
+            background-color: rgb(245, 245, 245);
+            overflow: hidden;
+        }
+        .event-list > li > time,
+        .event-list > li > img {
+            width: 180px;
+            height: 180px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .event-list > li > .info {
+            position: relative;
+            height: 180px;
+            text-align: left;
+        }   
+        .event-list > li > .info > .title, 
+        .event-list > li > .info > .desc {
+            padding: 0px 10px;
+        }
+        .event-list > li > .info > ul {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+
+    }
