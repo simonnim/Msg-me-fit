@@ -1,5 +1,7 @@
 #MSG ME FIT
 
+[Demo](http://msg-me-fit.herokuapp.com/)
+
 ##Purpose
 Prior to creating this app, we saw that often times, bodybuilders were on their phones throughout their workouts scrambling to figure out which exercise to work on next. We quickly found out that meal prepping caused similar problems, albeit at home instead of at the gym. As a result, we decided to move forward with an application that solves both of these problems by allowing users to pre-plan both their workout routines and meal plans. 
 
