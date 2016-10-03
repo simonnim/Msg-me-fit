@@ -1,13 +1,13 @@
 <div class="white-container">
     <div class="container">
-       <h1 class="intro title text-center dark-header"><%= @user.name.capitalize %>'s Profile Page</h1><br><br>
+       <h1 class="intro title text-center dark-header" style="color: #00b7b7;"><%= @user.name.capitalize %>'s Profile Page</h1><br><br>
        <p class="dark-paragraph">One of the best feelings in fitness is learning how you've progressed over time. Hard work pays off, and it's an amazing feeling to see how you've transformed both mentally and physically. Be proud of all the hard work you've put into working you butt off, and take a moment to pat yourself on the back. Numbers don't lie! <br><br>
        Below this block of text, you'll be able to check lift stats that you've uploaded. After a couple entries, you'll see the change in strength. Also, you'll also be able to check up on past events and see how they compare as well. We are in the works of adding a chart to graphically illustrate your gains, so stay tuned!</p> 
     </div>
 </div>
 
 
-<center><a class="btn btn-lg btn-primary" style="background-color:#00cccc; border: 0px solid black;" data-toggle="modal" 
+<center><a class="btn btn-lg btn-primary" style="background-color:#00cccc; border: 0px solid black; color: white;" data-toggle="modal" 
    data-target="#statsModal">Add Stats</a></center><br><br>
 
 <% @stats.each do |stat| %>
@@ -66,9 +66,9 @@
               <span class="year"><%= (calendar.time).strftime("%y")%></span>
             </time>
             <% if calendar.category == "Exercise" %>
-             <img alt="Exercise" src="/assets/dumbbell.png" />
+             <img alt="Exercise" src="/assets/dumbbell.png" style="height:170px; width:170px;" />
              <% elsif calendar.category == "Meal" %>
-            <img alt="Meal" src="/assets/food.png" />
+            <img alt="Meal" src="/assets/food.png" style="height:170px; width:170px;"/>
             <% end %>
             <div class="info">
               <h2 class="title"><%= calendar.title %></h2><br>

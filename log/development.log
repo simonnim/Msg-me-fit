@@ -1,0 +1,1 @@
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)

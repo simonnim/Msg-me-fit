@@ -13,14 +13,15 @@
 </div>
 <center><%= link_to "Add New Meal", new_user_meal_path(@user) %></center>
  -->
-<div class="grey-container">
-    <div class="container" >
-       <h1 class="text-center header">Food Makes the World Go Round</h1><br>
+ <div style="background-image: url('https://wallpaperscraft.com/image/tomatoes_pasta_onions_111800_1920x1080.jpg');background-position: center top ;">
+    <div class="container transparentbox" style="opacity: 0.8;" >
+       <h1 class="text-center header" style="color:#3ed5d5;">Food Makes the World Go Round</h1><br>
        <p class="white-paragraph">Food and Nutrition play a significant role in overall health and bodybuilding. Perhaps even more important than exercise, a healthy diet paves the way for healthy living. Fast food, sugar-rich snacks, and sodas are a huge detriment to all the progress you've made eating healthy and exercising daily. Don't let these hindrances block you on your journey to greatness.</p><br>
        <p class="white-paragraph">Who says healthy food can't be tasty?? These hand-picked recipes are delicious, healthy, and easy to make! What more can you ask for? Let's get cooking! We hope you enjoy eating and cooking these foods as much as we loved looking for them. Have any recipes you'd like to share? Let us know and we'll add it in the near future</p>      
            <!--     end extras -->        
     </div>
 </div>
+
 <center>
 <% @meal.each do |meal| %>
 	<div class="responsive-img " >
@@ -32,18 +33,9 @@
     						Directions:<%= meal.directions %> 
             </p>
         </div>
-        <center><h3><%= meal.meal %> </h3></center>
+        <center><h3 style="font-family: 'Oswald';"><%= meal.meal %> </h3></center>
     </div>
 	</div>
 </center>
  <% end %> 
 
-<%= form_for :number do |f| %>
-  <%= f.label :number_to_send_to %>
-  <%= f.telephone_field :number_to_send_to %><br />
-
-  <%= f.label :text_field %>
-  <%= f.text_area :text_field %>
-
-  <%= f.submit 'Send text' %>
-<% end %>

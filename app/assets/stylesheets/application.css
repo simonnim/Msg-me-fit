@@ -33,11 +33,7 @@ background-color: white;
     box-shadow: 0 7px 4px #777;
 
 }
-.shadowcal{
-    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-}
+
 .shadow2{
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
@@ -69,8 +65,8 @@ background-color: white;
     line-height: 100%;
 }
 .calendar-title{
-  font: 40px 'Pacifico';
-  color: #346fa1;
+  font: 45px 'Pacifico';
+  color: #323232;
 
 }
 .barbell{
@@ -81,15 +77,15 @@ background-color: white;
 }
 
 .today {
-    background: #cccccc !important;
+    background: #00CCCC  !important;
   }
 
 .next-month {
-    background-color: #8f98a0 !important;
+    background-color: #888888 !important;
   }
 
 .prev-month {
-    background: #587a9b !important;
+    background: #ccf4f4 !important;
   }
 
 .intro {
@@ -813,7 +809,7 @@ background-color: white;
 .tab-text{
     font-size:20px;
     color: white;
-    font-family: 'Helvetica';
+    font-family: 'Lato';
     word-spacing: 2px;
     line-height: 125%;
 }
@@ -1010,6 +1006,8 @@ div.desc {
   overflow:hidden;
   background:#191919;
   color:white;
+  font-family: 'Lato';
+
 }
 
 .acc-content-inner {
@@ -1033,12 +1031,12 @@ body
     font-family: Tahoma, Calibri, 'Trebuchet MS' , Arial;
     margin: 20px;
     color: #666666;
+    padding-right: 0 !important;
 }
 h1, h2
 {
     clear: both;
     font-weight: normal;
-    text-shadow: 1px 1px 0px #FFFFFF;
 }
 
 /* Common division block */
@@ -1180,6 +1178,7 @@ h1, h2
     .event-list > li > .info > .desc {
         font-size: 25px;
         font-family: 'Oswald';
+        line-height: 100%;
         font-weight: 300;
         margin: 0px;
     }
@@ -1261,3 +1260,40 @@ h1, h2
         }
 
     }
+
+    .transparentbox{
+  background-color: #2a2a2a;
+  opacity: 0.8;
+}
+
+.opaque-navbar {
+    background-color: rgba(0,0,0,0);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+.opaque-navbar.opaque {
+    background-color: white;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+ul.dropdown-menu {
+    background-color: black;
+}
+
+
+@media (max-width: 992px) {
+  body
+  {
+    background:white;
+  }
+  .opaque-navbar {
+    background-color: white;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+}
+

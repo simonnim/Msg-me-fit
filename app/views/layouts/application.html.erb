@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FitnessPlanner</title>
+  <title>Msg Me Fit</title>
   <%= csrf_meta_tags %>
  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
@@ -28,29 +30,36 @@
 
 </head>
 <body>
- <div id="navbar-full">
-    <div id="navbar">
-        <nav class="navbar-fixed-top navbar-transparent" role="navigation">
- 
-              <a class="navbar-brand" href="/user" style="font-size: 40px; color:#bdbdbd;">FitnessPlanner</a>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-              <% if current_user %>
-              <ul class="nav navbar-nav navbar-right">
-              <li ><a href="/user/show" style="color:#bdbdbd;">Profile &nbsp<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
-                        <li ><a href="/user/<%=current_user.id%>/calendar" style="color:#bdbdbd;" >Calendar &nbsp<span style="font-size:16px; color:#bdbdbd;" class="pull-right hidden-xs showopacity glyphicon glyphicon-calendar"></span></a></li>
-                        <li ><a href="/user/<%=current_user.id%>/workouts" style="color:#bdbdbd;">Exercises &nbsp<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-flash"></span></a></li>
-                        <li ><a href="/user/<%=current_user.id%>/meals" style="color:#bdbdbd;">Meals &nbsp<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphiconglyphicon glyphicon-apple"></span></a></li>
-                        <li ><a href="/logout" style="color:#bdbdbd;">Log out &nbsp<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-log-out"></span></a></li>
-              </ul>
-              <% else %>
-              <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" data-toggle="modal" data-target="#registerModal" style="color:#bdbdbd;">Register</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#loginModal" style="color:#bdbdbd;">Sign in</a></li>
+<div class="navbar navbar-transparent navbar-fixed-top opaque-navbar">
+  <div class="" >
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggler hidden-lg-up pull-right" data-toggle="collapse" data-target="#navMain" style="background-color:black;" >
+  <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+    
+  </button>
+      <a class="navbar-brand" href="/user" style="font-size: 40px; color:#00cccc;">Msg Me Fit</a>
+    </div>
+    <div class="collapse navbar-toggleable-md" id="navMain" >
+       <% if current_user %>
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="/user/show" style="color:#00cccc;">Profile &nbsp<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+                        <li ><a href="/user/<%=current_user.id%>/calendar" style="color:#00cccc;" >Calendar &nbsp<span style="font-size:16px; " class="pull-right hidden-xs showopacity glyphicon glyphicon-calendar"></span></a></li>
+                        <li ><a href="/user/<%=current_user.id%>/workouts" style="color:#00cccc;">Exercises &nbsp<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-flash"></span></a></li>
+                        <li ><a href="/user/<%=current_user.id%>/meals" style="color:#00cccc;">Meals &nbsp<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphiconglyphicon glyphicon-apple"></span></a></li>
+                        <li ><a href="/logout" style="color:#00cccc;">Log out &nbsp<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-log-out"></span></a></li>
+      </ul>
+      <% else %>
+      <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#registerModal" style="color:#00cccc;">Register</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#loginModal" style="color:#00cccc;">Sign in</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#guestModal" style="color:#00cccc;">Guest Login</a></li>
+
                </ul>
               <% end %>
-        </nav>
-      </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
+</div>
+
   <div class="blurred-container">
             <div class="img-src" ></div>
   </div>
@@ -77,6 +86,31 @@
     </div>
   </div>
 </div>
+
+<div id="guestModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <center><h4 class="modal-title">Guest Login</h4></center>
+      </div>
+      <div class="modal-body">
+        <%= bootstrap_form_tag url:'/sessions' do |f| %>
+         <%= f.hidden_field :email, :value => "calvin@calvin.com" %>
+         <%= f.hidden_field :password, :value => "123" %>
+        <center><%= f.submit "Log in as Guest" %></center>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <div id="registerModal" class="modal fade" role="dialog">
   <div class="modal-dialog">

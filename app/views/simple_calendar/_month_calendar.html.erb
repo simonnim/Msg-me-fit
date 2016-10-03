@@ -1,8 +1,8 @@
 
 <div id="col1" class="simple-calendar col shadowcal" style="width:78%;">
   <div class="calendar-heading">
-    <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view %>
-    <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
+    <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view %> &nbsp &nbsp
+    <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span> &nbsp &nbsp
     <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view %>
   </div>
 
