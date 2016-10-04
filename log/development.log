@@ -1,2 +1,24 @@
 DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)
 DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)
+Started GET "/" for ::1 at 2016-10-04 14:28:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  Rendered user/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 3894ms (Views: 3798.2ms | ActiveRecord: 66.6ms)
+
+
+Started GET "/user/show" for ::1 at 2016-10-04 14:28:57 -0700
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  [1m[36mStats Load (0.6ms)[0m  [1m[34mSELECT "stats".* FROM "stats"[0m
+  [1m[36mCalendar Load (0.6ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered user/show.html.erb within layouts/application (66.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 272ms (Views: 209.9ms | ActiveRecord: 9.3ms)
+
+
