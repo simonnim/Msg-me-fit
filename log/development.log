@@ -22,3 +22,18 @@ Processing by UserController#show as HTML
 Completed 200 OK in 272ms (Views: 209.9ms | ActiveRecord: 9.3ms)
 
 
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)
+Started GET "/user/show" for ::1 at 2016-10-04 14:32:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering user/show.html.erb within layouts/application
+  [1m[36mStats Load (0.6ms)[0m  [1m[34mSELECT "stats".* FROM "stats"[0m
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered user/show.html.erb within layouts/application (106.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 1788ms (Views: 1704.5ms | ActiveRecord: 9.9ms)
+
+
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from block in <top (required)> at /Users/macbook/Desktop/Msg-me-fit/config/initializers/quiet_assets.rb:11)
