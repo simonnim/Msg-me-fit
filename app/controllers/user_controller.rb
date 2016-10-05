@@ -6,13 +6,13 @@ class UserController < ApplicationController
 
 	def show
 		@user = User.find(session[:user_id])
-		@stats = Stats.all
+		@stats = Stats.where(user_id: @user.id)
 		@calendar = Calendar.where(user_id: @user.id)
 	end
 
 	def create
 		@user = User.new(name: params[:name], password: params[:password], email: params[:email])
-		@stats = Stats.new(weight: params[:weight], bench: params[:bench], squat: params[:squat],deadlift: params[:deadlift], overheadpress: params[:overheadpress], barbellrow: params[:barbellrow])
+		@stats = Stats.new(weight: params[:weight], bench: params[:bench], squat: params[:squat],deadlift: params[:deadlift], overheadpress: params[:overheadpress], barbellrow: params[:barbellrow], user_id: params[:user_id])
 		if @user.save
 			session[:user_id] = @user.id
 			redirect_to '/user/show'

@@ -7,6 +7,7 @@ class CreateStats < ActiveRecord::Migration[5.0]
     	t.integer :deadlift, null: false
     	t.integer :overheadpress, null: false
     	t.integer :barbellrow, null: false
+        t.integer :user_id, null: false
 
         t.timestamps
     end
