@@ -47,6 +47,7 @@
         <%= f.number_field :deadlift %>
         <%= f.number_field :overheadpress, label: "Overhead Press" %>
         <%= f.number_field :barbellrow,label: "Barbell Row" %>
+        <%= f.hidden_field :user_id, :value => current_user.id %>
         <%= f.submit %>
       <% end %>
       </div>
