@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20160928200635) do
     t.integer  "deadlift",      null: false
     t.integer  "overheadpress", null: false
     t.integer  "barbellrow",    null: false
+    t.integer  "user_id",       null: false
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
